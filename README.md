@@ -9,7 +9,7 @@ Text
 
 
 
-
+**Directory of the sensor data**
 
 ```
 ${ROOT}
@@ -37,6 +37,7 @@ ${ROOT}
 
 ```
 
+**Directory of the visual data**
 ```
 ${ROOT}
 |-- isometric_images
