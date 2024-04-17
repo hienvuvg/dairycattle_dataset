@@ -88,7 +88,7 @@ ${ROOT}
 |-- crop_profiles
 ```
 
-| Data | Source | Description | Frequency | Duration | Size   |
+| Data | Source | Description | Interval | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
 | ```images```| Recorded | 20k UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day  | 20GB |
 | ```labels```   |Annotated | bbox position with cow_id of each cow in the camera views. Format in image ratio ```[x_center, y_center, width, height]``` | Every 15 s | 1 day  |  |
@@ -114,7 +114,7 @@ ${ROOT}
 |-- cows_gallery
 ```
 
-| Data | Source | Description | Frequency | Duration | Size   |
+| Data | Source | Description | Interval | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
 | ```images```| Recorded| 14x20k UWB-synchronized 15s-interval images | Every 15 s | 14 day  |   21GB / zip |
 | ```proj_mat``` |Calibrated | Calibrated | N/A | 14 days  | N/A       |
@@ -123,6 +123,6 @@ ${ROOT}
 
 
 **Other sets of visual data:**
-* [15s_interval_images](link6) (4.5k resolution, 14 days, 14 zips, 21GB/zip): 
+* [15s_interval_images](link6) (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
 * [1s_interval_videos](link4) (4.5k resolution, 14 day, 14 videos, ?? GB/video) (319GB/zip):  
 * [1s_interval_combined_view_videos](link5) (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
