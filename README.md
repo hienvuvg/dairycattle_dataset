@@ -46,11 +46,11 @@ Explaining what each folder contains.
 **Text**\
 The table of data size and info.
 
-| Sensor Data | Source | Frequency | Processing Method | Duration | Size |
-|-------------|--------|-----------|-------------------|----------|------|
-| uwb_distance| 30  | Engineer   |
-| Bob   | 25  | Designer   |
-| Carol | 35  | Teacher    |
+| Sensor Data | Source | Frequency | Processing Method | Duration | Size   |
+|-------------|--------|-----------|-------------------|----------|--------|
+| uwb_distance| raw    | every 15 s| calibrated        | 14 days  |        |
+| neck_data   | raw    | 10 Hz     | calibrated        | 14 days  | 9.6 GB |
+| ankle_acceleration|raw|every minute|calibrated       | 14 days  |        |
 
 
 Visual Data
