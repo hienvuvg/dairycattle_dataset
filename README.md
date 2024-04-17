@@ -120,5 +120,5 @@ ${ROOT}
 
 
 **Other sets of visual data**
-* ```1s_interval_videos (4.5k resolution, 14 days)```
-* ```1s_interval_combined_view_videos (4k resolution, 14 days)```
+* ```1s_interval_videos``` (4.5k resolution, 14 days): 
+* ```1s_interval_combined_view_videos``` (4k resolution, 14 days): 
