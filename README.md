@@ -69,15 +69,16 @@ The table of data size and info.
 Single-Day Visual Data
 ------
 
-Data from a single day
+Data from a single day\
+Annotation rules
 
-**Structure of visual_data.zip**
+**Structure of single_day_visual_data.zip**
 ```
 ${ROOT}
 |-- images
 |-- labels
-|-- visual_location
 |-- projection_matrix
+|-- visual_location
 |-- crop_profiles
 |-- cows_gallery
 ```
@@ -86,8 +87,8 @@ ${ROOT}
 |-------------|--------|-----------|----------|----------|--------|
 | images| Recorded    | Every 15 s| Calibrated  | 1 day  |   ? GB     |
 | labels   | Annotated |Every 15 s|  | 1 day  |  |
-| projection_matrix |Calibrated |  | 14 days  |        |
-| visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |        |
+| projection_matrix |Calibrated |  | 1 days  |        |
+| visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |        | crop_profiles | Manual | N/A | For masking images | N/A | |
 | cow_gallery |Captured | N/A | None | N/A  |        |
 
 
@@ -96,12 +97,10 @@ Multi-Day Visual Data
 
 Data from multiple days
 
-**Structure of visual_data.zip**
+**Structure of multi_day_visual_data.zip**
 ```
 ${ROOT}
 |-- images
-|-- labels
-|-- visual_location
 |-- projection_matrix
 |-- crop_profiles
 |-- cows_gallery
@@ -109,8 +108,7 @@ ${ROOT}
 
 | Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded    | Every 15 s| Calibrated  | 1 day  |   ? GB     |
-| labels   | Annotated |Every 15 s|  | 1 day  |  |
+| images| Recorded    | Every 15 s| Calibrated  | 14 day  |   ? GB     |
 | projection_matrix |Calibrated |  | 14 days  |        |
-| visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |        |
+| crop_profiles | Manual | N/A | For masking images | N/A | |
 | cow_gallery |Captured | N/A | None | N/A  |        |
