@@ -87,7 +87,7 @@ ${ROOT}
 
 | Data | Source | Description | Frequency | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded |  | Every 15 s | 1 day  | 20k imgs, 20 GB |
+| images| Recorded | 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day  | 20k imgs, 20 GB |
 | labels   |images | | Every 15 s | 1 day  | 20k labels |
 | projection_matrix |Calibrated|  | N/A| 1 day  |        |
 | visual_location | labels (visual) | |Every 15 s | 1 day  |
