@@ -116,7 +116,7 @@ ${ROOT}
 | ```images```| Recorded | Every 15 s| Aligned | 14 day  |   ? GB     |
 | ```proj_mat``` |Calibrated | N/A | Calibrated | 14 days  | N/A       |
 | ```crop_profiles``` | Manual | N/A | Pixel locations in each camera view for masking images | N/A | N/A |
-| ```cow_gallery``` |Captured | N/A | None | N/A  | 500 imgs, 1.92 GB |
+| ```cow_gallery``` |Captured | N/A | 500 photos of the cows taken from different angles using phone cameras | N/A  | 1.92 GB |
 
 
 **Other sets of visual data:**
