@@ -2,14 +2,14 @@
 
 
 
-Text
+Sensor Data
 ------
 
 *   Text
 
 
 
-**Directory of the sensor data**
+**Structure of sensor_data.zip**
 
 ```
 ${ROOT}
@@ -37,10 +37,22 @@ ${ROOT}
     |-- bunching_behavior
 
 ```
+**Text**\
 Explaining what each folder contains.
+
+**Text**\
 The table of data size and info.
 
-**Directory of the visual data**
+| Name  | Age | Occupation |
+|-------|-----|------------|
+| Alice | 30  | Engineer   |
+| Bob   | 25  | Designer   |
+| Carol | 35  | Teacher    |
+
+
+Visual Data
+------
+**Structure of visual_data.zip**
 ```
 ${ROOT}
 |-- images
