@@ -11,7 +11,7 @@ Download links:
 Sensor Data
 ------
 
-Data from multiple days
+Data from multiple days, from 7/21 to 8/04
 
 **Structure of sensor_data.zip**
 
@@ -69,7 +69,7 @@ The table of data size and info.
 Single-Day Visual Data
 ------
 
-Data from a single day\
+Data from a single day 7/25\
 Annotation rules
 
 **Structure of single_day_visual_data.zip**
@@ -95,7 +95,7 @@ ${ROOT}
 Multi-Day Visual Data
 ------
 
-Data from multiple days
+Data from multiple days, from 7/21 to 8/04
 
 **Structure of multi_day_visual_data.zip**
 ```
