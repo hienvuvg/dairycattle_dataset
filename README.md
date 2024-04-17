@@ -48,19 +48,19 @@ The table of data size and info.
 
 | Sensor Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| uwb_distance| Raw    | Every 15 s| Calibrated  | 14 days  |        |
-| neck_data   | Raw    | 10 Hz     | Calibrated | 14 days  | 9.6 GB |
-| ankle_acceleration|Raw|Every 1 m|Calibrated  | 14 days  |        |
-|device_temperature|Raw|Every 15 s|Calibrated | 14 days  |        |
+| uwb_distance| Measured | Every 15 s| Calibrated  | 14 days  |        |
+| neck_data   | Measured | 10 Hz     | Calibrated | 14 days  | 9.6 GB |
+| ankle_acceleration| Measured |Every 1 m|Calibrated  | 14 days  |        |
+|device_temperature| Measured |Every 15 s|Calibrated | 14 days  |        |
 |neck_location|uwb_distance|Every 15 s|Adaptive Gradient|14 days  |        |
-|neck_elevation|Neck pressure| 10 Hz | | 14 days |
+|neck_elevation|Neck pressure| 10 Hz | ?? | 14 days |
 |head_direction|Neck accel & mag| 1 Hz | Tilt-compensated eCompass|14 days| |
 |cow_lying | ankle_acceleration | Every 1 m | K-mean clustering | 14 days | |
-|body_temperature  | Raw | Every 1 m  | Calibrated    | 14 days | |
-|milk_production   | Barn staffs | Daily | N/A  | 14 days | | 
-|health_information| Barn staffs | Log   | N/A   | 14 days | |
-|indoor_condition  | Raw | Every 1 m  | Calibrated    | 14 days | |
-|outdoor_weather   | Weather station | Every 3 m | N/A    | 14 days | |
+|body_temperature  | Measured | Every 1 m  | Calibrated    | 14 days | |
+|milk_production   | Barn staffs | Daily | None  | 14 days | | 
+|health_information| Barn staffs | Log   | None  | 14 days | |
+|indoor_condition  | Measured | Every 1 m  | Calibrated    | 14 days | |
+|outdoor_weather   | Weather station | Every 3 m | None    | 14 days | |
 |individual_behaviors| Visual data | 1 Hz | Manually created | 1 day | |
 |bunching_behavior| Visual data | 1 Hz | Manually created | 1 day | |
 
@@ -72,14 +72,20 @@ Visual Data
 ${ROOT}
 |-- images
 |-- labels
-|-- body_2D_location
-|-- visual_neck_location
+|-- visual_location
 |-- projection_matrix
 |-- crop_profiles
 |-- cows_gallery
 ```
 
-[abc](abc)
+| Visual Data | Source | Frequency | Processing Method | Duration | Size   |
+|-------------|--------|-----------|----------|----------|--------|
+| images| Recorded    | Every 15 s| Calibrated  | 14 days  |        |
+| labels   | Annotated |Every 15 s|  | 14 days  | 9.6 GB |
+| projection_matrix |Calibrated |  | 14 days  |        |
+| visual_location |Raw|Every 15 s| Adaptive Gradient | 14 days  |        |
+| cow_gallery |Captured | N/A | None |14 days  |        |
+
 
 <!--```
 ${ROOT}
