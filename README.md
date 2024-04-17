@@ -30,11 +30,11 @@ ${ROOT}
 |   |-- head_direction
 |   |-- cow_lying
 |-- references (raw)
+|   |-- body_temperature
+|   |-- milk_production
+|   |-- health_information
 |   |-- indoor_condition
 |   |-- outdoor_weather
-|   |-- body_temperature
-|   |-- milk_log
-|   |-- health_information
 |--behavior_labels
     |-- individual_behaviors
     |-- bunching_behavior
@@ -56,7 +56,13 @@ The table of data size and info.
 |neck_elevation|Neck pressure| 10 Hz | | 14 days |
 |head_direction|Neck accel & mag| 1 Hz | Tilt-compensated eCompass|14 days| |
 |cow_lying | ankle_acceleration | Every 60 s | K-mean clustering | 14 days | |
-|behavior_labels| Visual data | 1 Hz | Manually created | 1 day | |
+|body_temperature
+|milk_production
+|health_information
+|indoor_condition
+|outdoor_weather
+|individual_behaviors| Visual data | 1 Hz | Manually created | 1 day | |
+|bunching_behavior| Visual data | 1 Hz | Manually created | 1 day | |
 
 
 Visual Data
