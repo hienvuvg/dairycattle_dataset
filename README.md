@@ -51,21 +51,21 @@ The table of data size and info.
 
 | Data | Source | Description | Frequency| Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| uwb_distance| Measured | Calibrated | Every 15 s  | 14 days  |        |
-| neck_data   | Measured | Calibrated  | 10 Hz | 14 days  | 9.6 GB |
-| ankle_acceleration| Measured | Calibrated |Every 1 m  | 14 days  |        |
-|device_temperature| Measured | Calibrated |Every 15 s | 14 days  |        |
-|neck_location|uwb_distance|Adaptive Gradient | Every 15 s|14 days  |        |
-|neck_elevation|Neck pressure| ?? | 10 Hz | 14 days |
-|head_direction|Neck accel & mag| Tilt-compensated eCompass | 1 Hz|14 days| |
-|cow_lying | ankle_acceleration | K-mean clustering | Every 1 m | 14 days | |
-|body_temperature  | Measured | Calibrated  | Every 1 m    | 14 days | |
-|milk_production   | Barn staffs | None  | Daily  | 14 days | | 
-|health_information| Barn staffs | None  | Periodically | 14 days | |
-|indoor_condition  | Measured | Calibrated | Every 1 m | 14 days | |
-|outdoor_weather   | Weather station | None | Every 3 m    | 14 days | |
-|individual_behaviors| Visual data | Manually created  | 1 Hz| 1 day | |
-|bunching_behavior| Visual data | Manually created | 1 Hz | 1 day | |
+| ```uwb_distance```| Measured | Calibrated | Every 15 s  | 14 days  |        |
+| ```neck_data```   | Measured | Calibrated  | 10 Hz | 14 days  | 9.6 GB |
+| ```ankle_acceleration```| Measured | Calibrated |Every 1 m  | 14 days  |        |
+|```device_temperature```| Measured | Calibrated |Every 15 s | 14 days  |        |
+|```neck_location```|uwb_distance|Adaptive Gradient | Every 15 s|14 days  |        |
+|```neck_elevation```|Neck pressure| ?? | 10 Hz | 14 days |
+|```head_direction```|Neck accel & mag| Tilt-compensated eCompass | 1 Hz|14 days| |
+|```cow_lying``` | ankle_acceleration | K-mean clustering | Every 1 m | 14 days | |
+|```body_temperature```  | Measured | Calibrated  | Every 1 m    | 14 days | |
+|```milk_production```   | Barn staffs | None  | Daily  | 14 days | | 
+|```health_information```| Barn staffs | None  | Periodically | 14 days | |
+|```indoor_condition```  | Measured | Calibrated | Every 1 m | 14 days | |
+|```outdoor_weather```   | Weather station | None | Every 3 m    | 14 days | |
+|```individual_behaviors```| Visual data | Manually created  | 1 Hz| 1 day | |
+|```bunching_behavior```| Visual data | Manually created | 1 Hz | 1 day | |
 
 <br />
 
@@ -113,10 +113,10 @@ ${ROOT}
 
 | Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded | Every 15 s| Aligned | 14 day  |   ? GB     |
-| projection_matrix |Calibrated | N/A | Calibrated | 14 days  |        |
-| crop_profiles | Manual | N/A | Pixel locations in each camera view for masking images | N/A | |
-| cow_gallery |Captured | N/A | None | N/A  | 500 imgs, 1.92 GB |
+| ```images```| Recorded | Every 15 s| Aligned | 14 day  |   ? GB     |
+| ```projection_matrix``` |Calibrated | N/A | Calibrated | 14 days  |        |
+| ```crop_profiles``` | Manual | N/A | Pixel locations in each camera view for masking images | N/A | |
+| ```cow_gallery``` |Captured | N/A | None | N/A  | 500 imgs, 1.92 GB |
 
 
 **Other sets of visual data:**
