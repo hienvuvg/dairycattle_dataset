@@ -11,6 +11,7 @@ Download links:
 Sensor Data
 ------
 
+Data from multiple days
 
 **Structure of sensor_data.zip**
 
@@ -67,6 +68,9 @@ The table of data size and info.
 
 Visual Data
 ------
+
+Data from a single day
+
 **Structure of visual_data.zip**
 ```
 ${ROOT}
@@ -86,6 +90,9 @@ ${ROOT}
 | visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |        |
 | cow_gallery |Captured | N/A | None | N/A  |        |
 
+Data from multiple days
+
+**Structure of visual_data.zip**
 
 <!--```
 ${ROOT}
