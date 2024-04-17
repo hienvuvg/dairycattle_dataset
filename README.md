@@ -86,9 +86,9 @@ ${ROOT}
 
 | Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded    | Every 15 s| Calibrated  | 1 day  |   ? GB     |
+| images| Recorded    | Every 15 s| Aligned | 1 day  |   ? GB     |
 | labels   | Annotated |Every 15 s|  | 1 day  |  |
-| projection_matrix |Calibrated |  | 1 days  |        |
+| projection_matrix |Calibrated | N/A | Calibrated | 1 days  |        |
 | visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |
 |crop_profiles| Manual | N/A | For masking images| N/A | |
 | cow_gallery |Captured | N/A | None | N/A  |        |
@@ -110,7 +110,7 @@ ${ROOT}
 
 | Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded    | Every 15 s| Calibrated  | 14 day  |   ? GB     |
-| projection_matrix |Calibrated |  | 14 days  |        |
+| images| Recorded    | Every 15 s| Aligned | 14 day  |   ? GB     |
+| projection_matrix |Calibrated | N/A | Calibrated | 14 days  |        |
 | crop_profiles | Manual | N/A | For masking images | N/A | |
 | cow_gallery |Captured | N/A | None | N/A  |        |
