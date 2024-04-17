@@ -56,11 +56,11 @@ The table of data size and info.
 |neck_elevation|Neck pressure| 10 Hz | | 14 days |
 |head_direction|Neck accel & mag| 1 Hz | Tilt-compensated eCompass|14 days| |
 |cow_lying | ankle_acceleration | Every 1 m | K-mean clustering | 14 days | |
-|body_temperature  | Raw | Every 1 m  |     | 14 days | |
-|milk_production   | Raw | Daily       |     | 14 days | | 
-|health_information| Raw | Log         |     | 14 days | |
-|indoor_condition  | Raw | Every 1 m  |     | 14 days | |
-|outdoor_weather   | Raw | Every 3 m |     | 14 days | |
+|body_temperature  | Raw | Every 1 m  | Calibrated    | 14 days | |
+|milk_production   | Barn staffs | Daily       | N/A  | 14 days | | 
+|health_information| Barn staffs | Log         | N/A   | 14 days | |
+|indoor_condition  | Raw | Every 1 m  | Calibrated    | 14 days | |
+|outdoor_weather   | Weather station | Every 3 m | N/A    | 14 days | |
 |individual_behaviors| Visual data | 1 Hz | Manually created | 1 day | |
 |bunching_behavior| Visual data | 1 Hz | Manually created | 1 day | |
 
