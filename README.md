@@ -66,7 +66,7 @@ The table of data size and info.
 |bunching_behavior| Visual data | 1 Hz | Manually created | 1 day | |
 
 
-Visual Data
+Single-Day Visual Data
 ------
 
 Data from a single day
@@ -90,18 +90,27 @@ ${ROOT}
 | visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |        |
 | cow_gallery |Captured | N/A | None | N/A  |        |
 
+
+Multi-Day Visual Data
+------
+
 Data from multiple days
 
 **Structure of visual_data.zip**
-
-<!--```
+```
 ${ROOT}
-|-- visual_data
-|   |-- neck_data
-|   |   |-- uwb_distance
-|   |   |-- sensor_data
-|   |   |-- head_direction
-|   |   |-- device_temperature
-|   |-- location_data
-|   |-- ankle_data
-```-->
+|-- images
+|-- labels
+|-- visual_location
+|-- projection_matrix
+|-- crop_profiles
+|-- cows_gallery
+```
+
+| Data | Source | Frequency | Processing Method | Duration | Size   |
+|-------------|--------|-----------|----------|----------|--------|
+| images| Recorded    | Every 15 s| Calibrated  | 1 day  |   ? GB     |
+| labels   | Annotated |Every 15 s|  | 1 day  |  |
+| projection_matrix |Calibrated |  | 14 days  |        |
+| visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |        |
+| cow_gallery |Captured | N/A | None | N/A  |        |
