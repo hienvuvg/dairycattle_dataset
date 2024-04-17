@@ -87,7 +87,7 @@ ${ROOT}
 
 | Data | Source | Description | Frequency | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded | 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day  | 20k imgs, 20 GB |
+| images| Recorded | UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day  | 20k imgs, 20 GB |
 | labels   |images | | Every 15 s | 1 day  | 20k labels |
 | projection_matrix |Calibrated|  | N/A| 1 day  |        |
 | visual_location | labels (visual) | |Every 15 s | 1 day  |
@@ -117,3 +117,8 @@ ${ROOT}
 | projection_matrix |Calibrated | N/A | Calibrated | 14 days  |        |
 | crop_profiles | Manual | N/A | For masking images | N/A | |
 | cow_gallery |Captured | N/A | None | N/A  | 500 imgs, 1.92 GB |
+
+
+**Other sets of visual data**
+* ```1s_interval_videos (4.5k resolution, 14 days)```
+* ```1s_interval_combined_view_videos (4k resolution, 14 days)```
