@@ -93,7 +93,7 @@ ${ROOT}
 | ```visual_location``` | labels (visual) | 3D location of each cow's body computed from the bboxes in 4 camera views using AdaGrad |Every 15 s | 1 day  |
 | ```crop_profiles```| Manual | Pixel locations in each camera view for masking images | N/A | N/A | |
 
-```1s_interval_images``` that is
+[1s_interval_images.zip](link3) that is
 
 <br />
 
