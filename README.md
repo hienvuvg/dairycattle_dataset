@@ -51,17 +51,17 @@ The table of data size and info.
 
 | Data | Source | Description | Frequency| Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| ```uwb_distance```| Measured | Calibrated | Every 15 s  | 14 days  |  288 MB   |
-| ```neck_data```   | Measured | Calibrated  | 10 Hz | 14 days  | 9.6 GB |
-| ```ankle_acceleration```| Measured | Calibrated |Every 1 m  | 14 days  |   6 MB    |
-|```device_temperature```| Measured | Calibrated |Every 15 s | 14 days  |  19 MB |
-|```neck_location```|uwb_distance|Adaptive Gradient | Every 15 s|14 days  |  30 MB   |
+| ```uwb_distance```| Measured | Distance from the tag to the anchors | Every 15 s  | 14 days  |  288 MB   |
+| ```neck_data```   | Measured | Acceleration, magnetic, and pessure recorded by the neck tags | 10 Hz | 14 days  | 9.6 GB |
+| ```ankle_accel```| Measured | Ankle acceleration from ankle sensors |Every 1 m  | 14 days  |   6~MB    |
+|```dev_temp```| Measured | Temperature of neck tags |Every 15 s | 14 days  |  19 MB |
+|```neck_location```|```uwb_distance```| 3D neck location of the cows | Every 15 s|14 days  |  30MB   |
 |```neck_elevation```|Neck pressure| ?? | 10 Hz | 14 days | ?|
 |```head_direction```|Neck accel & mag| Tilt-compensated eCompass | 1 Hz|14 days| 686 MB |
-|```cow_lying``` | ankle_acceleration | K-mean clustering | Every 1 m | 14 days | 4 MB |
-|```body_temperature```  | Measured | Calibrated  | Every 1 m    | 14 days | 4 MB |
+|```cow_lying``` | ```ankle_accel``` | K-mean clustering | Every 1 m | 14 days | 4 MB |
+|```body_temp```  | Measured | Calibrated  | Every 1 m    | 14 days | 4 MB |
 |```milk_production```   | Barn staffs | None  | Daily  | 14 days | 10 KB | 
-|```health_information```| Barn staffs | None  | Periodically | 14 days | 0.2 MB |
+|```health_info```| Barn staffs | None  | Periodically | 14 days | 0.2 MB |
 |```indoor_condition```  | Measured | Calibrated | Every 1 m | 14 days | 4 MB |
 |```outdoor_weather```   | Weather station | None | Every 3 m    | 14 days | 9 MB |
 |```individual_behaviors```| Visual data | Manually created  | 1 Hz| 1 day | 32 MB |
@@ -88,9 +88,9 @@ ${ROOT}
 | Data | Source | Description | Frequency | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
 | ```images```| Recorded | 20k UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day  | 20 GB |
-| ```labels```   |images | bbox position with cow_id of each cow in the camera views. Format in image ratio ```[x_center, y_center, width, height]``` | Every 15 s | 1 day  | 20k labels |
+| ```labels```   |Annotated | bbox position with cow_id of each cow in the camera views. Format in image ratio ```[x_center, y_center, width, height]``` | Every 15 s | 1 day  | 20k labels |
 | ```proj_mat``` |Calibrated| Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A| 1 day  |  N/A   |
-| ```visual_location``` | labels (visual) | 3D location of each cow's body computed from the bboxes in 4 camera views using AdaGrad |Every 15 s | 1 day  |
+| ```visual_location``` | ```labels``` (visual) | 3D location of each cow's body computed from the bboxes in 4 camera views using AdaGrad |Every 15 s | 1 day  |
 | ```crop_profiles```| Manual | Pixel locations in each camera view for masking images | N/A | N/A | N/A |
 
 [1s_interval_images.zip](link3) that is
