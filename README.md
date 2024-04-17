@@ -87,7 +87,7 @@ ${ROOT}
 
 | Data | Source | Description | Frequency | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| ```images```| Recorded | UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day  | 20k imgs, 20 GB |
+| ```images```| Recorded | 20k UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day  | 20 GB |
 | ```labels```   |images | bbox position with cow_id of each cow in the camera views. Format in image ratio ```[x_center, y_center, width, height]``` | Every 15 s | 1 day  | 20k labels |
 | ```proj_mat``` |Calibrated| Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A| 1 day  |  N/A   |
 | ```visual_location``` | labels (visual) | 3D location of each cow's body computed from the bboxes in 4 camera views using AdaGrad |Every 15 s | 1 day  |
@@ -111,12 +111,12 @@ ${ROOT}
 |-- cows_gallery
 ```
 
-| Data | Source | Frequency | Processing Method | Duration | Size   |
+| Data | Source | Description | Frequency | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| ```images```| Recorded | Every 15 s| Aligned | 14 day  |   ? GB     |
-| ```proj_mat``` |Calibrated | N/A | Calibrated | 14 days  | N/A       |
-| ```crop_profiles``` | Manual | N/A | Pixel locations in each camera view for masking images | N/A | N/A |
-| ```cow_gallery``` |Captured | N/A | 500 photos of the cows taken from different angles using phone cameras | N/A  | 1.92 GB |
+| ```images```| Recorded| 14x20k UWB-synchronized 15s-interval images | Every 15 s | 14 day  |   21GB / zip |
+| ```proj_mat``` |Calibrated | Calibrated | N/A | 14 days  | N/A       |
+| ```crop_profiles``` | Manual | Pixel locations in each camera view for masking images | N/A | N/A | N/A |
+| ```cow_gallery``` |Captured | 500 photos of the cows taken from different angles using phone cameras | N/A | N/A  | 1.92 GB |
 
 
 **Other sets of visual data:**
