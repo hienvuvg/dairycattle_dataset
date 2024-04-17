@@ -90,8 +90,7 @@ ${ROOT}
 | labels   |images |Every 15 s| Annotated | 1 day  | 20k labels |
 | projection_matrix |Calibrated | N/A | Calibrated | 1 days  |        |
 | visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |
-|crop_profiles| Manual | N/A | For masking images| N/A | |
-| cow_gallery |Captured | N/A | None | N/A  | 500 imgs, 1.92 GB |
+| crop_profiles| Manual | N/A | For masking images| N/A | |
 
 
 Multi-Day Visual Data
@@ -113,4 +112,4 @@ ${ROOT}
 | images| Recorded | Every 15 s| Aligned | 14 day  |   ? GB     |
 | projection_matrix |Calibrated | N/A | Calibrated | 14 days  |        |
 | crop_profiles | Manual | N/A | For masking images | N/A | |
-| cow_gallery |Captured | N/A | None | N/A  |        |
+| cow_gallery |Captured | N/A | None | N/A  | 500 imgs, 1.92 GB |
