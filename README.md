@@ -25,28 +25,29 @@ ${ROOT}
 |   |-- neck_location
 |   |-- neck_elevation
 |   |-- head_direction
-|   |-- cow_resting
-|-- annotated_behaviors
-|   |-- (standing/resting/...)
+|   |-- cow_lying
 |-- references (raw)
 |   |-- indoor_condition
 |   |-- outdoor_weather
 |   |-- body_temperature
 |   |-- milk_log
 |   |-- health_information
+|--behavior_labels
+    |-- individual_behaviors
+    |-- bunching_behavior
 
 ```
 
 **Directory of the visual data**
 ```
 ${ROOT}
-|-- isometric_images
-|   |-- 0725.zip (MMDD)
-|   |-- sensor_data
-|   |-- head_direction
-|   |-- device_temperature
-|-- calibration (projection matrix)
-|   |-- 0725
+|-- images
+|-- labels
+|-- body_2D_location
+|-- visual_neck_location
+|-- projection_matrix
+|-- crop_profiles
+|-- cows_gallery
 ```
 
 [abc](abc)
