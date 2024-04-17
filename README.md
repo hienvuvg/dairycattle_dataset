@@ -80,8 +80,8 @@ ${ROOT}
 
 | Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded    | Every 15 s| Calibrated  | 14 days  |        |
-| labels   | Annotated |Every 15 s|  | 14 days  | 9.6 GB |
+| images| Recorded    | Every 15 s| Calibrated  | 14 days  |   ? GB     |
+| labels   | Annotated |Every 15 s|  | 14 days  |  |
 | projection_matrix |Calibrated |  | 14 days  |        |
 | visual_location |Raw|Every 15 s| Adaptive Gradient | 14 days  |        |
 | cow_gallery |Captured | N/A | None |14 days  |        |
