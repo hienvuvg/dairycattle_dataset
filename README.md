@@ -89,7 +89,7 @@ ${ROOT}
 |-------------|--------|-----------|----------|----------|--------|
 | ```images```| Recorded | UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day  | 20k imgs, 20 GB |
 | ```labels```   |images | bbox position with cow_id of each cow in the camera views. Format in image ratio ```[x_center, y_center, width, height]``` | Every 15 s | 1 day  | 20k labels |
-| ```proj_mat``` |Calibrated| Matrices for transforming a 3D world coordinate to a pixel location in each camera view | N/A| 1 day  |        |
+| ```proj_mat``` |Calibrated| Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A| 1 day  |        |
 | ```visual_location``` | labels (visual) | 3D location of each cow's body computed from the bboxes in 4 camera views using AdaGrad |Every 15 s | 1 day  |
 | ```crop_profiles```| Manual | Pixel locations in each camera view for masking images | N/A | N/A | |
 
@@ -114,11 +114,12 @@ ${ROOT}
 | Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
 | ```images```| Recorded | Every 15 s| Aligned | 14 day  |   ? GB     |
-| ```projection_matrix``` |Calibrated | N/A | Calibrated | 14 days  |        |
+| ```proj_mat``` |Calibrated | N/A | Calibrated | 14 days  |        |
 | ```crop_profiles``` | Manual | N/A | Pixel locations in each camera view for masking images | N/A | |
 | ```cow_gallery``` |Captured | N/A | None | N/A  | 500 imgs, 1.92 GB |
 
 
 **Other sets of visual data:**
-* [1s_interval_videos](link4) (4.5k resolution, 14 days): 
-* [1s_interval_combined_view_videos](link5) (4k resolution, 14 days): 
+* [15s_interval_images](link6) (4.5k resolution, 14 days, 14 zips, 21GB/zip): 
+* [1s_interval_videos](link4) (4.5k resolution, 14 day, 14 videos, ?? GB/video) (319GB/zip):  
+* [1s_interval_combined_view_videos](link5) (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
