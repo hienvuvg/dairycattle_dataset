@@ -25,22 +25,22 @@ ${ROOT}
 |   |   |-- acceleration
 |   |   |-- magnetic
 |   |   |-- pressure
-|   |-- ankle_acceleration
-|   |-- device_temperature
+|   |-- ankle_accel
+|   |-- device_temp
 |-- processed_data
 |   |-- neck_location
 |   |-- neck_elevation
 |   |-- head_direction
 |   |-- cow_lying
 |-- references 
-|   |-- body_temperature
+|   |-- body_temp
 |   |-- milk_production
 |   |-- health_information
 |   |-- indoor_condition
 |   |-- outdoor_weather
 |--behavior_labels
-    |-- individual_behaviors
-    |-- bunching_behavior
+    |-- individual
+    |-- social
 
 ```
 **Text**\
@@ -64,8 +64,8 @@ The table of data size and info.
 |```health_info```| Barn staffs | None  | Periodically | 14 days | 0.2MB |
 |```indoor_condition```  | Measured | Calibrated | Every 1 m | 14 days | 4MB |
 |```outdoor_weather```   | Weather station | None | Every 3 m    | 14 days | 9MB |
-|```individual_behaviors```| Visual data | Manually created  | 1 Hz| 1 day | 32MB |
-|```bunching_behavior```| Visual data | Manually created | 1 Hz | 1 day | 32MB |
+|```individual```| Visual data | Manually created behaviors of individual cows  | 1 Hz| 1 day | 32MB |
+|```social```| Visual data | Manually created bunching behavior | 1 Hz | 1 day | 32MB |
 
 <br />
 
