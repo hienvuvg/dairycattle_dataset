@@ -80,11 +80,11 @@ ${ROOT}
 
 | Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded    | Every 15 s| Calibrated  | 14 days  |   ? GB     |
-| labels   | Annotated |Every 15 s|  | 14 days  |  |
+| images| Recorded    | Every 15 s| Calibrated  | 1 day  |   ? GB     |
+| labels   | Annotated |Every 15 s|  | 1 day  |  |
 | projection_matrix |Calibrated |  | 14 days  |        |
-| visual_location |Raw|Every 15 s| Adaptive Gradient | 14 days  |        |
-| cow_gallery |Captured | N/A | None |14 days  |        |
+| visual_location |Raw|Every 15 s| Adaptive Gradient | 1 day  |        |
+| cow_gallery |Captured | N/A | None | N/A  |        |
 
 
 <!--```
