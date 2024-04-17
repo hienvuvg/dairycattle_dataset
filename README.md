@@ -9,6 +9,7 @@ Download links:
 * [multi_day_visual_data.zip](link1) (??GB)
 
 <br />
+
 Sensor Data
 ------
 
@@ -67,6 +68,7 @@ The table of data size and info.
 |bunching_behavior| Visual data | 1 Hz | Manually created | 1 day | |
 
 <br />
+
 Single-Day Visual Data
 ------
 
