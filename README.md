@@ -50,12 +50,12 @@ The table of data size and info.
 |-------------|--------|-----------|-------------------|----------|--------|
 | uwb_distance| Raw    | Every 15 s| Calibrated        | 14 days  |        |
 | neck_data   | Raw    | 10 Hz     | Calibrated        | 14 days  | 9.6 GB |
-| ankle_acceleration|Raw|Every minute|Calibrated       | 14 days  |        |
+| ankle_acceleration|Raw|Every 60 s|Calibrated       | 14 days  |        |
 |device_temperature|Raw|Every 15 s|Calibrated          | 14 days  |        |
 |neck_location|uwb_distance|Every 15 s|Adaptive Gradient|14 days  |        |
 |neck_elevation|Neck pressure| 10 Hz | | 14 days |
 |head_direction|Neck accel & mag| 1 Hz | Tilt-compensated eCompass|14 days| |
-|cow_lying | ankle_acceleration | Every minute | K-mean clustering | 14 days | |
+|cow_lying | ankle_acceleration | Every 60 s | K-mean clustering | 14 days | |
 |behavior_labels| Visual data | 1 Hz | Manually created | 1 day | |
 
 
