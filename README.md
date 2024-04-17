@@ -48,9 +48,9 @@ The table of data size and info.
 
 | Sensor Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|-------------------|----------|--------|
-| uwb_distance| raw    | every 15 s| calibrated        | 14 days  |        |
-| neck_data   | raw    | 10 Hz     | calibrated        | 14 days  | 9.6 GB |
-| ankle_acceleration|raw|every minute|calibrated       | 14 days  |        |
+| uwb_distance| Raw    | Every 15 s| Calibrated        | 14 days  |        |
+| neck_data   | Raw    | 10 Hz     | Calibrated        | 14 days  | 9.6 GB |
+| ankle_acceleration|Raw|Every minute|Calibrated       | 14 days  |        |
 
 
 Visual Data
