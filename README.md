@@ -46,7 +46,7 @@ Explaining what each folder contains.
 **Text**\
 The table of data size and info.
 
-| Sensor Data | Source | Frequency | Processing Method | Duration | Size   |
+| Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
 | uwb_distance| Measured | Every 15 s| Calibrated  | 14 days  |        |
 | neck_data   | Measured | 10 Hz     | Calibrated | 14 days  | 9.6 GB |
@@ -78,7 +78,7 @@ ${ROOT}
 |-- cows_gallery
 ```
 
-| Visual Data | Source | Frequency | Processing Method | Duration | Size   |
+| Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
 | images| Recorded    | Every 15 s| Calibrated  | 14 days  |        |
 | labels   | Annotated |Every 15 s|  | 14 days  | 9.6 GB |
