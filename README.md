@@ -117,7 +117,7 @@ ${ROOT}
 | Data | Source | Description | Interval | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
 | ```images```| Recorded| 14x20k UWB-synchronized 15s-interval images | Every 15 s | 14 day  |   21GB / zip |
-| ```proj_mat``` |Calibrated | Calibrated | N/A | 14 days  | N/A       |
+| ```proj_mat``` |Calibrated | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A | 14 days  | N/A       |
 | ```crop_profiles``` | Manual | Pixel locations in each camera view for masking images | N/A | N/A | N/A |
 | ```cow_gallery``` |Captured | 500 photos of the cows taken from different angles using phone cameras | N/A | N/A  | 2GB |
 
