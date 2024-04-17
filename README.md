@@ -37,6 +37,8 @@ ${ROOT}
     |-- bunching_behavior
 
 ```
+Explaining what each folder contains.
+The table of data size and info.
 
 **Directory of the visual data**
 ```
