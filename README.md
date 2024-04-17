@@ -89,7 +89,7 @@ ${ROOT}
 | images| Recorded    | Every 15 s| Calibrated  | 1 day  |   ? GB     |
 | labels   | Annotated |Every 15 s|  | 1 day  |  |
 | projection_matrix |Calibrated |  | 1 days  |        |
-| visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |        | crop_profiles | Manual | N/A | For masking images | N/A | |
+| visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |        | crop_profiles | Manual | N/A | For masking images| N/A | |
 | cow_gallery |Captured | N/A | None | N/A  |        |
 
 
