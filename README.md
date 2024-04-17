@@ -46,9 +46,9 @@ Explaining what each folder contains.
 **Text**\
 The table of data size and info.
 
-| Name  | Age | Occupation |
-|-------|-----|------------|
-| Alice | 30  | Engineer   |
+| Sensor Data | Source | Frequency | Processing Method | Duration | Size |
+|-------------|--------|-----------|-------------------|----------|------|
+| uwb_distance| 30  | Engineer   |
 | Bob   | 25  | Designer   |
 | Carol | 35  | Teacher    |
 
