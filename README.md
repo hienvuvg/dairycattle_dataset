@@ -8,7 +8,7 @@ Download links:
 * [single_day_visual_data.zip](link1) (??GB)
 * [multi_day_visual_data.zip](link1) (??GB)
 
-
+<br />
 Sensor Data
 ------
 
@@ -66,7 +66,7 @@ The table of data size and info.
 |individual_behaviors| Visual data | 1 Hz | Manually created | 1 day | |
 |bunching_behavior| Visual data | 1 Hz | Manually created | 1 day | |
 
-
+<br />
 Single-Day Visual Data
 ------
 
@@ -83,14 +83,17 @@ ${ROOT}
 |-- crop_profiles
 ```
 
-| Data | Source | Frequency | Processing Method | Duration | Size   |
+| Data | Source | Description | Frequency | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded    | Every 15 s| Aligned | 1 day  | 20k imgs, 20 GB |
-| labels   |images |Every 15 s| Annotated | 1 day  | 20k labels |
-| projection_matrix |Calibrated | N/A | Calibrated | 1 days  |        |
-| visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |
-| crop_profiles| Manual | N/A | For masking images| N/A | |
+| images| Recorded |  | Every 15 s | 1 day  | 20k imgs, 20 GB |
+| labels   |images | | Every 15 s | 1 day  | 20k labels |
+| projection_matrix |Calibrated|  | N/A| 1 day  |        |
+| visual_location | labels (visual) | |Every 15 s | 1 day  |
+| crop_profiles| Manual | For masking images | N/A | N/A | |
 
+```1s_interval_images``` that is
+
+<br />
 
 Multi-Day Visual Data
 ------
