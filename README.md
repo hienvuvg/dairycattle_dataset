@@ -51,13 +51,13 @@ The table of data size and info.
 
 | Data | Source | Description | Frequency| Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| ```uwb_distance```| Measured | Distance from the tag to the anchors | Every 15 s  | 14 days  |  288MB   |
+| ```uwb_distance```| Measured | Distance from the tag to the anchors | Every 15 s  | 14 days  |  0.3GB   |
 | ```neck_data```   | Measured | Acceleration, magnetic, and pessure recorded by the neck tags | 10Hz | 14 days  | 9.6GB |
 | ```ankle_accel```| Measured | Ankle acceleration from ankle sensors |Every 1 m  | 14 days  |   6MB    |
 |```dev_temp```| Measured | Temperature of neck tags |Every 15 s | 14 days  |  19 MB |
 |```neck_location```|```uwb_distance```| 3D neck location of the cows | Every 15 s|14 days  |  30MB   |
 |```neck_elevation```|Neck pressure| ?? | 10 Hz | 14 days | ?|
-|```head_direction```|Neck accel & mag| Tilt-compensated eCompass | 1 Hz|14 days| 686MB |
+|```head_direction```|Neck accel & mag| Tilt-compensated eCompass | 1 Hz|14 days| 0.7GB |
 |```cow_lying``` | ```ankle_accel``` | K-mean clustering | Every 1 m | 14 days | 4MB |
 |```body_temp```  | Measured | Calibrated  | Every 1 m    | 14 days | 4MB |
 |```milk_production```   | Barn staffs | None  | Daily  | 14 days | 10KB | 
