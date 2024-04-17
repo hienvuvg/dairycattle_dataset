@@ -126,3 +126,10 @@ ${ROOT}
 * [15s_interval_images](link6) (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
 * [1s_interval_videos](link4) (4.5k resolution, 14 day, 14 videos, ?? GB/video) (319GB/zip):  
 * [1s_interval_combined_view_videos](link5) (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
+
+
+<br />
+
+Annotation Rules for Visual Data
+------
+Text
