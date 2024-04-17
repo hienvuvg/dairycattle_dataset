@@ -16,7 +16,7 @@ Sensor Data
 
 ```
 ${ROOT}
-|-- measurements (raw)
+|-- measurements 
 |   |-- uwb_distance
 |   |-- neck_data
 |   |   |-- acceleration
@@ -29,7 +29,7 @@ ${ROOT}
 |   |-- neck_elevation
 |   |-- head_direction
 |   |-- cow_lying
-|-- references (raw)
+|-- references 
 |   |-- body_temperature
 |   |-- milk_production
 |   |-- health_information
