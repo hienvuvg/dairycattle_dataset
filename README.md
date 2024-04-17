@@ -145,5 +145,5 @@ Annotation Rules for Visual Data
 | 4 | Feeding head down | The head is at the feeding area and the mouth touches the food | |
 | 5 | Licking | Licking the mineral block | |
 | 6 | Drinking | Drinking at the water trough, when the mouth touches the water | |
-| 7 | Lying | The cow lies in the stall | |
-| 8 | Bunching | When there are at least three cows standing right next to each other including the current cow, excluding standing in the stall, feeding, licking, and drinking | <img src="docs/imgs/bunching.png" width="800"/> |
+| 7 | Lying | The cow lies in the stall |<!--<img src="docs/imgs/bunching.png" alt="drawing" width="800" />-->|
+| 8 | Bunching | When there are at least three cows standing right next to each other including the current cow, excluding standing in the stall, feeding, licking, and drinking |![](docs/imgs/bunching.png) |
