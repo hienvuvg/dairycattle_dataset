@@ -81,12 +81,11 @@ ${ROOT}
 |-- projection_matrix
 |-- visual_location
 |-- crop_profiles
-|-- cows_gallery
 ```
 
 | Data | Source | Frequency | Processing Method | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
-| images| Recorded    | Every 15 s| Aligned | 1 day  | 20 imgs, ? GB     |
+| images| Recorded    | Every 15 s| Aligned | 1 day  | 20k imgs, 20 GB |
 | labels   |images |Every 15 s| Annotated | 1 day  | 20k labels |
 | projection_matrix |Calibrated | N/A | Calibrated | 1 days  |        |
 | visual_location | labels (visual) |Every 15 s| Adaptive Gradient | 1 day  |
