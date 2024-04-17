@@ -32,15 +32,16 @@ ${ROOT}
 |   |-- neck_elevation
 |   |-- head_direction
 |   |-- cow_lying
-|-- references 
-|   |-- body_temp
-|   |-- milk_production
-|   |-- health_information
-|   |-- indoor_condition
-|   |-- outdoor_weather
 |--behavior_labels
-    |-- individual
-    |-- social
+|   |-- individual
+|   |-- social
+|-- references 
+    |-- body_temp
+    |-- milk_production
+    |-- health_information
+    |-- indoor_condition
+    |-- outdoor_weather
+
 
 ```
 **Text**\
@@ -59,13 +60,14 @@ The table of data size and info.
 |```neck_elevation```|Neck pressure| ?? | 10 Hz | 14 days | ?|
 |```head_direction```|Neck accel & mag| Tilt-compensated eCompass | 1 Hz|14 days| 0.7GB |
 |```cow_lying``` | ```ankle_accel``` | K-mean clustering | Every 1 m | 14 days | 4MB |
+|```individual```| Visual data | Manually created behaviors of individual cows  | 1 Hz| 1 day | 32MB |
+|```social```| Visual data | Manually created bunching behavior | 1 Hz | 1 day | 32MB |
 |```body_temp```  | Measured | Calibrated  | Every 1 m    | 14 days | 4MB |
 |```milk_production```   | Barn staffs | None  | Daily  | 14 days | 10KB | 
 |```health_info```| Barn staffs | None  | Periodically | 14 days | 0.2MB |
 |```indoor_condition```  | Measured | Calibrated | Every 1 m | 14 days | 4MB |
 |```outdoor_weather```   | Weather station | None | Every 3 m    | 14 days | 9MB |
-|```individual```| Visual data | Manually created behaviors of individual cows  | 1 Hz| 1 day | 32MB |
-|```social```| Visual data | Manually created bunching behavior | 1 Hz | 1 day | 32MB |
+
 
 <br />
 
