@@ -51,6 +51,9 @@ The table of data size and info.
 | uwb_distance| Raw    | Every 15 s| Calibrated        | 14 days  |        |
 | neck_data   | Raw    | 10 Hz     | Calibrated        | 14 days  | 9.6 GB |
 | ankle_acceleration|Raw|Every minute|Calibrated       | 14 days  |        |
+|device_temperature|Raw|Every 15 s|Calibrated          | 14 days  |        |
+|-------------|--------|-----------|-------------------|----------|--------|
+|neck_location|uwb_distance|Every 15 s|Adaptive Gradient|14 days  |        |
 
 
 Visual Data
