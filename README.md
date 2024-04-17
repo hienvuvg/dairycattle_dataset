@@ -47,7 +47,7 @@ Explaining what each folder contains.
 The table of data size and info.
 
 | Sensor Data | Source | Frequency | Processing Method | Duration | Size   |
-|-------------|--------|-----------|-------------------|----------|--------|
+|-------------|--------|-----------|---------------|----------|--------|
 | uwb_distance| Raw    | Every 15 s| Calibrated        | 14 days  |        |
 | neck_data   | Raw    | 10 Hz     | Calibrated        | 14 days  | 9.6 GB |
 | ankle_acceleration|Raw|Every 1 m|Calibrated       | 14 days  |        |
