@@ -6,8 +6,7 @@ This dataset includes two parts: data from wearable sensors and visual data from
 [Overview](https://hienvuvg.github.io/dairycattle_dataset/)\
 **Download links:**
 * [sensor_data.zip](link1) (??GB)
-* [single_day_visual_data.zip](link1) (??GB)
-* [multi_day_visual_data.zip](link1) (??GB)
+* [annotated_visual_data.zip](link1) (??GB)
 
 <br />
 
@@ -72,7 +71,7 @@ The table of data size and info.
 
 <br />
 
-Single-Day Visual Data
+Annotated Visual Data
 ------
 
 Data from a single day 7/25\
@@ -100,7 +99,7 @@ ${ROOT}
 
 <br />
 
-Multi-Day Visual Data
+Complete Visual Data
 ------
 
 Data from multiple days, from 7/21 to 8/04
@@ -124,7 +123,7 @@ ${ROOT}
 
 **Other sets of visual data:**
 * [15s_interval_images](link6) (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
-* [1s_interval_videos](link4) (4.5k resolution, 14 day, 14 videos, ?? GB/video) (319GB/zip):  
+* [1s_interval_videos](link4) (4.5k resolution, 14 day, 14x4 videos, 45 GB/video) (319GB/zip):  
 * [1s_interval_combined_view_videos](link5) (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
 
 
@@ -134,7 +133,7 @@ Annotation Rules for Visual Data
 ------
 **Isometric-view cow identification:** \\
 
-**Cow behaviors:** \\
+**Cow behaviors for behavior labels:** \\
 
 | # | Behavior | Definition |
 |-------------|--------|-----------|
@@ -147,3 +146,5 @@ Annotation Rules for Visual Data
 | 6 | Drinking | Drinking at the water trough, when the mouth touches the water | |
 | 7 | Lying | The cow lies in the stall |<!--<img src="docs/imgs/bunching.png" style="max-width:100%; height:auto;" />-->|
 | 8 | Bunching | When there are at least three cows standing right next to each other including the current cow, excluding standing in the stall, feeding, licking, and drinking |<!--![](docs/imgs/bunching.png)--> |
+
+Visual examples of the behaviors are provided in ```x.docx``` which is included in the zip.
