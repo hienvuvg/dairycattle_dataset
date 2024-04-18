@@ -7,7 +7,7 @@ This dataset includes two parts: data from wearable sensors and visual data from
 **Download links:**
 * [sensor_data.zip](link1) (11GB)
 * [annotated_visual_data.zip](link1) (21GB)
-* Complete visual data is provided in multiple mp4 and zip files
+* Aligned visual data is provided in multiple mp4 and zip files
 
 <br />
 
@@ -69,6 +69,35 @@ The table of data size and info.
 |```indoor_condition```  | Measured | Calibrated | Every 1 m | 14 days | 4MB |
 |```outdoor_weather```   | Weather station | None | Every 3 m    | 14 days | 9MB |
 
+<br />
+
+Aligned Visual Data
+------
+
+Data from multiple days, from 7/21 to 8/04
+
+**Structure of multi_day_visual_data.zip**
+```
+${ROOT}
+|-- images
+|-- projection_matrix
+|-- crop_profiles
+|-- cows_gallery
+```
+
+| Data | Source | Description | Interval | Duration | Size   |
+|-------------|--------|-----------|----------|----------|--------|
+| ```images```| Recorded| 14x20k UWB-synchronized 15s-interval images | Every 15 s | 14 day  |   21GB / zip |
+| ```proj_mat``` |Calibrated | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A | 14 days  | N/A       |
+| ```crop_profiles``` | Manual | Pixel locations in each camera view for masking images | N/A | N/A | N/A |
+| ```cow_gallery``` |Captured | 500 photos of the cows taken from different angles using phone cameras | N/A | N/A  | 2GB |
+
+
+**Multiple sets of visual data:**
+* ```15s_interval_images``` (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
+* ```1s_interval_videos``` (4.5k resolution, 14 day, 14x4 videos, 45 GB/video) (319GB/zip):  
+* ```1s_interval_combined_view_videos``` (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
+
 
 <br />
 
@@ -98,34 +127,6 @@ ${ROOT}
 
 [1s_interval_images.zip](link3) that is
 
-<br />
-
-Complete Visual Data
-------
-
-Data from multiple days, from 7/21 to 8/04
-
-**Structure of multi_day_visual_data.zip**
-```
-${ROOT}
-|-- images
-|-- projection_matrix
-|-- crop_profiles
-|-- cows_gallery
-```
-
-| Data | Source | Description | Interval | Duration | Size   |
-|-------------|--------|-----------|----------|----------|--------|
-| ```images```| Recorded| 14x20k UWB-synchronized 15s-interval images | Every 15 s | 14 day  |   21GB / zip |
-| ```proj_mat``` |Calibrated | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A | 14 days  | N/A       |
-| ```crop_profiles``` | Manual | Pixel locations in each camera view for masking images | N/A | N/A | N/A |
-| ```cow_gallery``` |Captured | 500 photos of the cows taken from different angles using phone cameras | N/A | N/A  | 2GB |
-
-
-**Other sets of visual data:**
-* [15s_interval_images](link6) (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
-* [1s_interval_videos](link4) (4.5k resolution, 14 day, 14x4 videos, 45 GB/video) (319GB/zip):  
-* [1s_interval_combined_view_videos](link5) (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
 
 
 <br />
