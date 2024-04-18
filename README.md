@@ -133,9 +133,14 @@ ${ROOT}
 
 Annotation Rules for Visual Data
 ------
-**Isometric-view cow identification:** \\
+**Isometric-view cow identification:** \
 
-**Cow behaviors for behavior labels:** \\
+| # | Text | Text |
+|-------------|--------|-----------|
+| 0 | Text | Text | N/A |
+
+
+**Cow behaviors for behavior labels:** \
 
 | # | Behavior | Definition |
 |-------------|--------|-----------|
