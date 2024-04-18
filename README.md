@@ -5,8 +5,9 @@ What this is\
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.\
 [Overview](https://hienvuvg.github.io/dairycattle_dataset/)\
 **Download links:**
-* [sensor_data.zip](link1) (??GB)
-* [annotated_visual_data.zip](link1) (??GB)
+* [sensor_data.zip](link1) (11GB)
+* [annotated_visual_data.zip](link1) (21GB)
+* Complete visual data is provided in multiple mp4 and zip files
 
 <br />
 
