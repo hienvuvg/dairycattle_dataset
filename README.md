@@ -137,7 +137,7 @@ Annotation Rules for Visual Data
 **Cow behaviors:** \\
 
 | # | Behavior | Definition | Visual example |
-|-------------|--------|-----------|-----------|
+|-------------|--------|-----------|:-----------:|
 | 0 | Unknow | When the cow is absent or the light is off | N/A |
 | 1 | Walking | Moving from one location to another between consecutive frames |  |
 | 2 | Standing | The legs are straight up for supporting the body and the head is not at the feeding area | |
