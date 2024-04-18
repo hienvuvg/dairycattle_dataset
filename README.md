@@ -58,16 +58,16 @@ The table of data size and info.
 | ```ankle_accel```| Measured | Ankle acceleration from ankle sensors |Every 1 m  | 14 days  |   6MB    |
 |```dev_temp```| Measured | Temperature of neck tags |Every 15 s | 14 days  |  19 MB |
 |```neck_location```|```uwb_distance```| 3D neck location of the cows | Every 15 s|14 days  |  30MB   |
-|```neck_elevation```|Neck pressure| ?? | 10 Hz | 14 days | ?|
-|```head_direction```|Neck accel & mag| Tilt-compensated eCompass | 1 Hz|14 days| 0.7GB |
-|```cow_lying``` | ```ankle_accel``` | K-mean clustering | Every 1 m | 14 days | 4MB |
+|```neck_elevation```|Neck pressure| Elevation of the cow relatively with sea level | 10 Hz | 14 days | ?|
+|```head_direction```|Neck accel & mag| Head direction calculated using Tilt-compensated eCompass | 1 Hz|14 days| 0.7GB |
+|```cow_lying``` | ```ankle_accel``` | Cow's lying behavior calculated from the ankle acceleration using K-mean clustering | Every 1 m | 14 days | 4MB |
 |```individual```| Visual data | Manually created behaviors of individual cows  | 1 Hz| 1 day | 32MB |
 |```social```| Visual data | Manually created bunching behavior | 1 Hz | 1 day | 32MB |
-|```body_temp```  | Measured | Calibrated  | Every 1 m    | 14 days | 4MB |
-|```milk_production```   | Barn staffs | None  | Daily  | 14 days | 10KB | 
-|```health_info```| Barn staffs | None  | Periodically | 14 days | 0.2MB |
-|```indoor_condition```  | Measured | Calibrated | Every 1 m | 14 days | 4MB |
-|```outdoor_weather```   | Weather station | None | Every 3 m    | 14 days | 9MB |
+|```body_temp```  | Measured | Body temperature measured by the varginal temperature sensor | Every 1 m    | 14 days | 4MB |
+|```milk_production```   | Barn staffs | Daily milk yield of each cow in kg | Daily  | 14 days | 10KB | 
+|```health_info```| Barn staffs | Health information of the cows | Periodically | 14 days | 0.2MB |
+|```indoor_condition```  | Measured | Temperature and humidity around the pen | Every 1 m | 14 days | 4MB |
+|```outdoor_weather```   | Weather station |  Outdoor weather collected by a near by weather station | Every 3 m    | 14 days | 9MB |
 
 <br />
 
