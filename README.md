@@ -136,8 +136,8 @@ Annotation Rules for Visual Data
 
 **Cow behaviors:** \\
 
-| # | Behavior | Definition | Visual example |
-|-------------|--------|-----------|:-----------:|
+| # | Behavior | Definition |
+|-------------|--------|-----------|
 | 0 | Unknow | When the cow is absent or the light is off | N/A |
 | 1 | Walking | Moving from one location to another between consecutive frames |  |
 | 2 | Standing | The legs are straight up for supporting the body and the head is not at the feeding area | |
@@ -145,5 +145,5 @@ Annotation Rules for Visual Data
 | 4 | Feeding head down | The head is at the feeding area and the mouth touches the food | |
 | 5 | Licking | Licking the mineral block | |
 | 6 | Drinking | Drinking at the water trough, when the mouth touches the water | |
-| 7 | Lying | The cow lies in the stall |<img src="docs/imgs/bunching.png" style="max-width:100%; height:auto;" />|
+| 7 | Lying | The cow lies in the stall |<!--<img src="docs/imgs/bunching.png" style="max-width:100%; height:auto;" />-->|
 | 8 | Bunching | When there are at least three cows standing right next to each other including the current cow, excluding standing in the stall, feeding, licking, and drinking |<!--![](docs/imgs/bunching.png)--> |
