@@ -59,7 +59,7 @@ The table of data size and info.
 |```dev_temp```| Measured | Temperature of neck tags |Every 15 s | 14 days  |  19 MB |
 |```neck_location```|```uwb_distance```| 3D neck location of the cows | Every 15 s|14 days  |  30MB   |
 |```neck_elevation```|Neck pressure| Elevation of the cow relative to the sea level | 10 Hz | 14 days | 3 GB|
-|```head_direction```|Neck accel & mag| Head direction calculated using Tilt-compensated eCompass | 1 Hz|14 days| 0.7GB |
+|```head_direction```|Neck accel & mag| Head direction calculated using Tilt-compensated eCompass | 10 Hz|14 days| 5.2GB |
 |```cow_lying``` | ```ankle_accel``` | Cow's lying behavior calculated from the ankle acceleration using K-mean clustering | Every 1 m | 14 days | 4MB |
 |```individual```| Visual data | Manually created behaviors of individual cows  | 1 Hz| 1 day | 32MB |
 |```social```| Visual data | Manually created bunching behavior | 1 Hz | 1 day | 32MB |
