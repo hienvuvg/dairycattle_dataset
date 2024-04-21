@@ -7,7 +7,7 @@ This dataset includes two parts: data from wearable sensors and visual data from
 **Download links:**
 * [sensor_data.zip](link1) (11GB)
 * Aligned visual data is provided in multiple mp4 and zip files
-* [annotated_visual_data.zip](link1) (21GB)
+* [annotated_visual_data.zip](link1) (29GB)
 
 <br />
 
