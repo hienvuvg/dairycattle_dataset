@@ -29,10 +29,11 @@ ${ROOT}
 |   |-- ankle_accel
 |   |-- device_temp
 |-- processed_data
-|   |-- neck_location
+|   |-- UWB_location
 |   |-- neck_elevation
 |   |-- head_direction
 |   |-- cow_lying
+|   |-- visual_location
 |--behavior_labels
 |   |-- individual
 |   |-- social
@@ -57,10 +58,11 @@ The table of data size and info.
 | ```neck_data```   | Measured | Acceleration, magnetic, and pessure recorded by the neck tags | 10Hz | 14 days  | 9.6GB |
 | ```ankle_accel```| Measured | Ankle acceleration from ankle sensors |Every 1 m  | 14 days  |   6MB    |
 |```dev_temp```| Measured | Temperature of neck tags |Every 15 s | 14 days  |  19 MB |
-|```neck_location```|```uwb_distance```| 3D neck location of the cows | Every 15 s|14 days  |  30MB   |
+|```UWB_location```|```uwb_distance```| 3D neck location of the cows | Every 15 s|14 days  |  30MB   |
 |```neck_elevation```|Neck pressure| Elevation of the cow relative to the sea level | 10 Hz | 14 days | 3 GB|
 |```head_direction```|Neck accel & mag| Head direction calculated using Tilt-compensated eCompass | 10 Hz|14 days| 5.2GB |
 |```cow_lying``` | ```ankle_accel``` | Cow's lying behavior calculated from the ankle acceleration using K-mean clustering | Every 1 m | 14 days | 4MB |
+|```visual_location``` | visual ID annotation | Cow's 3D body location computed from the annotated data using optimization-based localization | Every 15 s | 1 day | ??MB |
 |```individual```| Visual data | Manually created behaviors of individual cows  | 1 Hz| 1 day | 32MB |
 |```social```| Visual data | Manually created bunching behavior | 1 Hz | 1 day | 32MB |
 |```body_temp```  | Measured | Body temperature measured by the varginal temperature sensor | Every 1 m    | 14 days | 4MB |
