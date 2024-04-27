@@ -63,15 +63,15 @@ The table of data size and info.
 |```head_direction```|Neck accel & mag| Head direction calculated using Tilt-compensated eCompass | 10 Hz|14 days| 5.2GB |
 |```cow_lying``` | ```ankle_accel``` | Cow's lying behavior calculated from the ankle acceleration using K-mean clustering | Every 1 m | 14 days | 4MB |
 |```visual_location``` | visual ID annotation | Cow's 3D body location computed from the annotated data using optimization-based localization | Every 15 s | 1 day | ??MB |
-|```individual```| Visual data | Manually created individual behaviors of the cows  | 1 Hz| 1 day | 32MB |
-|```social```| Visual data | Manually created bunching behavior of individual cows | 1 Hz | 1 day | 32MB |
+|```individual```| Visual data | Manually annotated individual behaviors of the cows  | 1 Hz| 1 day | 32MB |
+|```social```| Visual data | Manually annotated bunching behavior of individual cows | 1 Hz | 1 day | 32MB |
 |```body_temp```  | Measured | Body temperature measured by the varginal temperature sensor | Every 1 m    | 14 days | 4MB |
 |```milk_production```   | Barn staffs | Daily milk yield of each cow in kg | Daily  | 14 days | 10KB | 
 |```health_info```| Barn staffs | Health information of the cows | Periodically | 14 days | 0.2MB |
 |```indoor_condition```  | Measured | Temperature and humidity around the pen | Every 1 m | 14 days | 4MB |
 |```outdoor_weather```   | Weather station |  Outdoor weather collected by a near by weather station | Every 3 m    | 14 days | 9MB |
 
-*Vision-related data is available for all 16 cows
+*Vision-related and manually annotated data is available for all 16 cows while data from wearable sensors is available from cow #1 to #10.
 
 <br />
 
