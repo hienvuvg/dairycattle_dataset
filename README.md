@@ -71,7 +71,7 @@ The table of data size and info.
 |```indoor_condition```  | Measured | Temperature and humidity around the pen | Every 1 m | 14 days | 4MB |
 |```outdoor_weather```   | Weather station |  Outdoor weather collected by a near by weather station | Every 3 m    | 14 days | 9MB |
 
-*Vision-related and manually annotated data is available for all 16 cows while data from wearable sensors is available from cow #1 to #10.
+Vision-related and manually annotated data is available for all 16 cows while data from wearable sensors is available from cow #1 to #10.
 
 <br />
 
