@@ -22,11 +22,11 @@ Data from multiple days, from 7/21 to 8/04
 ${ROOT}
 |-- measurements 
 |   |-- uwb_distance
-|   |-- neck_data
+|   |-- neck_imu
 |   |   |-- acceleration
 |   |   |-- magnetic
 |   |   |-- pressure
-|   |-- ankle_accel
+|   |-- ankle_imu
 |   |-- device_temp
 |-- processed_data
 |   |-- UWB_location
@@ -55,8 +55,8 @@ The table of data size and info.
 | Data | Source | Description | Frequency| Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
 | ```uwb_distance```| Measured | Distance from the tag to the anchors | Every 15 s  | 14 days  |  0.3GB   |
-| ```neck_data```   | Measured | Acceleration, magnetic, and pessure recorded by the neck tags | 10Hz | 14 days  | 9.6GB |
-| ```ankle_accel```| Measured | Ankle acceleration from ankle sensors |Every 1 m  | 14 days  |   6MB    |
+| ```neck_imu```   | Measured | Acceleration, magnetic, and pessure recorded by the neck tags | 10Hz | 14 days  | 9.6GB |
+| ```ankle_imu```| Measured | Ankle acceleration from ankle sensors |Every 1 m  | 14 days  |   6MB    |
 |```dev_temp```| Measured | Temperature of neck tags |Every 15 s | 14 days  |  19 MB |
 |```UWB_location```|```uwb_distance```| 3D neck location of the cows | Every 15 s|14 days  |  30MB   |
 |```neck_elevation```|Neck pressure| Elevation of the cow relative to the sea level | 10 Hz | 14 days | 3 GB|
