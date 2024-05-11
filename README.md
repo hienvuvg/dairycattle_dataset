@@ -127,7 +127,7 @@ ${ROOT}
 | Data | Source | Description | Interval | Duration | Size   |
 |-------------|--------|-----------|----------|----------|--------|
 | ```images```| Recorded | 20k UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day  | 20GB |
-| ```labels```   |Annotated | bbox position with cow_id of each cow in the camera views. Format in image ratio ```[x,y,w,h]``` | Every 15 s | 1 day  |  |
+| ```labels```   |Annotated | bbox position with cow_id of each cow in the camera views, formated in image ratio ```[x,y,w,h]```, separated in three sets: standing cows only, lying cow only, or both standing and lying cows | Every 15 s | 1 day  |  |
 | ```proj_mat``` |Calibrated| Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A| 1 day  |  N/A   |
 | ```visual_location``` | ```labels``` (visual) | 3D location of each cow's body computed from the bboxes in 4 camera views using AdaGrad |Every 15 s | 1 day  |
 | ```crop_profiles```| Manual | Pixel locations in each camera view for masking images | N/A | N/A | N/A |
