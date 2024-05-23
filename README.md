@@ -27,20 +27,19 @@ ${ROOT}
 |   |   |-- magnetic
 |   |   |-- pressure
 |   |-- ankle_accel
-|   |-- dev_temp
+|   |-- vaginal_temperature
+|   |-- milk_yield
+|   |-- health_records
 |-- processed_data
 |   |-- UWB_location
 |   |-- neck_elevation
 |   |-- head_direction
-|   |-- cow_lying
+|   |-- ankle_lying
 |   |-- visual_location
 |--behavior_labels
 |   |-- individual
 |   |-- social
-|-- references 
-    |-- body_temp
-    |-- milk_production
-    |-- health_information
+|-- environment 
     |-- indoor_condition
     |-- outdoor_weather
 
