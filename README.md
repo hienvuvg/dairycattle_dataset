@@ -32,8 +32,8 @@ ${ROOT}
 |   |-- health_records
 |-- processed_data
 |   |-- UWB_location
-|   |-- neck_elevation
 |   |-- head_direction
+|   |-- neck_elevation
 |   |-- ankle_lying
 |   |-- visual_location
 |-- behavior_labels
