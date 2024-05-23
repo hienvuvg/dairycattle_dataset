@@ -36,7 +36,7 @@ ${ROOT}
 |   |-- head_direction
 |   |-- ankle_lying
 |   |-- visual_location
-|--behavior_labels
+|-- behavior_labels
 |   |-- individual
 |   |-- social
 |-- environment 
