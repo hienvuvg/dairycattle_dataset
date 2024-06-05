@@ -1,7 +1,7 @@
 # MmCows
 
 
-What this is\
+<!--What this is\-->
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.\
 [Overview](https://hienvuvg.github.io/dairycattle_dataset/)\
 **Download links:**
