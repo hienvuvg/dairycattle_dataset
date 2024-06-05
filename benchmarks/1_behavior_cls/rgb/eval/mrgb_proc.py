@@ -66,10 +66,7 @@ def delete_files_in_folder(folder_path):
             os.remove(file_path)
     print("All files within the folder have been deleted.") 
 
-def mrgb_proc(id_list, selected_timestamps, behav_gt_list, cam_coord, Proj_cam_list, pred_label_dir, date = '0725', lying = False, save_csv = False):
-
-    no_print = True
-    report_outliner = True
+def mrgb_proc(id_list, selected_timestamps, gt_behav_full_16_list, cam_coord, Proj_cam_list, pred_label_dir, date = '0725', lying = False, save_csv = False, report_outliner = False, no_print_detail = True):
 
     frame_height = 2800
     resolution = (int(frame_height*1.6), frame_height)
@@ -118,6 +115,18 @@ def mrgb_proc(id_list, selected_timestamps, behav_gt_list, cam_coord, Proj_cam_l
     cam_list = ['cam_1','cam_2','cam_3','cam_4']
 
     for curr_timestamp in tqdm(selected_timestamps):
+
+        # Create gt_id_list
+        gt_id_list = []
+        for gt_id in range(1,17):
+            gt_behav = int(find_behav(gt_behav_full_16_list[gt_id-1], curr_timestamp))
+            if gt_behav > 0:
+                if lying == False:
+                    if gt_behav != 7:
+                        gt_id_list.append(gt_id)
+                else:
+                    gt_id_list.append(gt_id)
+
         ## Go through each camera
         bbox_dict_list = []
         for cam_idx, cam_name in zip(range(4), cam_list):
@@ -216,14 +225,16 @@ def mrgb_proc(id_list, selected_timestamps, behav_gt_list, cam_coord, Proj_cam_l
                         single_cow_dict['weight_list'].append(single_bbox_dict['weight'])
                         # print('found')
 
+        single_ts_pred_data = np.empty((0,2))
+
         # Considering all lines of a single cow
         for single_cow_dict in all_cows_line_set:
             if len(single_cow_dict['line_list']) > 0:
                 line_eqs = np.asarray(single_cow_dict['line_list'])
                 curr_timestamp = single_cow_dict['timestamp']
-                cow_id = single_cow_dict['cow_id']
+                pred_id = single_cow_dict['cow_id']
 
-                valid_datapoints = np.empty((0,2))
+                valid_lines = np.empty((0,2))
       
                 # Multi-view localization
                 if line_eqs.shape[0] > 1:
@@ -232,7 +243,7 @@ def mrgb_proc(id_list, selected_timestamps, behav_gt_list, cam_coord, Proj_cam_l
                     nearest_point, total_distance, iter, gradient = visual_localization(line_eqs)
                     nearest_point = nearest_point.astype(int)
                     single_cow_dict['location'] = nearest_point
-                    if no_print == False:
+                    if no_print_detail == False:
                         print(f"{single_cow_dict['cow_id']:2d}  {nearest_point}\td:{int(total_distance)/100:.2f}\t#{iter}\tg:{gradient:.2f}")
                     
                     # Convert the dict to [cow_id, weight, behav, line_eq[6]]
@@ -251,21 +262,21 @@ def mrgb_proc(id_list, selected_timestamps, behav_gt_list, cam_coord, Proj_cam_l
                             if report_outliner == True:
                                 print(f"==> Outlier: cow {single_cow_dict['cow_id']}, cam_{cam_id} ({line_eqs.shape[0]} cams)")
                         else:
-                            valid_datapoint = np.array([weight, behav])
-                            valid_datapoints = np.vstack((valid_datapoints, valid_datapoint))
+                            valid_line = np.array([weight, behav])
+                            valid_lines = np.vstack((valid_lines, valid_line))
 
                 # When the cow is only available in a single view
                 else:
                     weight = single_cow_dict['weight_list'][0]
                     behav = single_cow_dict['behav_list'][0]
-                    valid_datapoint = np.array([weight, behav])
-                    valid_datapoints = np.vstack((valid_datapoints, valid_datapoint))
+                    valid_line = np.array([weight, behav])
+                    valid_lines = np.atleast_2d(valid_line)
                         
-                # print(valid_datapoints)
+                # print(valid_lines)
 
                 ## Weighted_majority_voting
                 class_weights = defaultdict(float)
-                for row in valid_datapoints:
+                for row in valid_lines:
                     weight, behav_id = row
                     # print(behav_id)
                     class_weights[behav_id] += weight
@@ -274,38 +285,60 @@ def mrgb_proc(id_list, selected_timestamps, behav_gt_list, cam_coord, Proj_cam_l
                     # Find the class with the highest total weight
                     pred_behav = int(max(class_weights, key=class_weights.get))
 
-                    if len(behav_gt_list) > 0:
-                        cow_idx = cow_id-1
-                        test_behav = int(find_behav(behav_gt_list[cow_idx], curr_timestamp))
-                        datapoint = np.array([pred_behav, test_behav])
-                        cow_data = np.vstack((cow_data, datapoint))
+                    # gt_behav = int(find_behav(gt_behav_full_16_list[pred_id-1], curr_timestamp))
+                    datapoint = np.array([pred_id, pred_behav])
+                    single_ts_pred_data = np.vstack((single_ts_pred_data, datapoint))
 
-                        behav = valid_datapoint[1]
-                        datetime_obj = datetime.fromtimestamp(curr_timestamp, CT_time_zone)
-                        formatted_time = datetime_obj.strftime('%H:%M:%S')
+                    # ## For saving into csv
+                    # if save_csv == True:
+                    #     behav = valid_line[1]
+                    #     datetime_obj = datetime.fromtimestamp(curr_timestamp, CT_time_zone)
+                    #     formatted_time = datetime_obj.strftime('%H:%M:%S')
 
-                        behav_datapoint = np.hstack((curr_timestamp, formatted_time, behav))
+                    #     behav_datapoint = np.hstack((curr_timestamp, formatted_time, behav))
 
-                        cow_name = f'C{cow_id:02d}'
-                        output_dict[cow_name] = np.vstack((output_dict[cow_name], behav_datapoint))
-                        # print(behav_datapoint)
+                    #     cow_name = f'C{pred_id:02d}'
+                    #     output_dict[cow_name] = np.vstack((output_dict[cow_name], behav_datapoint))
                 except:
                     print('ValueError: max() arg is an empty sequence')
 
-    # Append to csv
-    if save_csv == True:
-        for cow_id in range(1,17):
-            out_behav_dir = os.path.join(current_dir, 'behaviors')
-            cow_name = f'C{cow_id:02d}'
-            csv_output_file = cow_name + '_' + date + '.csv'
-            output_dir = os.path.join(out_behav_dir, cow_name, csv_output_file)
+        # if len(gt_behav_full_16_list) > 0:
+        
+        pred_id_list = single_ts_pred_data[:,0].astype(int)
+        # pred_behav_list = single_ts_pred_data[:,1].astype(int)
+        # print('pred_id_list', pred_id_list)
+        # print('gt_id_list', gt_id_list)
+        # print('pred_behav_list', pred_behav_list)
+        # print('gt_behav_list', gt_behav_list)
+        for gt_id in gt_id_list:
+            if gt_id in pred_id_list:
+                gt_behav = int(find_behav(gt_behav_full_16_list[gt_id-1], curr_timestamp))
+                for pred_id, pred_behav in np.atleast_2d(single_ts_pred_data):
+                    if pred_id == gt_id:
+                        datapoint = np.array([pred_behav, gt_behav])
+                        cow_data = np.vstack((cow_data, datapoint))
+            else:
+                pred_behav = 0
+                datapoint = np.array([pred_behav, gt_behav])
+                cow_data = np.vstack((cow_data, datapoint))
+            
+        # print(behav_datapoint)
+        
 
-            single_dict = output_dict[cow_name]
-            if single_dict.size > 0:
-                row_data = pd.DataFrame(single_dict, columns=['timestamp', 'datetime', 'behavior'])
-                row_data.to_csv(output_dir, header=True, index=False)
+    # # Append to csv
+    # if save_csv == True:
+    #     for cow_id in range(1,17):
+    #         out_behav_dir = os.path.join(current_dir, 'behaviors')
+    #         cow_name = f'C{cow_id:02d}'
+    #         csv_output_file = cow_name + '_' + date + '.csv'
+    #         output_dir = os.path.join(out_behav_dir, cow_name, csv_output_file)
 
-                print(f'{csv_output_file} saved')
+    #         single_dict = output_dict[cow_name]
+    #         if single_dict.size > 0:
+    #             row_data = pd.DataFrame(single_dict, columns=['timestamp', 'datetime', 'behavior'])
+    #             row_data.to_csv(output_dir, header=True, index=False)
+
+    #             print(f'{csv_output_file} saved')
 
     # print(np.shape(cow_data))
 

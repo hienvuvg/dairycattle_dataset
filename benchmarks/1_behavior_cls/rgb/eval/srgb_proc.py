@@ -42,7 +42,21 @@ def select_range(timestamps, point1, point2):
         selected = [value for value in timestamps if point1 <= value < point2]
     return selected
 
-def srgb_proc(selected_timestamps, id_list, behav_gt_list, pred_label_dir, date, lying = False):
+def find_in_first_col_return_last_col_value(array, scalar):
+    # Check if the array is 2D
+    if array.ndim != 2:
+        raise ValueError("The input array must be 2D.")
+    
+    # Find the index of the row where the scalar is in the first column
+    for i in range(array.shape[0]):
+        if array[i, 0] == scalar:
+            # Return the value from the last column of the same row
+            return array[i, -1]
+    
+    # If the scalar is not found, return None or an appropriate value
+    return None
+
+def srgb_proc(selected_timestamps, id_list, behav_gt_list, pred_label_dir, gt_label_dir, date, lying = False):
     cow_data = np.empty((0,2)).astype(int)
     for i in range(1,5):
         cam_name = f"cam_{i:d}"
@@ -52,26 +66,68 @@ def srgb_proc(selected_timestamps, id_list, behav_gt_list, pred_label_dir, date,
         for curr_timestamp in selected_timestamps:
             # curr_timestamp = int(single_filename[0:10])
             datetime_var = datetime.fromtimestamp(curr_timestamp, CT_time_zone)
-            text_file_name = f'{curr_timestamp:d}_{datetime_var.hour:02d}-{datetime_var.minute:02d}-{datetime_var.second:02d}.txt'
-            file_dir = os.path.join(pred_label_dir, date, cam_name, text_file_name)
+
             try:
-                bboxes_data = read_bbox_labels(file_dir)
-                if len(bboxes_data.flatten()) > 0:
-                    for row in bboxes_data:
-                        cow_id = int(row[0])
-                        if cow_id in id_list:
-                            pred_behav = int(row[5])
-                            # cow_name = f'C{cow_id:02d}'
-                            test_behav = int(find_behav(behav_gt_list[cow_id-1], curr_timestamp))
-                            # if test_behav != pred_behav:
-                            #     print(f'{text_file_name}  {cow_name} {test_behav}')
-                            if lying == False:
-                                if test_behav != 7:
-                                    datapoint = np.array([pred_behav, test_behav])
-                                    cow_data = np.vstack((cow_data, datapoint))
+            # if True:
+                text_file_name = f'{curr_timestamp:d}_{datetime_var.hour:02d}-{datetime_var.minute:02d}-{datetime_var.second:02d}.txt'
+
+                gt_file_dir = os.path.join(gt_label_dir, date, cam_name, text_file_name)
+                gt_bbox_data = np.atleast_2d(read_bbox_labels(gt_file_dir))
+                if len(gt_bbox_data.flatten()) > 0:
+                    gt_id_list = gt_bbox_data[:,0].astype(int)
+
+                    file_dir = os.path.join(pred_label_dir, date, cam_name, text_file_name)
+                    pred_bbox_data = np.atleast_2d(read_bbox_labels(file_dir))
+                    if len(pred_bbox_data.flatten()) > 0:
+                        pred_id_list = pred_bbox_data[:,0]
+
+                        if len(pred_id_list) != len(np.unique(pred_id_list)):
+                            print(f'dupplication in cam {cam_name} {text_file_name}')
+
+                        for gt_id in gt_id_list:
+                            gt_behav = int(find_behav(behav_gt_list[gt_id-1], curr_timestamp))
+                            if gt_id in pred_id_list:
+                                for pred_data_row in pred_bbox_data:
+                                    pred_id, _, _, _, _, pred_behav = pred_data_row
+                                    if pred_id == gt_id:
+                                        if lying == False:
+                                            if gt_behav != 7:
+                                                datapoint = np.array([pred_behav, gt_behav])
+                                                cow_data = np.vstack((cow_data, datapoint))
+                                        else:
+                                            datapoint = np.array([pred_behav, gt_behav])
+                                            cow_data = np.vstack((cow_data, datapoint))
                             else:
-                                datapoint = np.array([pred_behav, test_behav])
-                                cow_data = np.vstack((cow_data, datapoint))
+                                if lying == False:
+                                    if gt_behav != 7:
+                                        pred_behav = 0
+                                        datapoint = np.array([pred_behav, gt_behav])
+                                        cow_data = np.vstack((cow_data, datapoint))
+                                else:
+                                    pred_behav = 0
+                                    datapoint = np.array([pred_behav, gt_behav])
+                                    cow_data = np.vstack((cow_data, datapoint))
+
+                            # for row in bboxes_data:
+                            #     cow_id = int(row[0])
+                            #     if cow_id in gt_id_list:
+                            #         pred_behav = int(row[5])
+                            #         # cow_name = f'C{cow_id:02d}'
+                            #         test_behav = int(find_behav(behav_gt_list[cow_id-1], curr_timestamp))
+                            #         # if test_behav != pred_behav:
+                            #         #     print(f'{text_file_name}  {cow_name} {test_behav}')
+                            #         if lying == False:
+                            #             if test_behav != 7:
+                            #                 datapoint = np.array([cow_id, pred_behav, test_behav])
+                            #                 cow_data = np.vstack((cow_data, datapoint))
+                            #         else:
+                            #             datapoint = np.array([cow_id, pred_behav, test_behav])
+                            #             cow_data = np.vstack((cow_data, datapoint))
+                                    
+                            #     else: # if the cow is not in the gt
+                            #         datapoint = np.array([cow_id, pred_behav, test_behav])
+
+                            # cow_data = np.vstack((cow_data, datapoint))
             except:
                 print('missing', text_file_name)
                 pass

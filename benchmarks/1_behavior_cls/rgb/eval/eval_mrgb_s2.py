@@ -59,10 +59,17 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Test')
     parser.add_argument('--path_dir', type=str, default=os.path.join(current_dir, 'private', "path.yaml"))
     parser.add_argument('--config_dir', type=str, default=os.path.join(current_dir, 'private', config_name))   
+    parser.add_argument('--lying', action='store_false', help='N/A')
     args = parser.parse_args() 
     
     yaml_dir = args.path_dir
     json_dir = args.config_dir
+    lying = args.lying
+
+    if lying == True:
+        print('With lying cows')
+    else:
+        print('Without lying cows')
 
     with open(yaml_dir, 'r') as file:
         file_dirs = yaml.safe_load(file)
@@ -73,8 +80,9 @@ if __name__ == '__main__':
     
     sensor_data_dir = file_dirs['sensor_data_dir']
     visual_data_dir = file_dirs['visual_data_dir']
+    pred_label_dir = file_dirs['pred_label_dir']
     behav_dir = os.path.join(sensor_data_dir, 'behavior_labels', 'individual')
-    pred_label_dir = os.path.join(visual_data_dir, 'output_labels')
+    # pred_label_dir = os.path.join(visual_data_dir, 'output_labels')
     proj_mat_dir = os.path.join(visual_data_dir, 'proj_mat')
 
     # print("proj mat: ", proj_mat_dir)
@@ -147,7 +155,7 @@ if __name__ == '__main__':
         selected_timestamps = list(timestamp_chunk1) + list(timestamp_chunk2)
         print('  # of timestamps:', len(selected_timestamps))
 
-        y_pred, y_test = mrgb_proc(id_list, selected_timestamps, behav_gt_list, cam_coord, Proj_cam_list, pred_label_dir)
+        y_pred, y_test = mrgb_proc(id_list, selected_timestamps, behav_gt_list, cam_coord, Proj_cam_list, pred_label_dir, lying = lying)
         acc_dict, prec_dict, recal_dict, f1_dict = cmb_eval(y_pred, y_test)
 
         # for key, value in acc_dict.items():
