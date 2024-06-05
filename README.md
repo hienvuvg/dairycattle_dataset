@@ -1,4 +1,4 @@
-# DairyCows2024
+# MmCows
 
 
 What this is\
@@ -6,8 +6,8 @@ This dataset includes two parts: data from wearable sensors and visual data from
 [Overview](https://hienvuvg.github.io/dairycattle_dataset/)\
 **Download links:**
 * [sensor_data.zip](link1) (11GB)
-* Aligned visual data is provided in multiple mp4 and zip files
 * [annotated_visual_data.zip](link1) (29GB)
+* Aligned visual data is provided in multiple mp4 and zip files
 
 <br />
 
