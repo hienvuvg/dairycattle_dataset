@@ -6,10 +6,16 @@ This dataset includes two parts: data from wearable sensors and visual data from
 [Overview](https://hienvuvg.github.io/dairycattle_dataset/)\
 **Download links:**
 * [sensor_data.zip](link1) (11GB)
-* [annotated_visual_data.zip](link1) (29GB)
+* [visual_data.zip](link1) (29GB)
 * Aligned visual data is provided in multiple mp4 and zip files
 
 <br />
+
+Benchmarking
+------
+Please download and upzip ```sensor_data.zip``` and ```visual_data.zip``` to two separate folders. 
+Clone this repo to your local directory. In ```benckmarks/1_behavior_cls
+
 
 Sensor Data
 ------
