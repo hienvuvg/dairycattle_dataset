@@ -15,7 +15,11 @@ This dataset includes two parts: data from wearable sensors and visual data from
 Benchmarking
 ------
 Please download and upzip ```sensor_data.zip``` and ```visual_data.zip``` to two separate folders. 
-Clone this repo to your local directory. In ```configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the two respective folders. Then navigate to your repo directory, run ```test_all.sh``` to benchmark MmCows.
+Clone this repo to your local directory. In ```configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the two respective folders. 
+
+For benchmarking, navigate to your repo directory and run ```test_all.sh``` to evaluate the performance of the modalities.
+
+To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```test_stats.sh```
 
 Please install all dependencies using python 3.8 or 3.11 before running the test: ```pip3 install -r requirements.txt```
 
