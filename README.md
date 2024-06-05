@@ -15,12 +15,12 @@ This dataset includes two parts: data from wearable sensors and visual data from
 Benchmarks
 ------
 Setup:
-1. Download and upzip ```sensor_data.zip```, ```visual_data.zip```, and ```pred_behaviors.zip``` to separate folders. 
-1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir```, ```visual_data_dir```, and ```pred_behavior_dir``` to your local directories of the respective folders. 
+1. Download and upzip ```sensor_data.zip```, ```visual_data.zip```, and ```pred_behaviors.zip``` to separate folders
+1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir```, ```visual_data_dir```, and ```pred_behavior_dir``` to your local directories of the respective folders
 2. Install all dependencies using python 3.8 or 3.11 before running the test:<br>```pip3 install -r requirements.txt```
 
 Benchmarking:
-1. Navigate to your repo directory.
+1. Navigate to your local directory of this repo 
 2. To evaluate the performance of the modalities, run ```test_all.sh```
 1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```test_stats.sh```
 
