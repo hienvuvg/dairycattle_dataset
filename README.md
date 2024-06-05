@@ -14,10 +14,10 @@ This dataset includes two parts: data from wearable sensors and visual data from
 
 Benchmarks
 ------
-Setup:\
+Setup:
 1. Download and upzip ```sensor_data.zip```, ```visual_data.zip```, and ```pred_behaviors.zip``` to separate folders. 
 1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir```, ```visual_data_dir```, and ```pred_behavior_dir``` to your local directories of the respective folders. 
-2. install all dependencies using python 3.8 or 3.11 before running the test: ```pip3 install -r requirements.txt```
+2. Install all dependencies using python 3.8 or 3.11 before running the test:\ ```pip3 install -r requirements.txt```
 
 Benchmarking:
 1. Navigate to your repo directory and run ```test_all.sh``` to evaluate the performance of the modalities.
