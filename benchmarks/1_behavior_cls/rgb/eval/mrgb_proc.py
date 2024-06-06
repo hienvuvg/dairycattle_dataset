@@ -300,7 +300,8 @@ def mrgb_proc(id_list, selected_timestamps, gt_behav_full_16_list, cam_coord, Pr
                     #     cow_name = f'C{pred_id:02d}'
                     #     output_dict[cow_name] = np.vstack((output_dict[cow_name], behav_datapoint))
                 except:
-                    print('\t__ max() arg is an empty sequence')
+                    pass
+                    # print('\t__ max() arg is an empty sequence')
 
         # if len(gt_behav_full_16_list) > 0:
         
