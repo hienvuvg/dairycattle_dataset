@@ -20,12 +20,12 @@ Setup:
 2. Install all dependencies using python 3.8 or 3.11 before running the test:<br>```pip3 install -r requirements.txt```
 
 There are two options for benchmarking the dataset:\
-Train and test all models from scratch:
+A. Train and test all models from scratch:
 1. Navigate to your local directory of this repo 
 2. To evaluate the performance of the modalities, run ```train_test_all_moda.sh```
 1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```train_test_behaviors.sh```
 
-Test all models using provided weights:
+B. Test all models using provided weights:
 1. Navigate to your local directory of this repo 
 2. To evaluate the performance of the modalities, run ```test_all_moda.sh```
 1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```test_behaviors.sh```
