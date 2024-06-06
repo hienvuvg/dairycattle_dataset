@@ -104,7 +104,7 @@ ${ROOT}
 
 | Data  | Description | Interval | Duration    |
 |-------------|-----------|-----------|----------|
-| ```images```| 14x20k UWB-synchronized 15s-interval images | Every 15 s | 14 day  |  
+| ```images```| 14x20k UWB-synchronized 15s-interval images | 15 s | 14 day  |  
 | ```proj_mat```  | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A | 14 days  |
 | ```crop_profiles```  | Pixel locations in each camera view fr masking images | N/A | N/A | 
 | ```cow_gallery```  | 500 photos of the cows taken from different angles using phone cameras | N/A | N/A  |
@@ -139,10 +139,10 @@ ${ROOT}
 
 | Data  | Description | Interval | Duration    |
 |-------------|-----------|----------|----------|
-| ```images``` | 20k UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | Every 15 s | 1 day   |
-| ```labels```    | bbox position with cow_id of each cow in the camera views, formated in image ratio ```[x,y,w,h]```, separated in three sets: standing cows only, lying cow only, or both standing and lying cows | Every 15 s | 1 day  | 
+| ```images``` | 20k UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | 15 s | 1 day   |
+| ```labels```    | bbox position with cow_id of each cow in the camera views, formated in image ratio ```[x,y,w,h]```, separated in three sets: standing cows only, lying cow only, or both standing and lying cows | 15 s | 1 day  | 
 | ```proj_mat``` | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A| 1 day   |
-| ```visual_location``` | 3D location of each cow's body computed from the bboxes in 4 camera views using AdaGrad |Every 15 s | 1 day  |
+| ```visual_location``` | 3D location of each cow's body computed from the bboxes in 4 camera views using AdaGrad | 15 s | 1 day  |
 | ```crop_profiles``` | Pixel locations in each camera view for masking images | N/A | N/A  |
 
 [1s_interval_images.zip](link3) that is
