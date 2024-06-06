@@ -59,10 +59,10 @@ ${ROOT}
 
 
 ```
-**Text**
+**Text**\
 Explaining what each folder contains.
 
-**Text**
+**Text**\
 The table of data size and info.
 
 | Data  | Description | Frequency| Duration    |
@@ -152,14 +152,14 @@ ${ROOT}
 
 Annotation Rules for Visual Data
 ------
-**Isometric-view cow identification:** \
+**Isometric-view cow identification:** 
 
 | # | Text | Text |
 |-------------|--------|-----------|
 | 0 | Text | Text | N/A |
 
 
-**Cow behaviors for behavior labels:** \
+**Cow behaviors for behavior labels:** 
 
 | # | Behavior | Definition |
 |-------------|--------|-----------|
