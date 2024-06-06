@@ -5,8 +5,9 @@
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.\
 [Overview](https://hienvuvg.github.io/dairycattle_dataset/)\
 **Download links:**
-* [sensor_data.zip](https://www.dropbox.com/scl/fi/k2qikwjw8lamm5u8w8m76/sensor_data.zip?rlkey=x897xeha714nsd0m16tphqbyb&dl=1) (17GB)
-* [visual_data.zip](https://www.dropbox.com/scl/fi/g9ydufqcxcaxd582sjf0q/visual_data.zip?rlkey=mav7mvqmqy53kz0f180if4e9e&dl=1) (34.4GB) (15s interval data of 7/25)
+* [sensor_data.zip](https://www.dropbox.com/scl/fi/k2qikwjw8lamm5u8w8m76/sensor_data.zip?rlkey=x897xeha714nsd0m16tphqbyb&dl=1) (17 GB)
+* [visual_data.zip](https://www.dropbox.com/scl/fi/g9ydufqcxcaxd582sjf0q/visual_data.zip?rlkey=mav7mvqmqy53kz0f180if4e9e&dl=1) (34.4 GB) (15s interval data of 7/25)
+* [pred_labels.zip]() (20 MB) Predicted labels from visual models on 7/25
 * Aligned visual data of 14 days with sampling rates of 1s and 15s is provided in multiple mp4 and zip files
 
 <br />
@@ -14,11 +15,17 @@ This dataset includes two parts: data from wearable sensors and visual data from
 Benchmarks
 ------
 Setup:
-1. Download and upzip ```sensor_data.zip``` and ```visual_data.zip``` to separate folders
-1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir```, ```visual_data_dir```, and ```pred_behavior_dir``` to your local directories of the respective folders
+1. Download and upzip ```sensor_data.zip```, ```visual_data.zip```, and ```pred_labels.zip``` to separate folders
+1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir```, ```visual_data_dir```, and ```pred_label_dir``` to your local directories of the respective folders
 2. Install all dependencies using python 3.8 or 3.11 before running the test:<br>```pip3 install -r requirements.txt```
 
-Benchmarking:
+There are two options for benchmarking the dataset:\
+Train and test all models from scratch:
+1. Navigate to your local directory of this repo 
+2. To evaluate the performance of the modalities, run ```train_test_all_moda.sh```
+1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```train_test_behaviors.sh```
+
+Test all models using provided weights:
 1. Navigate to your local directory of this repo 
 2. To evaluate the performance of the modalities, run ```test_all_moda.sh```
 1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```test_behaviors.sh```
