@@ -1,4 +1,4 @@
-# Computer Vision-based cow monitoring
+# Computer Vision-based Cow Monitoring
 
 
 <img src="./S-RGB_pipeline.png" alt="S-RGB" width="700"/>
