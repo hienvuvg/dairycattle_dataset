@@ -179,6 +179,8 @@ if __name__ == '__main__':
             aggregated_f1[key].append(value)
             print(f'\t{key}: {value:.3f}')
     
+    if 0 in aggregated_f1:
+        del aggregated_f1[0]
 
     # Calculate mean and standard deviation for each key
     mean_std_results = {key: (np.mean(values), np.std(values)) for key, values in aggregated_f1.items()}
