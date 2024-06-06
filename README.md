@@ -28,7 +28,7 @@ Benchmarking:
 Sensor Data
 ------
 
-Data from multiple days, from 7/21 to 8/04
+Data of 14 days, from 7/21 to 8/04
 
 **Structure of sensor_data.zip**
 
@@ -59,10 +59,10 @@ ${ROOT}
 
 
 ```
-**Text**\
+**Text**
 Explaining what each folder contains.
 
-**Text**\
+**Text**
 The table of data size and info.
 
 | Data  | Description | Frequency| Duration    |
