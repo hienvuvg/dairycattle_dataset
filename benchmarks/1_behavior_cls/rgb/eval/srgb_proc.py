@@ -92,10 +92,10 @@ def srgb_proc(selected_timestamps, id_list, behav_gt_list, pred_label_dir, gt_la
                                     if pred_id == gt_id:
                                         if lying == False:
                                             if gt_behav != 7:
-                                                datapoint = np.array([pred_behav, gt_behav])
+                                                datapoint = np.array([int(pred_behav), gt_behav])
                                                 cow_data = np.vstack((cow_data, datapoint))
                                         else:
-                                            datapoint = np.array([pred_behav, gt_behav])
+                                            datapoint = np.array([int(pred_behav), gt_behav])
                                             cow_data = np.vstack((cow_data, datapoint))
                             else:
                                 if lying == False:

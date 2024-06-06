@@ -177,6 +177,7 @@ if __name__ == '__main__':
             if key not in aggregated_f1:
                 aggregated_f1[key] = []
             aggregated_f1[key].append(value)
+            print(f'\t{key}: {value:.3f}')
     
 
     # Calculate mean and standard deviation for each key

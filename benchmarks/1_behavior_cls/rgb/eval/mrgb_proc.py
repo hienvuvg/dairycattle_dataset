@@ -286,8 +286,8 @@ def mrgb_proc(id_list, selected_timestamps, gt_behav_full_16_list, cam_coord, Pr
                     pred_behav = int(max(class_weights, key=class_weights.get))
 
                     # gt_behav = int(find_behav(gt_behav_full_16_list[pred_id-1], curr_timestamp))
-                    datapoint = np.array([pred_id, pred_behav])
-                    single_ts_pred_data = np.vstack((single_ts_pred_data, datapoint))
+                    datapoint = np.array([int(pred_id), int(pred_behav)])
+                    single_ts_pred_data = np.vstack((single_ts_pred_data, datapoint)).astype(int)
 
                     # ## For saving into csv
                     # if save_csv == True:
@@ -300,7 +300,7 @@ def mrgb_proc(id_list, selected_timestamps, gt_behav_full_16_list, cam_coord, Pr
                     #     cow_name = f'C{pred_id:02d}'
                     #     output_dict[cow_name] = np.vstack((output_dict[cow_name], behav_datapoint))
                 except:
-                    print('ValueError: max() arg is an empty sequence')
+                    print('\t__ max() arg is an empty sequence')
 
         # if len(gt_behav_full_16_list) > 0:
         
