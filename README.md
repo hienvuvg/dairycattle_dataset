@@ -88,7 +88,7 @@ The table of data size and info.
 |```neck_dev_temp``` | Temperature of neck tag device |Every 15 s | 14 days  |
 |```UWB_location```| 3D neck location of the cows | Every 15 s|14 days  |  
 |```neck_elevation```| Elevation of the cow relative to the sea level | 10 Hz | 14 days | 
-|```head_direction```| Head direction calculated using Tilt-compensated eCompass | 10 Hz|14 days| 
+|```head_direction```| Head direction calculated using tilt-compensated eCompass | 10 Hz|14 days| 
 |```ankle_lying``` | Cow's lying behavior calculated from the ankle acceleration using K-mean clustering | Every 1 m | 14 days | 
 |```visual_location``` | Cow's 3D body location computed from the annotated data using optimization-based localization | Every 15 s | 1 day | 
 |```individual```| Manually annotated individual behaviors of the cows  | 1 Hz| 1 day | 
