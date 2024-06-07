@@ -31,7 +31,7 @@ if __name__ == '__main__':
     with open(yaml_dir, 'r') as file:
         file_dirs = yaml.safe_load(file)
     sensor_data_dir = file_dirs['sensor_data_dir']
-    out_behav_dir = file_dirs['out_behav_dir']
+    # out_behav_dir = file_dirs['out_behav_dir']
 
 
     id_list = range(1,11)
