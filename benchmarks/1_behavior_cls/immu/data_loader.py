@@ -12,16 +12,16 @@ def immu_pre_data_loader(sensor_data_dir, id_list, date = '0725'):
         cow_name = f'C{cow_id:02d}'
         tag_name = f'T{cow_id:02d}'
         
-        accel_data = pd.read_csv(os.path.join(sensor_data_dir,'measurements','neck_data', tag_name, f'{tag_name}_{date}.csv'))
+        accel_data = pd.read_csv(os.path.join(sensor_data_dir,'main_data','immu', tag_name, f'{tag_name}_{date}.csv'))
         accel_data = accel_data[['timestamp', 'accel_x_mps2', 'accel_y_mps2', 'accel_z_mps2']]
         # accel_data = accel_data.drop(columns=['pressure_Pa'])
 
-        head_data = pd.read_csv(os.path.join(sensor_data_dir,f'processed_data/head_direction/T{cow_id:02d}/T{cow_id:02d}_{date}.csv'))
+        head_data = pd.read_csv(os.path.join(sensor_data_dir, 'sub_data', 'head_direction', tag_name, f'T{cow_id:02d}_{date}.csv'))
         accel_data = pd.merge(accel_data, head_data[['timestamp', 'relative_angle']], on='timestamp', how='inner')
         # accel_data = pd.merge(accel_data, head_data, on='timestamp', how='inner')
         # accel_data = head_data
 
-        label_df = pd.read_csv(os.path.join(sensor_data_dir,f'behavior_labels/individual/C{cow_id:02d}_{date}.csv'))
+        label_df = pd.read_csv(os.path.join(sensor_data_dir, 'behavior_labels', 'individual', f'C{cow_id:02d}_{date}.csv'))
         label_df = label_df[['timestamp', 'behavior']]
 
         # Replace all occurrences of 1 with 2 in the 'behavior' column

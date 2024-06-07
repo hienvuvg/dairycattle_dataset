@@ -14,8 +14,8 @@ def uwb_hd_pre_loader(sensor_data_dir, id_list, date = '0725'):
         tag_name = f'T{cow_id:02d}'
         cow_name = f'C{cow_id:02d}'
 
-        uwb_dir = os.path.join(sensor_data_dir, 'processed_data', 'neck_location', tag_name, tag_name + '_' + date + '.csv') # 1/15 Hz
-        head_dir = os.path.join(sensor_data_dir, 'processed_data', 'head_direction', tag_name, tag_name + '_' + date + '.csv') # 10 Hz
+        uwb_dir = os.path.join(sensor_data_dir, 'main_data', 'uwb', tag_name, tag_name + '_' + date + '.csv') # 1/15 Hz
+        head_dir = os.path.join(sensor_data_dir, 'sub_data', 'head_direction', tag_name, tag_name + '_' + date + '.csv') # 10 Hz
         label_dir = os.path.join(sensor_data_dir, 'behavior_labels', 'individual', cow_name + '_' + date + '.csv') # 1 Hz
 
         uwb_df = pd.read_csv(uwb_dir)
