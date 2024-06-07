@@ -100,35 +100,6 @@ The table of data size and info.
 
 Vision-related and manually annotated data is available for all 16 cows while data from wearable sensors is available for cow #1 to #10.
 
-<br />
-
-Aligned Visual Data
-------
-
-Data from multiple days, from 7/21 to 8/04
-
-**Structure of multi_day_visual_data.zip**
-```
-${ROOT}
-|-- images
-|-- projection_matrix
-|-- crop_profiles
-|-- cows_gallery
-```
-
-| Data  | Description | Interval | Duration    |
-|-------------|-----------|-----------|----------|
-| ```images```| 14x20k UWB-synchronized 15s-interval images | 15 s | 14 day  |  
-| ```proj_mat```  | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A | 14 days  |
-| ```crop_profiles```  | Pixel locations in each camera view fr masking images | N/A | N/A | 
-| ```cow_gallery```  | 500 photos of the cows taken from different angles using phone cameras | N/A | N/A  |
-
-
-**Multiple sets of visual data:**
-* ```15s_interval_images``` (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
-* ```1s_interval_videos``` (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos) (319GB/zip):  
-* ```1s_interval_combined_view_videos``` (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
-
 
 <br />
 
@@ -161,6 +132,40 @@ ${ROOT}
 
 [1s_interval_images.zip](link3) that is
 
+<br />
+
+UWB-Synced Visual Data
+------
+
+Data from multiple days, from 7/21 to 8/04
+
+**Structure of multi_day_visual_data.zip**
+```
+${ROOT}
+|-- images
+|-- projection_matrix
+|-- crop_profiles
+|-- cows_gallery
+```
+
+| Data  | Description | Interval | Duration    |
+|-------------|-----------|-----------|----------|
+| ```images```| 14x20k UWB-synchronized 15s-interval images | 15 s | 14 day  |  
+| ```proj_mat```  | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A | 14 days  |
+| ```crop_profiles```  | Pixel locations in each camera view fr masking images | N/A | N/A | 
+| ```cow_gallery```  | 500 photos of the cows taken from different angles using phone cameras | N/A | N/A  |
+
+
+**Multiple sets of visual data:**
+* ```15s_interval_images``` (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
+* ```1s_interval_videos``` (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos) (319GB/zip):  
+* ```1s_interval_combined_view_videos``` (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
+
+
+<br />
+
+Complete Visual Data
+------
 
 
 <br />
