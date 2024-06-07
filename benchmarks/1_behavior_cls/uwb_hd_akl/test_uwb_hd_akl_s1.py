@@ -13,7 +13,7 @@ from rf_classifer import rf_classifer
 
 # ===============================================
 if __name__ == '__main__':
-    print('\nMODALITY: UWB+HD+AA (S1) --------------------------------------------')
+    print('\nMODALITY: UWB+HD+Akl (S1) --------------------------------------------')
     behav_list = ['unknown', 'walking', 'standing', 'feed up', 'feed down', 'licking', 'drinking', 'lying']
 
     train = False
