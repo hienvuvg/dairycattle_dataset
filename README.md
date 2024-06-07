@@ -31,7 +31,7 @@ B. Train and test all models from scratch:
 1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```train_test_behaviors.sh```
 
 Note:
-* Option A is available while the option B is currently in-progress
+* As of 6/6/2024, only pption A is available while the option B is currently in-progress
 * In the scripts, s1 = OS (object-wise split), s2 = TS (temporal split)
 
 
