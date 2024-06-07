@@ -31,7 +31,7 @@ B. Train and test all models from scratch:
 1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```train_test_behaviors.sh```
 
 Note:
-* As of 6/6/2024, all four scripts are working but only the training ans testing of the vision pipeline has not been incorporated into ```train_test_all_moda.sh```
+* As of 6/6/2024, all four scripts are working but only the training and testing of the vision pipeline has not been incorporated into ```train_test_all_moda.sh```
 * In the scripts, s1 = OS (object-wise split), s2 = TS (temporal split)
 
 
