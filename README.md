@@ -90,10 +90,9 @@ ${ROOT}
 |-- sub_data
 |   |-- head_direction
 |   |-- uwb_distance
-|   |-- neck_elevation
 |   |-- ankle_accel
 |   |-- visual_location
-|   |-- health
+|   |-- health_records
 |-- behavior_labels
     |-- individual
 ```
