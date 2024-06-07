@@ -129,19 +129,19 @@ if __name__ == '__main__':
     # id_list = [3]
 
     current_dir = os.path.join(os.path.dirname(__file__))  # Folder
-    yaml_dir = os.path.join(current_dir, "path.yaml")
+    yaml_dir = os.path.join(current_dir, 'private', "path.yaml")
 
     with open(yaml_dir, 'r') as file:
         file_dirs = yaml.safe_load(file)
     sensor_data_dir = file_dirs['sensor_data_dir']
-    out_behav_dir = file_dirs['out_behav_dir']
+    # pred_behav_dir = file_dirs['pred_behav_dir']
 
-    input_dir = os.path.join(sensor_data_dir, 'environment', 'indoor_condition', 'average.csv')
+    input_dir = os.path.join(sensor_data_dir, 'main_data', 'thi', 'average.csv')
     THI_timestamps, daily_THI = get_avg_THI(input_dir)
 
     behav_id = 3 # feeding
     window_size = 50 # 50: feeding
-    combined_dict = extract_behav(out_behav_dir, date_list, id_list, window_size, behav_id)
+    combined_dict = extract_behav(os.path.join(current_dir, 'pred_behav_data'), date_list, id_list, window_size, behav_id)
 
     for cow_data_dict in combined_dict:
         # for key, value in cow_data_dict.items():

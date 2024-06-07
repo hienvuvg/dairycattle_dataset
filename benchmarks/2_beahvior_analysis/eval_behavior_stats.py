@@ -92,7 +92,7 @@ if __name__ == '__main__':
 
     pred_behav_dir = os.path.join(current_dir, 'pred_behav_data')
 
-    input_dir = os.path.join(sensor_data_dir, 'environment', 'indoor_condition', 'average.csv')
+    input_dir = os.path.join(sensor_data_dir, 'main_data', 'thi', 'average.csv')
     THI_timestamps, daily_THI = get_avg_THI(input_dir)
 
     behavior_names = {2: "Standing", 7: "Lying", 3: "Feeding", 6: "Drinking"}
