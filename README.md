@@ -8,7 +8,7 @@ This dataset includes two parts: data from wearable sensors and visual data from
 * [sensor_data.zip](https://www.dropbox.com/scl/fi/9jc07gsd6mfujqf2gd84z/sensor_data.zip?rlkey=txykj4qqewhwu6m1c2ue0wyim&dl=1) (18 GB) Data from wearable sensors
 * [visual_data.zip](https://www.dropbox.com/scl/fi/yiw5khfkzizntooz2if5y/visual_data.zip?rlkey=ncpvn9hn3kh9dbriykacthexy&dl=1) (23 GB) (15s interval data of 7/25)
 * [pred_labels.zip](https://www.dropbox.com/scl/fi/d6wj82bmi5v6whret8wwu/pred_labels.zip?rlkey=srg3cnqou72yfuuxvdu51z7hg&dl=1) (20 MB) Predicted labels from visual models on 7/25
-* Aligned visual data of 14 days with sampling rates of 1s and 15s is provided in multiple mp4 and zip files
+* Visual data of 14 days with sampling rates of 1s and 15s is provided in multiple mp4 and zip files
 
 <br />
 
