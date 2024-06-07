@@ -51,26 +51,25 @@ Data of 14 days, from 7/21 to 8/04
 ${ROOT}
 |-- measurements 
 |   |-- uwb_distance
-|   |-- neck_data
+|   |-- immu
 |   |   |-- acceleration
 |   |   |-- magnetic
-|   |   |-- pressure
+|   |-- pressure
 |   |-- ankle_accel
-|   |-- vaginal_temperature
-|   |-- milk_yield
+|   |-- cbt (vaginal temperature)
+|   |-- milk
 |   |-- health_records
 |-- processed_data
-|   |-- UWB_location
+|   |-- uwb (neck location)
 |   |-- head_direction
 |   |-- neck_elevation
-|   |-- ankle_lying
+|   |-- ankle (lying behavior)
 |   |-- visual_location
 |-- behavior_labels
 |   |-- individual
-|   |-- social
 |-- environment 
-    |-- indoor_condition
-    |-- outdoor_weather
+    |-- thi (indoor condition)
+    |-- weather (outdoor)
 
 
 ```
