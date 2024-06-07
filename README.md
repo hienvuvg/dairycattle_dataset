@@ -47,7 +47,7 @@ Data of 14 days, from 7/21 to 8/04
 
 **Structure of sensor_data.zip**
 
-Old
+<!--Old
 ```
 ${ROOT}
 |-- measurements 
@@ -71,9 +71,9 @@ ${ROOT}
 |-- environment 
     |-- indoor_condition
     |-- outdoor_weather
-```
+```-->
 
-New
+
 ```
 ${ROOT}
 |-- main_data
