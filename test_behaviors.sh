@@ -1,7 +1,7 @@
 # @Author: mac
 # @Date:   2024-05-09 23:13:16
 # @Last Modified by:   mac
-# @Last Modified time: 2024-06-05 20:31:18
+# @Last Modified time: 2024-06-06 19:21:33
 
 
 # Check if Python is installed
@@ -30,5 +30,5 @@ $python_cmd ./benchmarks/2_beahvior_analysis/eval_behavior_stats.py --path_dir "
 
 
 echo "-------TESTING HAS BEEN COMPLETED------"
-sleep 3600
+sleep 36000
 
