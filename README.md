@@ -105,12 +105,11 @@ The table of data size and info.
 
 | Data  | Description | Frequency| Duration    |
 |-------------|-----------|----------|----------|
+| ```uwb``` | 3D neck location of the cows | Every 15 s  | 14 days    |
+| ```pressure``` | Ambient air pressure at the cow neck | 10 Hz  | 14 days    |
 | ```uwb_distance``` | Distance from the tag to the anchors | Every 15 s  | 14 days    |
-| ```neck_data```    | Acceleration, magnetic, and pessure recorded by the neck tags | 10Hz | 14 days   |
+| ```immu```    | Acceleration, magnetic, and pessure recorded by the neck tags | 10Hz | 14 days   |
 | ```ankle_accel``` | Ankle acceleration from ankle sensors |Every 1 m  | 14 days   |
-|```neck_dev_temp``` | Temperature of neck tag device |Every 15 s | 14 days  |
-|```UWB_location```| 3D neck location of the cows | Every 15 s|14 days  |  
-|```neck_elevation```| Elevation of the cow relative to the sea level | 10 Hz | 14 days | 
 |```head_direction```| Head direction calculated using tilt-compensated eCompass | 10 Hz|14 days| 
 |```ankle_lying``` | Cow's lying behavior calculated from the ankle acceleration using K-mean clustering | Every 1 m | 14 days | 
 |```visual_location``` | Cow's 3D body location computed from the annotated data using optimization-based localization | Every 15 s | 1 day | 
