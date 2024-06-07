@@ -1,7 +1,7 @@
 # @Author: mac
 # @Date:   2024-05-09 23:13:16
 # @Last Modified by:   mac
-# @Last Modified time: 2024-06-05 13:43:27
+# @Last Modified time: 2024-06-06 18:41:23
 
 
 # Check if Python is installed
@@ -28,18 +28,18 @@ S1_JSON_DIR="$DIR/configs/config_s1.json"
 S2_JSON_DIR="$DIR/configs/config_s2.json"
 
 
-$python_cmd ./benchmarks/1_behavior_cls/uwb/test_uwb_s1.py --path_dir "$YAML_DIR" --config_dir "$S1_JSON_DIR"
-$python_cmd ./benchmarks/1_behavior_cls/uwb/test_uwb_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
+# $python_cmd ./benchmarks/1_behavior_cls/uwb/test_uwb_s1.py --path_dir "$YAML_DIR" --config_dir "$S1_JSON_DIR"
+# $python_cmd ./benchmarks/1_behavior_cls/uwb/test_uwb_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
 
-$python_cmd ./benchmarks/1_behavior_cls/immu/test_immu_s0.py --path_dir "$YAML_DIR"
-$python_cmd ./benchmarks/1_behavior_cls/immu/test_immu_s1.py --path_dir "$YAML_DIR" --config_dir "$S1_JSON_DIR"
-$python_cmd ./benchmarks/1_behavior_cls/immu/test_immu_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
+# $python_cmd ./benchmarks/1_behavior_cls/immu/test_immu_s0.py --path_dir "$YAML_DIR"
+# $python_cmd ./benchmarks/1_behavior_cls/immu/test_immu_s1.py --path_dir "$YAML_DIR" --config_dir "$S1_JSON_DIR"
+# $python_cmd ./benchmarks/1_behavior_cls/immu/test_immu_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
 
-$python_cmd ./benchmarks/1_behavior_cls/uwb_hd/test_uwb_hd_s1.py --path_dir "$YAML_DIR" --config_dir "$S1_JSON_DIR"
-$python_cmd ./benchmarks/1_behavior_cls/uwb_hd/test_uwb_hd_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
+# $python_cmd ./benchmarks/1_behavior_cls/uwb_hd/test_uwb_hd_s1.py --path_dir "$YAML_DIR" --config_dir "$S1_JSON_DIR"
+# $python_cmd ./benchmarks/1_behavior_cls/uwb_hd/test_uwb_hd_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
 
-$python_cmd ./benchmarks/1_behavior_cls/uwb_hd_aa/test_uwb_hd_aa_s1.py --path_dir "$YAML_DIR" --config_dir "$S1_JSON_DIR"
-$python_cmd ./benchmarks/1_behavior_cls/uwb_hd_aa/test_uwb_hd_aa_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
+# $python_cmd ./benchmarks/1_behavior_cls/uwb_hd_aa/test_uwb_hd_aa_s1.py --path_dir "$YAML_DIR" --config_dir "$S1_JSON_DIR"
+# $python_cmd ./benchmarks/1_behavior_cls/uwb_hd_aa/test_uwb_hd_aa_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
 
 
 # Run S-RGB inference here

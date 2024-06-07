@@ -58,6 +58,9 @@ def find_in_first_col_return_last_col_value(array, scalar):
 
 def srgb_proc(selected_timestamps, id_list, behav_gt_list, pred_label_dir, gt_label_dir, date, lying = False):
     cow_data = np.empty((0,2)).astype(int)
+    n_missing = 0
+    pred_file_dir = []
+    gt_file_dir = []
     for i in range(1,5):
         cam_name = f"cam_{i:d}"
         # folder_path = os.path.join(pred_label_dir, date, cam_name)
@@ -72,12 +75,14 @@ def srgb_proc(selected_timestamps, id_list, behav_gt_list, pred_label_dir, gt_la
                 text_file_name = f'{curr_timestamp:d}_{datetime_var.hour:02d}-{datetime_var.minute:02d}-{datetime_var.second:02d}.txt'
 
                 gt_file_dir = os.path.join(gt_label_dir, date, cam_name, text_file_name)
+                # print(gt_file_dir)
                 gt_bbox_data = np.atleast_2d(read_bbox_labels(gt_file_dir))
                 if len(gt_bbox_data.flatten()) > 0:
                     gt_id_list = gt_bbox_data[:,0].astype(int)
 
-                    file_dir = os.path.join(pred_label_dir, date, cam_name, text_file_name)
-                    pred_bbox_data = np.atleast_2d(read_bbox_labels(file_dir))
+                    pred_file_dir = os.path.join(pred_label_dir, date, cam_name, text_file_name)
+                    # print(pred_file_dir)
+                    pred_bbox_data = np.atleast_2d(read_bbox_labels(pred_file_dir))
                     if len(pred_bbox_data.flatten()) > 0:
                         pred_id_list = pred_bbox_data[:,0]
 
@@ -130,6 +135,8 @@ def srgb_proc(selected_timestamps, id_list, behav_gt_list, pred_label_dir, gt_la
                             # cow_data = np.vstack((cow_data, datapoint))
             except:
                 print('missing', text_file_name)
+                n_missing+=1
+                assert n_missing < 1000, f'Wrong label directory: {gt_file_dir} and {pred_file_dir}'
                 pass
 
     print(np.shape(cow_data))

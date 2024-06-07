@@ -187,7 +187,7 @@ if __name__ == '__main__':
 
     print('\nRESULTS:', moda)
     for key, (mean, std) in mean_std_results.items():
-        print(f"Class {key} F1: {mean:.3f}±{std:.3f}  ({behav_list[int(key)]})")
+        print(f"\tClass {key} F1: {mean:.3f}±{std:.3f}  ({behav_list[int(key)]})")
 
     # Extract the mean F1 scores and standard deviations
     mean_f1_scores = [mean for mean, std in mean_std_results.values()]
@@ -195,7 +195,7 @@ if __name__ == '__main__':
     macro_average_f1 = np.mean(mean_f1_scores)
     average_error_f1 = np.mean(std_f1_scores)
 
-    print(f"Macro avg F1: {macro_average_f1:.3f}±{average_error_f1:.3f}")
+    print(f"\tMacro avg F1: {macro_average_f1:.3f}±{average_error_f1:.3f}")
 
     
 

@@ -114,6 +114,8 @@ def mrgb_proc(id_list, selected_timestamps, gt_behav_full_16_list, cam_coord, Pr
     cow_data = np.empty((0,2)).astype(int)
     cam_list = ['cam_1','cam_2','cam_3','cam_4']
 
+    n_missing = 0
+    
     for curr_timestamp in tqdm(selected_timestamps):
 
         # Create gt_id_list
@@ -138,7 +140,7 @@ def mrgb_proc(id_list, selected_timestamps, gt_behav_full_16_list, cam_coord, Pr
             datetime_var = datetime.fromtimestamp(curr_timestamp, CT_time_zone)
             text_file_name = f'{curr_timestamp:d}_{datetime_var.hour:02d}-{datetime_var.minute:02d}-{datetime_var.second:02d}.txt'
             # timestamp = text_file_name[0:10]
-            text_file_dir = os.path.join(pred_label_dir, date, cam_name, text_file_name)
+            pred_file_dir = os.path.join(pred_label_dir, date, cam_name, text_file_name)
 
             ## Dict structure:
             #  cam_view_dict {'cam_idx', 'n_rays', 'list_dict'}
@@ -150,7 +152,7 @@ def mrgb_proc(id_list, selected_timestamps, gt_behav_full_16_list, cam_coord, Pr
 
             try:
             # if True:
-                bboxes_data = read_bbox_labels(text_file_dir)
+                bboxes_data = read_bbox_labels(pred_file_dir)
                 
                 if len(bboxes_data.flatten()) > 0:
                     # bboxes_data[:,0] = np.ones(bboxes_data.shape[0])*(0) # change all bbox ids to 0
@@ -191,6 +193,8 @@ def mrgb_proc(id_list, selected_timestamps, gt_behav_full_16_list, cam_coord, Pr
             except:
                 cam_view_dict = dummy_cam_view_dict
                 print("missing", text_file_name)
+                n_missing+=1
+                assert n_missing < 1000, f'Wrong label directory: {pred_file_dir}'
 
             bbox_dict_list.append(cam_view_dict)
 
