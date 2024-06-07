@@ -134,7 +134,7 @@ ${ROOT}
 
 <br />
 
-UWB-Synced Visual Data
+UWB-Synced Visual Data (15s interval)
 ------
 
 Data from multiple days, from 7/21 to 8/04
@@ -164,7 +164,7 @@ ${ROOT}
 
 <br />
 
-Complete Visual Data
+Complete Visual Data (1s interval)
 ------
 
 
