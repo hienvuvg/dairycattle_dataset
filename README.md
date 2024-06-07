@@ -3,7 +3,7 @@
 
 <!--What this is\-->
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.\
-[Overview](https://hienvuvg.github.io/dairycattle_dataset/)\
+[Overview](https://hienvuvg.github.io/mmcows/)\
 **Download links:**
 * [sensor_data.zip](https://www.dropbox.com/scl/fi/k2qikwjw8lamm5u8w8m76/sensor_data.zip?rlkey=x897xeha714nsd0m16tphqbyb&dl=1) (17 GB)
 * [visual_data.zip](https://www.dropbox.com/scl/fi/yiw5khfkzizntooz2if5y/visual_data.zip?rlkey=ncpvn9hn3kh9dbriykacthexy&dl=1) (23 GB) (15s interval data of 7/25)
