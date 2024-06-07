@@ -30,7 +30,9 @@ B. Train and test all models from scratch:
 2. To evaluate the performance of the modalities, run ```train_test_all_moda.sh```
 1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```train_test_behaviors.sh```
 
-Note: Option A is available while the option B is currently in-progress
+Note:
+* Option A is available while the option B is currently in-progress
+* In the scripts, s1 = OS (object-wise split), s2 = TS (temporal split)
 
 
 
