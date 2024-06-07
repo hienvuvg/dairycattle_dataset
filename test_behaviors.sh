@@ -1,7 +1,7 @@
 # @Author: mac
 # @Date:   2024-05-09 23:13:16
 # @Last Modified by:   mac
-# @Last Modified time: 2024-06-06 19:21:33
+# @Last Modified time: 2024-06-07 12:32:21
 
 
 # Check if Python is installed
@@ -25,7 +25,7 @@ cd "$DIR"
 # Get the directory path of the YAML file
 YAML_DIR="$DIR/configs/path.yaml"
 
-$python_cmd ./benchmarks/2_beahvior_analysis/test_uwb_hd_aa.py --path_dir "$YAML_DIR"
+$python_cmd ./benchmarks/2_beahvior_analysis/test_uwb_hd_akl.py --path_dir "$YAML_DIR"
 $python_cmd ./benchmarks/2_beahvior_analysis/eval_behavior_stats.py --path_dir "$YAML_DIR"
 
 
