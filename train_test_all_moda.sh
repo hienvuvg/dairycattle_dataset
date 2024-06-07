@@ -1,7 +1,7 @@
 # @Author: mac
 # @Date:   2024-05-09 23:13:16
 # @Last Modified by:   mac
-# @Last Modified time: 2024-06-06 12:14:06
+# @Last Modified time: 2024-06-06 19:22:22
 
 
 # Check if Python is installed
@@ -51,5 +51,5 @@ $python_cmd ./benchmarks/1_behavior_cls/rgb/eval/eval_mrgb_s2.py --path_dir "$YA
 
 
 echo "-------TRAINING HAS BEEN COMPLETED------"
-sleep 36000
+sleep 360000
 
