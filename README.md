@@ -87,16 +87,15 @@ ${ROOT}
 |   |-- thi
 |   |-- weather
 |   |-- milk
-
 |-- sub_data
 |   |-- head_direction
-    |-- uwb_distance
+|   |-- uwb_distance
 |   |-- neck_elevation
 |   |-- ankle_accel
 |   |-- visual_location
 |   |-- health
 |-- behavior_labels
-|   |-- individual
+    |-- individual
 ```
 
 **Text**\
