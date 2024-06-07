@@ -3,8 +3,6 @@
 import datetime as dt
 import os
 
-import matplotlib.dates as md
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import yaml
@@ -120,6 +118,9 @@ def extract_behav(behav_dir, date_list, id_list, window_size, behav_id):
 
 # ===============================================
 if __name__ == '__main__':
+
+    import matplotlib.dates as md
+    import matplotlib.pyplot as plt
     
     # date_list = ['0722','0723','0724','0725','0726','0727','0728','0729','0730','0731','0801','0802','0803']
     date_list = ['0725']
