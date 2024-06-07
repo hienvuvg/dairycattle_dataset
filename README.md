@@ -47,32 +47,58 @@ Data of 14 days, from 7/21 to 8/04
 
 **Structure of sensor_data.zip**
 
+Old
 ```
 ${ROOT}
 |-- measurements 
 |   |-- uwb_distance
-|   |-- immu
+|   |-- neck_data
 |   |   |-- acceleration
 |   |   |-- magnetic
-|   |-- pressure
+|   |   |-- pressure
 |   |-- ankle_accel
-|   |-- cbt (vaginal temperature)
-|   |-- milk
+|   |-- cbt
+|   |-- milk_yield
 |   |-- health_records
 |-- processed_data
-|   |-- uwb (neck location)
+|   |-- UWB_location
 |   |-- head_direction
 |   |-- neck_elevation
-|   |-- ankle (lying behavior)
+|   |-- ankle_lying
 |   |-- visual_location
 |-- behavior_labels
 |   |-- individual
 |-- environment 
-    |-- thi (indoor condition)
-    |-- weather (outdoor)
-
-
+    |-- indoor_condition
+    |-- outdoor_weather
 ```
+
+New
+```
+${ROOT}
+|-- main_data
+|   |-- uwb
+|   |-- immu
+|   |   |-- acceleration
+|   |   |-- magnetic
+|   |-- pressure
+|   |-- cbt
+|   |-- ankle
+|   |-- thi
+|   |-- weather
+|   |-- milk
+
+|-- sub_data
+|   |-- head_direction
+    |-- uwb_distance
+|   |-- neck_elevation
+|   |-- ankle_accel
+|   |-- visual_location
+|   |-- health
+|-- behavior_labels
+|   |-- individual
+```
+
 **Text**\
 Explaining what each folder contains.
 
@@ -91,7 +117,7 @@ The table of data size and info.
 |```ankle_lying``` | Cow's lying behavior calculated from the ankle acceleration using K-mean clustering | Every 1 m | 14 days | 
 |```visual_location``` | Cow's 3D body location computed from the annotated data using optimization-based localization | Every 15 s | 1 day | 
 |```individual```| Manually annotated individual behaviors of the cows  | 1 Hz| 1 day | 
-|```body_temp```   | Body temperature measured by the varginal temperature sensor | Every 1 m    | 14 days |
+|```cbt```   | Core body temperature measured by the varginal temperature sensor | Every 1 m    | 14 days |
 |```milk_production```    | Daily milk yield of each cow in kg | Daily  | 14 days | 
 |```health_info``` | Health information of the cows | Periodically | 14 days | 
 |```indoor_condition```  | Temperature and humidity around the pen | Every 1 m | 14 days | 
