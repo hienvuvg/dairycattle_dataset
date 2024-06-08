@@ -16,6 +16,11 @@ import tensorflow as tf
 import random
 import os
 
+import warnings
+
+# Suppress all warnings
+warnings.filterwarnings("ignore")
+
 
 def dnn_classifer(moda, fold_name, train_data, val_data, test_data, num_classes, train = False, verbose = 1):
 
