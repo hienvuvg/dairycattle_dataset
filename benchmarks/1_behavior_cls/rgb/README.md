@@ -54,8 +54,10 @@ Data Preparation
     ```
 
 <br />
+As shown in the figure at the top, we have the following stages of cow detection, behavior classification, and cow identification.
+<br />
 
-Cow Detection
+Stage 1: Cow Detection
 ------
 
 1. Training:
@@ -73,7 +75,7 @@ Cow Detection
 <br />
 
 
-Behavior Classification
+Stage 2: Behavior Classification
 ------
 1. Training:
     ```
@@ -86,9 +88,13 @@ Behavior Classification
     ```
     The above command shows example usage for fold_1 test data split. Similarly, testing can be performed on fold_2, fold_3, fold_4, and fold_5.
 
+<br />
 
-Standing Cow Identification
+Stage 3: Cow Identification
 ------
+
+**Standing Cow Identification**
+
 1. Training:
     ```
     python standing_cow_identifier/train.py --normalization_values_file_path norm_params.json --model_save_path ./standing_cow_identifier/saved_models --data_path ./data_standing_cow_classification --fold fold_1
@@ -101,8 +107,10 @@ Standing Cow Identification
     ```
     The above command shows example usage for fold_1 test data split. Similarly, testing can be performed on fold_2, fold_3, fold_4, and fold_5.
 
-Lying Cow Identification
-------
+<br />
+
+**Lying Cow Identification**
+
 1. Training:
     ```
     python lying_cow_identifier/train.py --normalization_values_file_path norm_params.json --model_save_path data_lying_cow_classification/saved_models --data_path ./data_lying_cow_classification/fold_1 --fold fold_1
