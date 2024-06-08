@@ -123,6 +123,8 @@ The table of data size and info.
 Vision-related and manually annotated data is available for all 16 cows while data from wearable sensors is available for cow #1 to #10.
 
 
+Time index format is unix timestamp. When converting unix timestamp to datetime, it needs to be converted to Central Daylight Time (CDT) which is 5 hours off from the Coordinated Universal Time (UTC).
+
 <br />
 
 Annotated Visual Data
