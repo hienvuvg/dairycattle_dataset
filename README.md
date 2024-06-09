@@ -34,7 +34,12 @@ Note:
 * As of 6/6/2024, all four scripts are working but only the training and testing of the RGBs vision model has not been integrated into ```train_test_all_moda.sh```
 * In the scripts, s1 = OS (object-wise split), s2 = TS (temporal split)
 
+<br />
 
+**RGBs and RGBm benchmarking:** <br /> 
+Follow [this readme](https://github.com/hienvuvg/dairycattle_dataset/blob/main/benchmarks/1_behavior_cls/rgb/README.md) for benchmarking RGBs and RGBm benchmarking.
+
+<br />
 
 <mark>Note: The content below is currently being revisied</mark>
 ------
