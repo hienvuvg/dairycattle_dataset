@@ -17,7 +17,7 @@ Benchmarks
 Setup:
 1. Download and upzip ```sensor_data.zip```, ```visual_data.zip```, and ```pred_labels.zip``` to separate folders
 1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir```, ```visual_data_dir```, and ```pred_label_dir``` to your local directories of the respective folders
-2. Install all dependencies using python 3.8 or 3.11 before running the test:<br>```pip3 install -r requirements.txt```
+2. Install all dependencies using python 3.8 or 3.11 (idealy 3.9) before running the test:<br>```pip3 install -r requirements.txt```
 
 There are two options for benchmarking the dataset:\
 A. Test all models using provided weights:
