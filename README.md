@@ -131,6 +131,10 @@ Vision-related and manually annotated data is available for all 16 cows while da
 
 Time index format is unix timestamp. When converting unix timestamp to datetime, it needs to be converted to Central Daylight Time (CDT) which is 5 hours off from the Coordinated Universal Time (UTC).
 
+
+ 
+
+
 <br />
 
 Annotated Visual Data
