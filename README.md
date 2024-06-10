@@ -7,7 +7,7 @@ This dataset includes two parts: data from wearable sensors and visual data from
 **Download links:**
 * [sensor_data.zip](https://www.dropbox.com/scl/fi/9jc07gsd6mfujqf2gd84z/sensor_data.zip?rlkey=txykj4qqewhwu6m1c2ue0wyim&dl=1) (18 GB) Data from wearable sensors
 * [visual_data.zip](https://www.dropbox.com/scl/fi/yiw5khfkzizntooz2if5y/visual_data.zip?rlkey=ncpvn9hn3kh9dbriykacthexy&dl=1) (23 GB) (15s interval data of 7/25)
-* [pred_labels.zip](https://www.dropbox.com/scl/fi/d6wj82bmi5v6whret8wwu/pred_labels.zip?rlkey=srg3cnqou72yfuuxvdu51z7hg&dl=1) (20 MB) Predicted labels from visual models on 7/25
+<!--* [pred_labels.zip](https://www.dropbox.com/scl/fi/d6wj82bmi5v6whret8wwu/pred_labels.zip?rlkey=srg3cnqou72yfuuxvdu51z7hg&dl=1) (20 MB) Predicted labels from visual models on 7/25-->
 * Visual data of 14 days with sampling rates of 1s and 15s is provided in multiple mp4 and zip files
 
 <br />
@@ -15,9 +15,9 @@ This dataset includes two parts: data from wearable sensors and visual data from
 Benchmarks
 ------
 Setup:
-1. Download and upzip ```sensor_data.zip```, ```visual_data.zip```, and ```pred_labels.zip``` to separate folders
-1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir```, ```visual_data_dir```, and ```pred_label_dir``` to your local directories of the respective folders
-2. Install all dependencies using python 3.8 or 3.11 (idealy 3.9) before running the test:<br>```pip3 install -r requirements.txt```
+1. Download and upzip ```sensor_data.zip``` and ```visual_data.zip``` to separate folders
+1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
+2. Install all dependencies using python 3.8 or 3.11, idealy 3.9 before running the test:<br>```pip3 install -r requirements.txt```
 
 There are two options for benchmarking the dataset:\
 A. Test all models using provided weights:
