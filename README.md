@@ -14,6 +14,7 @@ This dataset includes two parts: data from wearable sensors and visual data from
 
 Benchmarks
 ------
+**Benchmarking of UWB-related models:** <br /> 
 Setup:
 1. Download and upzip ```sensor_data.zip``` and ```visual_data.zip``` to separate folders
 1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
@@ -31,13 +32,11 @@ B. Train and test all models from scratch:
 1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```train_test_behaviors.sh```
 
 Note:
-* As of 6/6/2024, all four scripts are working but only the training and testing of the RGBs vision model has not been integrated into ```train_test_all_moda.sh```
 * In the scripts, s1 = OS (object-wise split), s2 = TS (temporal split)
 
-<br />
 
 **RGBs and RGBm benchmarking:** <br /> 
-Follow [this readme](https://github.com/hienvuvg/dairycattle_dataset/blob/main/benchmarks/1_behavior_cls/rgb/README.md) for benchmarking RGBs and RGBm.
+* Follow [this readme](https://github.com/hienvuvg/dairycattle_dataset/blob/main/benchmarks/1_behavior_cls/rgb/README.md) for benchmarking RGBs and RGBm.
 
 <br />
 
