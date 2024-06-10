@@ -37,7 +37,7 @@ Note:
 <br />
 
 **RGBs and RGBm benchmarking:** <br /> 
-Follow [this readme](https://github.com/hienvuvg/dairycattle_dataset/blob/main/benchmarks/1_behavior_cls/rgb/README.md) for benchmarking RGBs and RGBm benchmarking.
+Follow [this readme](https://github.com/hienvuvg/dairycattle_dataset/blob/main/benchmarks/1_behavior_cls/rgb/README.md) for benchmarking RGBs and RGBm.
 
 <br />
 
