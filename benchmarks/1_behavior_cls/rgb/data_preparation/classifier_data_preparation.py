@@ -36,15 +36,13 @@ def get_datetime_from_filename(file_name):
 # Function to create output directories if they don't exist
 def create_output_dirs(fold_name, output_dir, experiment_type):
     for split in ['train', 'val', 'test']:
-        # For cow in 16 cows or behav in 7 behaviors (these are the subfolders inside the cropped bboxes folder)
-        # for cow in ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']:
         # for behav in ['1','2','3','4','5','6','7']
-        if experiment_type == 'behavior':
-            for cow in ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']: # #for behav in ['1','2','3','4','5','6','7']
+        if experiment_type == 'cow_id':
+            for cow in ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']:
                 os.makedirs(os.path.join(output_dir, fold_name, split, cow), exist_ok=True)
         
-        elif experiment_type == 'cow_id':
-            for behav in ['1','2','3','4','5','6','7']: # #for behav in ['1','2','3','4','5','6','7']
+        elif experiment_type == 'behavior':
+            for behav in ['1','2','3','4','5','6','7']: 
                 os.makedirs(os.path.join(output_dir, fold_name, split, behav), exist_ok=True)
         # os.makedirs(os.path.join(output_dir, fold_name, split, 'labels'), exist_ok=True)
 
