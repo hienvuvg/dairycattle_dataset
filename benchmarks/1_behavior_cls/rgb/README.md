@@ -36,6 +36,7 @@ Data Preparation
     ```bash
     python data_preparation/labels_for_detector.py --dataset_path ./organized_data
     ```
+
 7.2 [Optional]Crop bounding boxes from the images using this script OR [Recommended]download them 'here' and unzip inside '/visual_data'
     To generate bboxes for behavior classification,
     ```bash
