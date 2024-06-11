@@ -32,9 +32,18 @@ Data Preparation
     python data_preparation/vision_data_organization.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/images/0725 --label_dir ./visual_data/labels/combined/0725 --output_dir ./organized_data
     ```
 
-7. The labels contain cow IDs too. However, we would like to have an ID-agnostic cow detector. Therefore, we replace cow id with '0', where '0' represent a single object 'cow'
+7.1 The labels contain cow IDs too. However, we would like to have an ID-agnostic cow detector. Therefore, we replace cow id with '0', where '0' represent a single object 'cow'
     ```bash
     python data_preparation/labels_for_detector.py --dataset_path ./organized_data
+    ```
+7.2 [Optional]Crop bounding boxes from the images using this script OR [Recommended]download them 'here' and unzip inside '/visual_data'
+    To generate bboxes for behavior classification,
+    ```bash
+    python data_preparation/crop_data_prep/crop_bboxes_7b.py
+    ```
+    To generate bboxes for standing and lying cow classification,
+    ```bash
+    python data_preparation/crop_data_prep/crop_bboxes_16c.py
     ```
 
 8. Generate data directories required for behvior classifier    
