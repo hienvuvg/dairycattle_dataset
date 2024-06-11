@@ -82,13 +82,15 @@ if __name__ == '__main__':
 
     # current_dir = os.path.dirname(current_dir)   # Get the parent directory (one level up)        
     current_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current script's directory
-    yaml_dir = os.path.join(current_dir, "config.yaml")
+    yaml_dir = os.path.join(current_dir, "path.yaml")
     
     with open(yaml_dir, 'r') as file:
         file_dirs = yaml.safe_load(file)
-    dataset_dir = file_dirs['dataset']
-    image_dir = file_dirs['images']
-    label_dir = file_dirs['labels']
+    sensor_data_dir = file_dirs['sensor_data_dir']
+    visual_data_dir = file_dirs['visual_data_dir'] 
+    image_dir = os.path.join(visual_data_dir, 'images')
+    label_dir = os.path.join(visual_data_dir, 'labels', 'combined')
+    proj_mat_dir = os.path.join(visual_data_dir, 'proj_mat')
 
 
     # cow_data_dir = os.path.join(dataset_dir, "cow_data", "combined_data")
@@ -99,7 +101,7 @@ if __name__ == '__main__':
 
     # Get UWB distance data
 
-    input_path = os.path.join(dataset_dir, 'measurements','uwb_distance', tag_name , tag_name + '_' + date + ".csv")
+    input_path = os.path.join(sensor_data_dir, 'sub_data','uwb_distance', tag_name , tag_name + '_' + date + ".csv")
     uwb_data = pd.read_csv(input_path).to_numpy()
 
     timestamps = uwb_data[:,0]

@@ -480,24 +480,24 @@ def main(args):
 
         # Read location
         # timestmap x_m y_m z_m
-        location_data_dir = os.path.join(sensor_data_dir, 'processed_data', 'neck_location', tag_name, tag_name + "_" + date + ".csv")
+        location_data_dir = os.path.join(sensor_data_dir, 'main_data', 'uwb', tag_name, tag_name + "_" + date + ".csv")
         loc_df = pd.read_csv(location_data_dir) 
         locations = loc_df[['coord_x_cm', 'coord_y_cm', 'coord_z_cm']].values
         loc_timestamp = loc_df[['timestamp']].values.flatten()
 
         # Read head direction
         # timestamp	roll	pitch	yaw	accel_norm	mag_norm	relative_angle
-        input_file_dir = os.path.join(sensor_data_dir, 'processed_data', 'head_direction', tag_name, tag_name + "_"+ date + ".csv")
+        input_file_dir = os.path.join(sensor_data_dir, 'sub_data', 'head_direction', tag_name, tag_name + "_"+ date + ".csv")
         heading_data = pd.read_csv(input_file_dir).values
         heading_data = downsampling_by_second(heading_data)
 
         # Read lying reference
-        input_file_dir = os.path.join(sensor_data_dir, 'processed_data', 'ankle_lying', cow_name, cow_name + "_"+ date +  ".csv")
+        input_file_dir = os.path.join(sensor_data_dir, 'main_data', 'ankle', cow_name, cow_name + "_"+ date +  ".csv")
         data = pd.read_csv(input_file_dir).values
         lying_ref = np.column_stack((data[:,0], data[:,2]))
 
         # Read CBT
-        input_file_dir = os.path.join(sensor_data_dir, 'measurements', 'vaginal_temperature', cow_name + ".csv")
+        input_file_dir = os.path.join(sensor_data_dir, 'main_data', 'cbt', cow_name + ".csv")
         CBT_data = pd.read_csv(input_file_dir).values
 
         temp_sel_data = []
