@@ -23,7 +23,7 @@ Setup:
 	```
 	git clone https://github.com/hienvuvg/dairycattle_dataset
 	```
-In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
+	In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
 3. [Optional] Create a virtual environment using conda: 
 	```
 	conda create -n mmcows python=3.9
@@ -33,7 +33,7 @@ In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_di
 	```
 	pip3 install -r requirements.txt
 	```
-
+<br />
 There are two options for benchmarking the dataset:\
 A. Test all models using provided weights:
 1. Navigate to your local directory of this repo
