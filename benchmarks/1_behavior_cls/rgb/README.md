@@ -23,7 +23,7 @@ Data Preparation
     ```bash
     cd ./benchmarks/1_behavior_cls/rgb
     ```
-4. Download the dataset [visual_data.zip](https://www.dropbox.com/scl/fi/g9ydufqcxcaxd582sjf0q/visual_data.zip?rlkey=mav7mvqmqy53kz0f180if4e9e&dl=1) (34.4 GB) (15s interval data of 7/25)
+4. Download the dataset [visual_data.zip](https://www.dropbox.com/scl/fi/yiw5khfkzizntooz2if5y/visual_data.zip?rlkey=ncpvn9hn3kh9dbriykacthexy&dl=1) (23 GB) 15s interval visual data of 7/25
 
 5. Extract the zip file in the current working directory, i.e. ```dairycattle_dataset/benchmarks/1_behavior_cls/rgb```.
 
