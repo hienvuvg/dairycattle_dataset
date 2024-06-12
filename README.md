@@ -18,7 +18,7 @@ Benchmarks
 ------
 **Benchmarking of UWB-related models:** <br /> 
 Setup:
-1. Download and upzip ```sensor_data.zip``` and ```visual_data.zip``` to separate folders
+1. Download and upzip sensor_data.zip and visual_data.zip to separate folders
 2. Clone this directory: 
 	```
 	git clone https://github.com/hienvuvg/dairycattle_dataset
@@ -167,7 +167,7 @@ Annotated Visual Data
 Data from a single day 7/25\
 Annotation rules
 
-**Structure of single_day_visual_data.zip**
+**Structure of visual_data.zip**
 ```
 ${ROOT}
 |-- images
