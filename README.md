@@ -24,7 +24,7 @@ Setup:
 	git clone https://github.com/hienvuvg/dairycattle_dataset
 	```
 	In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
-3. [Optional] Create a virtual environment using conda: 
+3. [Optional] Create a virtual environment using [conda](https://docs.anaconda.com/free/miniconda/): 
 	```
 	conda create -n mmcows python=3.9
 	conda activate mmcows
