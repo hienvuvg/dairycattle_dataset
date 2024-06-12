@@ -1,11 +1,17 @@
-
 import ultralytics
 import time
 import torch
 import argparse
+import json
 
 def main():
-    model = ultralytics.YOLO(args.yolov8_path)
+    # Read the JSON config file
+    inference_config_file = 'custom_ultralytics_yolov8/inference_config.json'
+    with open(inference_config_file, 'r') as json_file:
+        inference_config = json.load(json_file)
+    yolov8_path = inference_config['cow_detection_model_path']
+
+    model = ultralytics.YOLO(yolov8_path)
     # data_path = '/nfs/oprabhune/MmCows/vision_data/unlabeled_data/0721/images/0721/cam_1'
     # data_path = '/nfs/oprabhune/MmCows/vision_data/detection/organized_data/fold_1/train/images/cam_1_1690271846_02-57-26.jpg'
     #data_path = '/nfs/oprabhune/MmCows/vision_data/detection/organized_data/fold_1/train/images/cam_1_1690272821_03-13-41.jpg'
@@ -36,6 +42,6 @@ if __name__ == "__main__":
         device = torch.device("cpu")
     parser = argparse.ArgumentParser(description='Inference Pipeline')
     parser.add_argument('--data_path', type=str, required=True, help='Path to the data directory containing images to be inferred')
-    parser.add_argument('--yolov8_path', type=str, default = '/Users/omkar/Library/CloudStorage/OneDrive-purdue.edu/Omkar_research/CPS_dataset/benchmarking/yolov8_cow_detector.pt')
+    # parser.add_argument('--yolov8_path', type=str, default = '/Users/omkar/Library/CloudStorage/OneDrive-purdue.edu/Omkar_research/CPS_dataset/benchmarking/yolov8_cow_detector.pt')
     args = parser.parse_args()
     main()
