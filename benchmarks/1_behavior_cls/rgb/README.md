@@ -23,42 +23,49 @@ Data Preparation
     ```bash
     cd ./benchmarks/1_behavior_cls/rgb
     ```
-4. Download the dataset [visual_data.zip](https://www.dropbox.com/scl/fi/g9ydufqcxcaxd582sjf0q/visual_data.zip?rlkey=mav7mvqmqy53kz0f180if4e9e&dl=1) (34.4 GB) (15s interval data of 7/25)
+4. Download the dataset [visual_data.zip](https://www.dropbox.com/scl/fi/yiw5khfkzizntooz2if5y/visual_data.zip?rlkey=ncpvn9hn3kh9dbriykacthexy&dl=1) (23 GB) 15s interval visual data of 7/25
 
 5. Extract the zip file in the current working directory, i.e. ```dairycattle_dataset/benchmarks/1_behavior_cls/rgb```.
 
-6. Generate data directories required for YOLOv8 object detector training by running the following command
+6. Generate data directories required for training and testing by running the following command
     ```bash
     python data_preparation/vision_data_organization.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/images/0725 --label_dir ./visual_data/labels/combined/0725 --output_dir ./organized_data
     ```
 
-7.1 The labels contain cow IDs too. However, we would like to have an ID-agnostic cow detector. Therefore, we replace cow id with '0', where '0' represent a single object 'cow'
+7. The labels contain cow IDs too. However, we would like to have an ID-agnostic cow detector. Therefore, we replace cow id with '0', where '0' represents a single object 'cow'
     ```bash
     python data_preparation/labels_for_detector.py --dataset_path ./organized_data
     ```
 
-7.2 [Optional]Crop bounding boxes from the images using this script OR [Recommended]download them 'here' and unzip inside '/visual_data'
-    To generate bboxes for behavior classification,
+8. Download the cropped bounding boxes of cows from here: [cropped_bboxes.zip](https://www.dropbox.com/scl/fi/44d79t76i3bm81u3s7dk9/cropped_bboxes.zip?rlkey=needcxkpfw1ujo4i9d4fscb23&dl=1) (13 GB). Unzip inside './visual_data'<br>
+    OR </br>
+   [Optional] Crop bounding boxes from the original images using this script
+   To generate bboxes for behavior classification
     ```bash
     python data_preparation/crop_data_prep/crop_bboxes_7b.py
     ```
-    To generate bboxes for standing and lying cow classification,
+    
+    [Optional] To generate bboxes for standing and lying cow classification
     ```bash
     python data_preparation/crop_data_prep/crop_bboxes_16c.py
     ```
+<br/>
 
-8. Generate data directories required for behvior classifier    
+9. **To skip training and use our trained models for testing and inference, go to [Overall Inference Pipeline](#overall-inference-pipeline). Else, follow the next steps.**
+<br/>
+
+10. Generate data directories required for behavior classifier training
     ```bash
     python data_preparation/classifier_data_preparation.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/cropped_bboxes/behaviors --output_dir ./data_behavior_classification --experiment_type behavior
     ```
 
-9. Generate data directories as required for standing cow classifier    
+11. Generate data directories as required for standing cow classifier training    
     ```bash
     python data_preparation/classifier_data_preparation.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/cropped_bboxes/standing --output_dir ./data_standing_cow_classification --experiment_type cow_id
     ```
 
 
-10. Generate data directories as required for lying cow classifier    
+12. Generate data directories as required for lying cow classifier training   
     ```bash
     python data_preparation/classifier_data_preparation.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/cropped_bboxes/lying --output_dir ./data_lying_cow_classification --experiment_type cow_id
     ```
@@ -74,7 +81,7 @@ Stage 1: Cow Detection
     ```bash
     python cow_detection/train_yolov8.py --data_directory ./organized_data --epochs 20 --batch_size 16
     ```
-    This will train the yolov8 model for all the folds in ./organized data.
+    This will train the yolov8 model for all the folds in ./organized_data.
 
 
 2. Testing:
@@ -134,9 +141,9 @@ Stage 3: Cow Identification
 
 <br />
 
-Overall Inference Pipeline
+### Overall Inference Pipeline
 ------
-1. Use the models trained in the previous steps by entering the paths of trained weight files in the config file below. Alternatively, the trained weights can be downloaded from [here](https://purdue0-my.sharepoint.com/:u:/g/personal/oprabhun_purdue_edu/ERgvtswYqrlAm8yCn2SutekB6DYBvxc5ZDexZVXr-XHyJQ?e=nCEZUL).  <br />
+1. Inference pipeline can be run either using the models trained in the previous steps or using the trained weights that can be downloaded from [here](https://purdue0-my.sharepoint.com/:u:/g/personal/oprabhun_purdue_edu/ERgvtswYqrlAm8yCn2SutekB6DYBvxc5ZDexZVXr-XHyJQ?e=nCEZUL).  <br />
 Code adapted from https://github.com/ultralytics/ultralytics.
 1. Enter the configurations in ```./custom_ultralytics_yolov8/inference_config.json```
     
@@ -148,7 +155,7 @@ Code adapted from https://github.com/ultralytics/ultralytics.
     
 2. Run the following command
     ```
-    python pipeline.py --data_path ./organized/fold_1/test/images
+    python pipeline.py --data_path ./organized_data/fold_1/test/images
     ```
     Each image will produce ```.txt``` files per test image with the same filename at the location mentioned in ```save_preds_directory```. Each row corresponds to a detected object, and has the following format:
 
