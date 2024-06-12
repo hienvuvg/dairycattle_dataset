@@ -138,7 +138,7 @@ The table of data size and info.
 | Data  | Description | Sampling | Duration    |
 |-------------|-----------|----------|----------|
 | ```uwb``` | 3D neck location of the cows | 15 s  | 14 d    |
-| ```immu```    | Acceleration, magnetic, and pessure recorded by the neck tags | 0.1 s | 14 d   |
+| ```immu```    | Acceleration and magnetic recorded by the neck tags | 0.1 s | 14 d   |
 | ```pressure``` | Ambient air pressure at the cow neck | 0.1 s  | 14 d    |
 |```cbt```   | Core body temperature measured by the varginal temperature sensor | 60 s    | 14 d |
 | ```ankle``` | ow's lying behavior calculated from the ankle acceleration | 60 s  | 14 d   |
@@ -148,7 +148,7 @@ The table of data size and info.
 | ```uwb_distance``` | Distance from the tag to the anchors | 15 s  | 14 d |
 |```head_direction```| Head direction calculated using tilt-compensated eCompass | 10 Hz|14 d| 
 | ```ankle_accel``` | Ankle acceleration from ankle sensors | 60 s  | 14 d   |
-|```visual_location``` | Cow's 3D body location computed from the annotated data using optimization-based localization | 15 s | 1 d | 
+|```visual_location``` | 3D body location computed from the annotated data | 15 s | 1 d | 
 |```health_info``` | Health information of the cows | - | 14 d | 
 |```individual```| Manually annotated individual behaviors of the cows  | 1 s | 1 d | 
 
