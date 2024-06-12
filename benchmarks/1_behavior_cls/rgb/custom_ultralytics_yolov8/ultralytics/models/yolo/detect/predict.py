@@ -26,7 +26,7 @@ else:
 
 
 
-inference_config_file = 'inference_config.json'
+inference_config_file = 'custom_ultralytics_yolov8/inference_config.json'
 
 # Read the JSON config file
 with open(inference_config_file, 'r') as json_file:
