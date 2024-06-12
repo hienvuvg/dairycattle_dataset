@@ -37,12 +37,13 @@ Data Preparation
     python data_preparation/labels_for_detector.py --dataset_path ./organized_data
     ```
 
-7.2 [Optional]Crop bounding boxes from the images using this script OR [Recommended]download them 'here' and unzip inside '/visual_data'
-    To generate bboxes for behavior classification,
+7.2 [Optional]Crop bounding boxes from the images using this script OR **[Recommended]**download them 'here' and unzip inside '/visual_data'<br>
+    To generate bboxes for behavior classification
     ```bash
     python data_preparation/crop_data_prep/crop_bboxes_7b.py
     ```
-    To generate bboxes for standing and lying cow classification,
+    <br>
+    To generate bboxes for standing and lying cow classification
     ```bash
     python data_preparation/crop_data_prep/crop_bboxes_16c.py
     ```
