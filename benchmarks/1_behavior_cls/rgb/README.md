@@ -27,39 +27,43 @@ Data Preparation
 
 5. Extract the zip file in the current working directory, i.e. ```dairycattle_dataset/benchmarks/1_behavior_cls/rgb```.
 
-6. Generate data directories required for YOLOv8 object detector training by running the following command
+6. Generate data directories required for training and testing by running the following command
     ```bash
     python data_preparation/vision_data_organization.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/images/0725 --label_dir ./visual_data/labels/combined/0725 --output_dir ./organized_data
     ```
 
-7.1 The labels contain cow IDs too. However, we would like to have an ID-agnostic cow detector. Therefore, we replace cow id with '0', where '0' represent a single object 'cow'
+7. The labels contain cow IDs too. However, we would like to have an ID-agnostic cow detector. Therefore, we replace cow id with '0', where '0' represents a single object 'cow'
     ```bash
     python data_preparation/labels_for_detector.py --dataset_path ./organized_data
     ```
 
-7.2 [Optional]Crop bounding boxes from the images using this script OR **[Recommended]**download them 'here' and unzip inside '/visual_data'<br>
-    To generate bboxes for behavior classification
+8. Download the cropped bounding boxes of cows from here: [cropped_bboxes.zip](https://www.dropbox.com/scl/fi/44d79t76i3bm81u3s7dk9/cropped_bboxes.zip?rlkey=needcxkpfw1ujo4i9d4fscb23&dl=1) (13 GB). Unzip inside './visual_data'<br>
+    OR </br>
+   [Optional] Crop bounding boxes from the original images using this script
+   To generate bboxes for behavior classification
     ```bash
     python data_preparation/crop_data_prep/crop_bboxes_7b.py
     ```
-    <br>
-    To generate bboxes for standing and lying cow classification
+    
+    [Optional] To generate bboxes for standing and lying cow classification
     ```bash
     python data_preparation/crop_data_prep/crop_bboxes_16c.py
     ```
 
-8. Generate data directories required for behvior classifier    
+9. To skip training and use our trained models, go to [Overall Inference Pipeline](#overall-inference-pipeline)
+
+9. Generate data directories required for behavior classifier training and testing   
     ```bash
     python data_preparation/classifier_data_preparation.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/cropped_bboxes/behaviors --output_dir ./data_behavior_classification --experiment_type behavior
     ```
 
-9. Generate data directories as required for standing cow classifier    
+10. Generate data directories as required for standing cow classifier    
     ```bash
     python data_preparation/classifier_data_preparation.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/cropped_bboxes/standing --output_dir ./data_standing_cow_classification --experiment_type cow_id
     ```
 
 
-10. Generate data directories as required for lying cow classifier    
+11. Generate data directories as required for lying cow classifier    
     ```bash
     python data_preparation/classifier_data_preparation.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/cropped_bboxes/lying --output_dir ./data_lying_cow_classification --experiment_type cow_id
     ```
@@ -135,7 +139,7 @@ Stage 3: Cow Identification
 
 <br />
 
-Overall Inference Pipeline
+### Overall Inference Pipeline
 ------
 1. Use the models trained in the previous steps by entering the paths of trained weight files in the config file below. Alternatively, the trained weights can be downloaded from [here](https://purdue0-my.sharepoint.com/:u:/g/personal/oprabhun_purdue_edu/ERgvtswYqrlAm8yCn2SutekB6DYBvxc5ZDexZVXr-XHyJQ?e=nCEZUL).  <br />
 Code adapted from https://github.com/ultralytics/ultralytics.
