@@ -34,7 +34,8 @@ Setup:
 	pip install -r requirements.txt
 	```
 <br />
-There are two options for benchmarking the dataset:\
+There are two options for benchmarking the dataset:
+
 A. Test all models using provided weights:
 1. Navigate to your local directory of this repo
 2. To evaluate the performance of the modalities, run
