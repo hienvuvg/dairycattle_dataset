@@ -3,7 +3,7 @@
 
 <!--What this is\-->
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.\
-[Overview](https://hienvuvg.github.io/mmcows/)\
+<!--[Overview](https://hienvuvg.github.io/mmcows/)\-->
 **Download links:**
 * [sensor_data.zip](https://www.dropbox.com/scl/fi/k2qikwjw8lamm5u8w8m76/sensor_data.zip?rlkey=x897xeha714nsd0m16tphqbyb&dl=1) (18 GB) Data from wearable sensors
 * [visual_data.zip](https://www.dropbox.com/scl/fi/yiw5khfkzizntooz2if5y/visual_data.zip?rlkey=ncpvn9hn3kh9dbriykacthexy&dl=1) (23 GB) 15s interval visual data of 7/25
@@ -132,7 +132,7 @@ ${ROOT}
 **Data description**
 
 
-| Data  | Description | Sampling | Duration |
+| Data  | Description | Interval | Duration |
 |-------------|-----------|--|--|
 | ```uwb``` | 3D neck location of the cows | 15 s  | 14 d    |
 | ```immu```    | Acceleration and magnetic recorded by the neck tags | 0.1 s | 14 d   |
