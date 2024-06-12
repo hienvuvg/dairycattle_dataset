@@ -31,6 +31,7 @@ Setup:
 	```
 4. Install all dependencies using python (3.8 or 3.11, idealy 3.9) before running the test:
 	```
+	cd dairycattle_dataset
 	pip install -r requirements.txt
 	```
 <br />
