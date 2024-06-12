@@ -20,27 +20,42 @@ Benchmarks
 Setup:
 1. Download and upzip ```sensor_data.zip``` and ```visual_data.zip``` to separate folders
 1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
-2. Install all dependencies using python 3.8 or 3.11, idealy 3.9 before running the test:<br>```pip3 install -r requirements.txt```
+2. Install all dependencies using python 3.8 or 3.11, idealy 3.9 before running the test:
+	```
+	pip3 install -r requirements.txt
+	```
 3. Clone this directory: 
 	```
 	git clone https://github.com/hienvuvg/dairycattle_dataset
 	```
 3. [Optional] Create a virtual environment using conda: 
-	```bash 
+	```
 	conda create -n mmcows python=3.9
 	conda activate mmcows
 	```
 
 There are two options for benchmarking the dataset:\
 A. Test all models using provided weights:
-1. Navigate to your local directory of this repo: ```cd dairycattle_dataset```
-2. To evaluate the performance of the modalities, run ```sh test_all_moda.sh```
-1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```sh test_behaviors.sh```
+1. Navigate to your local directory of this repo
+2. To evaluate the performance of the modalities, run
+	```
+	sh test_all_moda.sh
+	```
+1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run
+	```
+	sh test_behaviors.sh
+	```
 
 B. Train and test all models from scratch:
-1. Navigate to your local directory of this repo: ```cd dairycattle_dataset```
-2. To evaluate the performance of the modalities, run ```sh train_test_all_moda.sh```
-1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run ```sh train_test_behaviors.sh```
+1. Navigate to your local directory of this repo
+2. To evaluate the performance of the modalities, run
+	```
+	sh train_test_all_moda.sh
+	```
+1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run
+	```
+	sh train_test_behaviors.sh
+	```
 
 Note:
 * In the scripts, s1 = OS (object-wise split), s2 = TS (temporal split)
