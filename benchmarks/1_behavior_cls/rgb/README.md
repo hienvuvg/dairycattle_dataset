@@ -49,8 +49,10 @@ Data Preparation
     ```bash
     python data_preparation/crop_data_prep/crop_bboxes_16c.py
     ```
+<br/>
 
 9. **To skip training and use our trained models for testing and inference, go to [Overall Inference Pipeline](#overall-inference-pipeline). Else, follow the next steps.**
+<br/>
 
 10. Generate data directories required for behavior classifier training
     ```bash
