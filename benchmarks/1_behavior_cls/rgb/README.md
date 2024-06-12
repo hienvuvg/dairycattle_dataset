@@ -50,20 +50,20 @@ Data Preparation
     python data_preparation/crop_data_prep/crop_bboxes_16c.py
     ```
 
-9. To skip training and use our trained models, go to [Overall Inference Pipeline](#overall-inference-pipeline)
+9. To skip training and use our trained models for testing and inference, go to [Overall Inference Pipeline](#overall-inference-pipeline). Else, follow the next steps.
 
-9. Generate data directories required for behavior classifier training and testing   
+10. Generate data directories required for behavior classifier training
     ```bash
     python data_preparation/classifier_data_preparation.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/cropped_bboxes/behaviors --output_dir ./data_behavior_classification --experiment_type behavior
     ```
 
-10. Generate data directories as required for standing cow classifier    
+11. Generate data directories as required for standing cow classifier training    
     ```bash
     python data_preparation/classifier_data_preparation.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/cropped_bboxes/standing --output_dir ./data_standing_cow_classification --experiment_type cow_id
     ```
 
 
-11. Generate data directories as required for lying cow classifier    
+12. Generate data directories as required for lying cow classifier training   
     ```bash
     python data_preparation/classifier_data_preparation.py --data_splits_config_file ../../../configs/config_s2.json --image_dir ./visual_data/cropped_bboxes/lying --output_dir ./data_lying_cow_classification --experiment_type cow_id
     ```
@@ -141,7 +141,7 @@ Stage 3: Cow Identification
 
 ### Overall Inference Pipeline
 ------
-1. Use the models trained in the previous steps by entering the paths of trained weight files in the config file below. Alternatively, the trained weights can be downloaded from [here](https://purdue0-my.sharepoint.com/:u:/g/personal/oprabhun_purdue_edu/ERgvtswYqrlAm8yCn2SutekB6DYBvxc5ZDexZVXr-XHyJQ?e=nCEZUL).  <br />
+1. Inference pipeline can be run either using the models trained in the previous steps or using the trained weights that can be downloaded from [here](https://purdue0-my.sharepoint.com/:u:/g/personal/oprabhun_purdue_edu/ERgvtswYqrlAm8yCn2SutekB6DYBvxc5ZDexZVXr-XHyJQ?e=nCEZUL).  <br />
 Code adapted from https://github.com/ultralytics/ultralytics.
 1. Enter the configurations in ```./custom_ultralytics_yolov8/inference_config.json```
     
