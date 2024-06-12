@@ -151,6 +151,7 @@ Code adapted from https://github.com/ultralytics/ultralytics.
     ```behav_model_path```: Path to behavior classification model trained weights file <br />
     ```standing_ID_model_path```: Path to non-lying cow classification model trained weights file <br />
     ```lying_ID_model_path```: Path to lying cow classification model trained weights file <br />
+    ```cow_detection_model_path```: Path to yolov8 cow detection model trained weights file <br />
     ```save_preds_directory```: Path to the directory where the results will be stored <br />
     
 2. Run the following command
