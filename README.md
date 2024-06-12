@@ -29,9 +29,9 @@ Setup:
 	conda create -n mmcows python=3.9
 	conda activate mmcows
 	```
-4. Install all dependencies using python 3.8 or 3.11, idealy 3.9 before running the test:
+4. Install all dependencies using python (3.8 or 3.11, idealy 3.9) before running the test:
 	```
-	pip3 install -r requirements.txt
+	pip install -r requirements.txt
 	```
 <br />
 There are two options for benchmarking the dataset:\
