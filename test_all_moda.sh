@@ -1,7 +1,7 @@
 # @Author: mac
 # @Date:   2024-05-09 23:13:16
-# @Last Modified by:   hien
-# @Last Modified time: 2024-06-10 11:27:18
+# @Last Modified by:   mac
+# @Last Modified time: 2024-06-12 09:55:42
 
 
 # Check if Python is installed
@@ -14,10 +14,11 @@ else
     exit 1
 fi
 
-cd 
+# cd 
 
 # Get the directory of the current script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# DIR="$PWD"
 
 # Navigate to the directory of the script
 cd "$DIR"
@@ -43,8 +44,8 @@ $python_cmd ./benchmarks/1_behavior_cls/uwb_hd_akl/test_uwb_hd_akl_s2.py --path_
 
 
 # S-RGB and M-RGB evaluation
-# $python_cmd ./benchmarks/1_behavior_cls/rgb/eval/eval_srgb_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
-# $python_cmd ./benchmarks/1_behavior_cls/rgb/eval/eval_mrgb_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
+$python_cmd ./benchmarks/1_behavior_cls/rgb/eval/eval_srgb_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
+$python_cmd ./benchmarks/1_behavior_cls/rgb/eval/eval_mrgb_s2.py --path_dir "$YAML_DIR" --config_dir "$S2_JSON_DIR"
 
 
 echo "-------TESTING HAS BEEN COMPLETED------"

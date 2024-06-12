@@ -1,7 +1,7 @@
 # @Author: mac
 # @Date:   2024-05-09 23:13:16
 # @Last Modified by:   mac
-# @Last Modified time: 2024-06-07 12:31:56
+# @Last Modified time: 2024-06-12 10:04:27
 
 
 # Check if Python is installed
@@ -14,7 +14,7 @@ else
     exit 1
 fi
 
-cd 
+# cd 
 
 # Get the directory of the current script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
