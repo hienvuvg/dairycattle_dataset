@@ -120,8 +120,8 @@ ${ROOT}
 |   |-- weather
 |   |-- milk
 |-- sub_data
-|   |-- head_direction
 |   |-- uwb_distance
+|   |-- head_direction
 |   |-- ankle_accel
 |   |-- visual_location
 |   |-- health_records
@@ -138,19 +138,20 @@ The table of data size and info.
 | Data  | Description | Frequency| Duration    |
 |-------------|-----------|----------|----------|
 | ```uwb``` | 3D neck location of the cows | Every 15 s  | 14 days    |
-| ```pressure``` | Ambient air pressure at the cow neck | 10 Hz  | 14 days    |
-| ```uwb_distance``` | Distance from the tag to the anchors | Every 15 s  | 14 days    |
 | ```immu```    | Acceleration, magnetic, and pessure recorded by the neck tags | 10Hz | 14 days   |
-| ```ankle_accel``` | Ankle acceleration from ankle sensors |Every 1 m  | 14 days   |
-|```head_direction```| Head direction calculated using tilt-compensated eCompass | 10 Hz|14 days| 
-|```ankle_lying``` | Cow's lying behavior calculated from the ankle acceleration using K-mean clustering | Every 1 m | 14 days | 
-|```visual_location``` | Cow's 3D body location computed from the annotated data using optimization-based localization | Every 15 s | 1 day | 
-|```individual```| Manually annotated individual behaviors of the cows  | 1 Hz| 1 day | 
+| ```pressure``` | Ambient air pressure at the cow neck | 10 Hz  | 14 days    |
 |```cbt```   | Core body temperature measured by the varginal temperature sensor | Every 1 m    | 14 days |
-|```milk_production```    | Daily milk yield of each cow in kg | Daily  | 14 days | 
+| ```ankle``` | ow's lying behavior calculated from the ankle acceleration |Every 1 m  | 14 days   |
+| ```thi``` | Temperature, humidity, and THI around the pen |Every 1 m  | 14 days   |
+|```weather```  |  Outdoor weather collected by a near by weather station | Every 3 m    | 14 days | 
+|```milk```    | Daily milk yield of each cow in kg | Daily  | 14 days | 
+| ```uwb_distance``` | Distance from the tag to the anchors | Every 15 s  | 14 days    |
+|```head_direction```| Head direction calculated using tilt-compensated eCompass | 10 Hz|14 days| 
+| ```ankle_accel``` | Ankle acceleration from ankle sensors |Every 1 m  | 14 days   |
+|```visual_location``` | Cow's 3D body location computed from the annotated data using optimization-based localization | Every 15 s | 1 day | 
 |```health_info``` | Health information of the cows | Periodically | 14 days | 
-|```indoor_condition```  | Temperature and humidity around the pen | Every 1 m | 14 days | 
-|```outdoor_weather```  |  Outdoor weather collected by a near by weather station | Every 3 m    | 14 days | 
+|```individual```| Manually annotated individual behaviors of the cows  | 1 Hz| 1 day | 
+
 
 Vision-related and manually annotated data is available for all 16 cows while data from wearable sensors is available for cow #1 to #10.
 
