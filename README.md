@@ -39,22 +39,22 @@ There are two options for benchmarking the dataset:
 
 A. Test all models using the provided weights:
 1. Navigate to your local directory of this repo
-2. To evaluate the performance of the modalities, run
+2. To evaluate the performance of the modalities
 	```
 	sh test_all_moda.sh
 	```
-1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run
+1. To show the correlations between cows' behavior changes and THI thoughout the deployment
 	```
 	sh test_behaviors.sh
 	```
 
 B. Train and test all models from scratch:
 1. Navigate to your local directory of this repo
-2. To evaluate the performance of the modalities, run
+2. To evaluate the performance of the modalities
 	```
 	sh train_test_all_moda.sh
 	```
-1. To show the correlations between cows' behavior changes and THI thoughout the deployment, run
+1. To show the correlations between cows' behavior changes and THI thoughout the deployment
 	```
 	sh train_test_behaviors.sh
 	```
