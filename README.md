@@ -135,8 +135,8 @@ Explaining what each folder contains.
 **Text**\
 The table of data size and info.
 
-| Data  | Description | Sampling | Duration    |
-|-------------|-----------|----------|----------|
+| Data  | Description | Sampling | Duration |
+|-------------|-----------|--|--|
 | ```uwb``` | 3D neck location of the cows | 15 s  | 14 d    |
 | ```immu```    | Acceleration and magnetic recorded by the neck tags | 0.1 s | 14 d   |
 | ```pressure``` | Ambient air pressure at the cow neck | 0.1 s  | 14 d    |
