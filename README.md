@@ -146,7 +146,7 @@ The table of data size and info.
 |```weather```  |  Outdoor weather collected by a near by weather station |  300 s  | 14 d | 
 |```milk```    | Daily milk yield of each cow in kg | 1 d  | 14 d | 
 | ```uwb_distance``` | Distance from the tag to the anchors | 15 s  | 14 d |
-|```head_direction```| Head direction calculated using tilt-compensated eCompass | 10 Hz|14 d| 
+|```head_direction```| Head direction calculated using tilt-compensated eCompass | 0.1 s|14 d| 
 | ```ankle_accel``` | Ankle acceleration from ankle sensors | 60 s  | 14 d   |
 |```visual_location``` | 3D body location computed from the annotated data | 15 s | 1 d | 
 |```health_info``` | Health information of the cows | - | 14 d | 
