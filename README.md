@@ -21,7 +21,10 @@ Setup:
 1. Download and upzip ```sensor_data.zip``` and ```visual_data.zip``` to separate folders
 1. Clone this repo to your local directory. In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
 2. Install all dependencies using python 3.8 or 3.11, idealy 3.9 before running the test:<br>```pip3 install -r requirements.txt```
-3. Clone this directory: ```bash git clone https://github.com/hienvuvg/dairycattle_dataset```
+3. Clone this directory: 
+	```
+	git clone https://github.com/hienvuvg/dairycattle_dataset
+	```
 3. [Optional] Create a virtual environment using conda: 
 	```bash 
 	conda create -n mmcows python=3.9
