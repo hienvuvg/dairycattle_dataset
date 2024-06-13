@@ -219,7 +219,7 @@ ${ROOT}
 * ```15s_interval_images``` (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
 * ```1s_interval_videos``` (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos) (319GB/zip):  
 * ```1s_interval_combined_view_videos``` (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
-* [cow_gallery.zip](): High-res photos of cows from various angles for references
+* [cow_gallery.zip](https://www.dropbox.com/scl/fi/zni1huben6kdtboi0dkn2/cow_gallery.zip?rlkey=7vagfppu9o0guz9pzzqixgttt&dl=1): High-res photos of cows from various angles for references
 
 <br />
 
