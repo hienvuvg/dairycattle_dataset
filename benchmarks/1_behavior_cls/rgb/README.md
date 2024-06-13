@@ -174,7 +174,7 @@ Evaluation
 ------
 
 
-1. Set the value of the key ```visual_data_dir``` in ```./eval/private/path.yaml``` same as the directory containg the prediction files. That is, it will be same as the location mentioned for the key ```save_preds_directory```  in ```./custom_ultralytics_yolov8/inference_config.json```. This location stores the results produced by the previous command for running the inference pipeline. 
+1. Set the value of the key ```pred_label_dir``` in ```./eval/private/path.yaml``` same as the directory containg the prediction files. That is, it will be same as the location mentioned for the key ```save_preds_directory```  in ```./custom_ultralytics_yolov8/inference_config.json```. This location stores the results produced by the previous command for running the inference pipeline. 
 
 2. In order to evaluate the performance of single view vision pipeline (i.e. RGBs), we compare the predicted labels with the ground truth using the following command:
     ```
