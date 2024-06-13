@@ -28,6 +28,7 @@ else:
 
 inference_config_file = 'custom_ultralytics_yolov8/inference_config.json'
 
+
 # Read the JSON config file
 with open(inference_config_file, 'r') as json_file:
     inference_config = json.load(json_file)
@@ -200,11 +201,9 @@ lying_ID_preprocess = create_preprocess(mean_lying_ID, std_lying_ID)
 
 # Create the directory if it does not exist
 os.makedirs(save_preds_directory, exist_ok=True)
-
-"""
 for sub_dir in ['cam_1', 'cam_2', 'cam_3', 'cam_4']:
     os.makedirs(f"{save_preds_directory}/{sub_dir}", exist_ok=True)
-"""
+
 
 def behav_and_id(results, orig_img, filename):
         # Process each detected object
@@ -273,10 +272,10 @@ def behav_and_id(results, orig_img, filename):
             custom_result_list = remove_duplicate_bboxes(custom_result_list)
             # print('Results 2 : ' , custom_result_list)
             text_filename = os.path.splitext(os.path.basename(filename))[0]
-            # cam_directory = text_filename[0:5]
+            cam_directory = text_filename[0:5]
             text_filename = text_filename[6:]
             # Open the file in write mode
-            with open(f'{save_preds_directory}/{text_filename}.txt', 'w') as file:
+            with open(f'{save_preds_directory}/{cam_directory}/{text_filename}.txt', 'w') as file:
                 for sublist in custom_result_list:
                     # Join the elements of the sublist into a space-separated string
                     line = ' '.join(map(str, sublist))
