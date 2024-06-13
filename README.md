@@ -132,7 +132,7 @@ ${ROOT}
 
 | Data  | Description | Interval | Duration |
 |-------------|-----------|--|--|
-| ```uwb``` | 3D neck location of the cows computed from the ```uwb_distance``` | 15 s  | 14 d    |
+| ```uwb``` | 3D neck location of the cows computed from ```uwb_distance``` | 15 s  | 14 d    |
 | ```immu```| Acceleration and magnetic at the neck of the cows | 0.1 s | 14 d   |
 | ```pressure``` | Ambient air pressure at the cows' neck | 0.1 s  | 14 d    |
 |```cbt```   | Core body temperature of the cow | 60 s    | 14 d |
