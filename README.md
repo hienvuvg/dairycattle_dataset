@@ -6,7 +6,7 @@ This dataset includes two parts: data from wearable sensors and visual data from
 <!--[Overview](https://hienvuvg.github.io/mmcows/)\-->
 **Download links:**
 * [sensor_data.zip](https://www.dropbox.com/scl/fi/k2qikwjw8lamm5u8w8m76/sensor_data.zip?rlkey=x897xeha714nsd0m16tphqbyb&dl=1) (18 GB) 14-day data from wearable sensors
-* [visual_data.zip](https://www.dropbox.com/scl/fi/yiw5khfkzizntooz2if5y/visual_data.zip?rlkey=ncpvn9hn3kh9dbriykacthexy&dl=1) (23 GB) 15s-interval visual data on 7/25
+* [visual_data.zip](https://www.dropbox.com/scl/fi/9wm047u96gnhgf4g3i381/visual_data.zip?rlkey=w06ifb1rso516oqhnt08sdclc&dl=1) (23 GB) 15s-interval visual data on 7/25
 * [cropped_bboxes.zip](https://www.dropbox.com/scl/fi/44d79t76i3bm81u3s7dk9/cropped_bboxes.zip?rlkey=needcxkpfw1ujo4i9d4fscb23&dl=1) (13 GB) cropped bounding boxes of cows for the training of behavior classification, lying cow identification, and non-lying cow identification
 * Visual data of 14 days with sampling rates of 1s and 15s is provided in multiple mp4 and zip files
 
