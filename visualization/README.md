@@ -13,3 +13,17 @@
 
 Note: Use ```--help``` to show config options.
 
+```
+${ROOT}
+|-- images
+    |-- 0721
+    |   |-- cam_1
+    |   |-- cam_2
+    |   |-- cam_3
+    |   |-- cam_4
+    |-- 0722
+    |-- 0723
+    |-- ...
+    |-- 0803
+    |-- 0804
+```
