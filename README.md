@@ -144,7 +144,7 @@ ${ROOT}
 |```head_direction```| Head direction calculated using tilt-compensated eCompass | 0.1 s|14 d| 
 | ```ankle_accel``` | Ankle acceleration from ankle sensors | 60 s  | 14 d   |
 |```visual_location``` | 3D body location computed from the annotated data | 15 s | 1 d | 
-|```health_info``` | Health information of the cows | - | 14 d | 
+|```health_info``` | Health information of the cows | - | - | 
 |```individual```| Manually annotated individual behaviors of the cows  | 1 s | 1 d | 
 
 
