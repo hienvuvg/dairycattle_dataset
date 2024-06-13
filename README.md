@@ -144,7 +144,7 @@ ${ROOT}
 |```head_direction```| Head direction calculated from the ```immu``` data | 0.1 s|14 d| 
 | ```ankle_accel``` | Ankle acceleration recorded by ankle sensors | 60 s  | 14 d   |
 |```visual_location``` | 3D body location computed from the annotated visual data | 15 s | 1 d | 
-|```health_info``` | Health records of the cows | - | - | 
+|```health_records``` | Health records of the cows | - | - | 
 |```individual```| Manually annotated behavior labels of the cows  | 1 s | 1 d | 
 
 
