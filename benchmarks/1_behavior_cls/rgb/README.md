@@ -172,16 +172,15 @@ Code adapted from https://github.com/ultralytics/ultralytics.
 Evaluation
 ------
 
-1. In ```./eval/private/path.yaml```, modify ```sensor_data_dir```, ```visual_data_dir```, and ```pred_label_dir``` to your local directories of the respective folders
 
-2. In order to evaluate the performance of single view vision pipeline (i.e. RGBs), we compare the predicted labels with the ground truth using the following command:
+1. In order to evaluate the performance of single view vision pipeline (i.e. RGBs), we compare the predicted labels with the ground truth using the following command:
     ```
     python ./eval/eval_srgb_s2.py 
     ```
 
     Running the above command prints the F-1 scores for all the behaviors for single-view vision pipeline (RGBs).
 
-3. To evaluate the performance of multi-view vision pipeline (i.e. mRGB), use the following command:
+2. To evaluate the performance of multi-view vision pipeline (i.e. mRGB), use the following command:
     ```
     python ./eval/eval_mrgb_s2.py
     ```
