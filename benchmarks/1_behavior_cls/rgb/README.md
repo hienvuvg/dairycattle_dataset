@@ -15,14 +15,16 @@ Data Preparation
     cd dairycattle_dataset
     ```
 
-2. Install the required packages 
-    ```bash
-    pip3 install -r requirements.txt
-    ```
-3. Change the working directory to ```./benchmarks/1_behavior_cls/rgb```.
+2. Change the working directory to ```./benchmarks/1_behavior_cls/rgb```.
     ```bash
     cd ./benchmarks/1_behavior_cls/rgb
     ```
+    
+3. Install the required packages 
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+    
 4. Download sensor_data.zip, visual_data.zip, cropped_bboxes.zip, and trained_model_weights.zip from [this page](https://github.com/hienvuvg/dairycattle_dataset)
 
 5. Extract visual_data.zip in the current working directory, i.e. ```dairycattle_dataset/benchmarks/1_behavior_cls/rgb```.
