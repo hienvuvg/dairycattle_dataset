@@ -176,8 +176,6 @@ ${ROOT}
 |-- behavior_labels
 |   |-- individual
 |-- visual_location
-|-- crop_profiles
-|-- cows_gallery
 ```
 
 **Data description**
@@ -186,11 +184,9 @@ ${ROOT}
 |-------------|-----------|----------|----------|
 | ```images``` | UWB-syned isometric-view images where the other unrelated pens are masked out | 15 s | 1 d   |
 | ```labels```    | Annotated cow ID and bbox of individual cows in camera view, formated as ```[cow_id, x,y,w,h]```. Separated in three sets: standing cows only, lying cow only, or both standing and lying cows | 15 s | 1 d  | 
-| ```proj_mat``` | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | -| -   |
+| ```proj_mat``` | Matrices for projecting a 3D world location to a 2D pixel location | -| -   |
 | ```behavior_labels``` |   | 1 s | 1 d   |
 | ```visual_location``` | 3D locations of cow body derived from ```labels``` using visual localization | 15 s | 1 d  |
-| ```crop_profiles``` | Pixel locations in each camera view for masking the images | - | -  |
-| ```cows_gallery``` | High-res photos of cows from various angles for references | - | -   |
 
 
 
@@ -206,28 +202,25 @@ UWB-Synced Visual Data (15s interval)
 
 Data from multiple days, from 7/21 to 8/04
 
-**Structure of multi_day_visual_data.zip**
+**Structure of uwb_synced_frames.zip**
 ```
 ${ROOT}
 |-- images
-|-- projection_matrix
+|-- proj_mat
 |-- crop_profiles
-|-- cows_gallery
 ```
 
 | Data  | Description | Interval | Duration    |
 |-------------|-----------|-----------|----------|
-| ```images```| 14x20k UWB-synchronized 15s-interval images | 15 s | 14 day  |  
-| ```proj_mat```  | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | - | 14 days  |
-| ```crop_profiles```  | Pixel locations in each camera view fr masking images | - | - | 
-| ```cow_gallery```  | 500 photos of the cows taken from different angles using phone cameras | - | -  |
-
+| ```images```| UWB-synced isometric-view images of 4 cameras | 15 s | 14 d  |  
+| ```proj_mat```  | Matrices for projecting a 3D world location to a 2D pixel location | - | 14 d  |
+| ```crop_profiles``` | Pixel locations in each camera view for masking the images | - | -  |
 
 **Multiple sets of visual data:**
 * ```15s_interval_images``` (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
 * ```1s_interval_videos``` (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos) (319GB/zip):  
 * ```1s_interval_combined_view_videos``` (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
-
+* ```cows_gallery```: High-res photos of cows from various angles for references
 
 <br />
 
