@@ -68,8 +68,6 @@ Note:
 
 <br />
 
-<mark>Note: The content below is currently being revisied</mark>
-------
 
 
 Sensor Data
@@ -164,8 +162,7 @@ Time index format is unix timestamp. When converting unix timestamp to datetime,
 Annotated Visual Data
 ------
 
-Data from a single day 7/25\
-Annotation rules
+Data from a single day 7/25
 
 **Structure of visual_data.zip**
 ```
@@ -176,19 +173,30 @@ ${ROOT}
 |   |-- lying
 |   |-- combined
 |-- proj_mat
+|-- behavior_labels
+|   |-- individual
 |-- visual_location
 |-- crop_profiles
+|-- cows_gallery
 ```
+
+**Data description**
 
 | Data  | Description | Interval | Duration    |
 |-------------|-----------|----------|----------|
-| ```images``` | 20k UWB-synchronized 15s-interval images where the other pens with unrelated cows are masked out | 15 s | 1 day   |
-| ```labels```    | bbox position with cow_id of each cow in the camera views, formated in image ratio ```[x,y,w,h]```, separated in three sets: standing cows only, lying cow only, or both standing and lying cows | 15 s | 1 day  | 
-| ```proj_mat``` | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A| 1 day   |
-| ```visual_location``` | 3D location of each cow's body computed from the bboxes in 4 camera views using AdaGrad | 15 s | 1 day  |
-| ```crop_profiles``` | Pixel locations in each camera view for masking images | N/A | N/A  |
+| ```images``` | UWB-syned isometric-view images where the other unrelated pens are masked out | 15 s | 1 d   |
+| ```labels```    | Annotated cow ID and bbox of individual cows in camera view, formated as ```[cow_id, x,y,w,h]```. Separated in three sets: standing cows only, lying cow only, or both standing and lying cows | 15 s | 1 d  | 
+| ```proj_mat``` | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | -| -   |
+| ```behavior_labels``` |   | 1 s | 1 d   |
+| ```visual_location``` | 3D locations of cow body derived from ```labels``` using visual localization | 15 s | 1 d  |
+| ```crop_profiles``` | Pixel locations in each camera view for masking the images | - | -  |
+| ```cows_gallery``` | High-res photos of cows from various angles for references | - | -   |
 
-[1s_interval_images.zip](link3) that is
+
+
+<br />
+<mark>Note: The content below is currently being revisied</mark>
+------
 
 <br />
 
@@ -209,9 +217,9 @@ ${ROOT}
 | Data  | Description | Interval | Duration    |
 |-------------|-----------|-----------|----------|
 | ```images```| 14x20k UWB-synchronized 15s-interval images | 15 s | 14 day  |  
-| ```proj_mat```  | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | N/A | 14 days  |
-| ```crop_profiles```  | Pixel locations in each camera view fr masking images | N/A | N/A | 
-| ```cow_gallery```  | 500 photos of the cows taken from different angles using phone cameras | N/A | N/A  |
+| ```proj_mat```  | Matrices for projecting a 3D world coordinate to a pixel location in each camera view | - | 14 days  |
+| ```crop_profiles```  | Pixel locations in each camera view fr masking images | - | - | 
+| ```cow_gallery```  | 500 photos of the cows taken from different angles using phone cameras | - | -  |
 
 
 **Multiple sets of visual data:**
@@ -230,18 +238,13 @@ Complete Visual Data (1s interval)
 
 Annotation Rules for Visual Data
 ------
-**Isometric-view cow identification:** 
-
-| # | Text | Text |
-|-------------|--------|-----------|
-| 0 | Text | Text | N/A |
 
 
 **Cow behaviors for behavior labels:** 
 
 | # | Behavior | Definition |
 |-------------|--------|-----------|
-| 0 | Unknow | When the cow is absent or the light is off | N/A |
+| 0 | Unknow | When the cow is absent or the light is off | - |
 | 1 | Walking | Moving from one location to another between consecutive frames |  |
 | 2 | Standing | The legs are straight up for supporting the body and the head is not at the feeding area | |
 | 3 | Feeding head up | The head is at the feeding area and the mouth is above the food | |
