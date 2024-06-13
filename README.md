@@ -145,7 +145,7 @@ ${ROOT}
 | ```ankle_accel``` | Ankle acceleration recorded by ankle sensors | 60 s  | 14 d   |
 |```visual_location``` | 3D body location computed from the annotated visual data | 15 s | 1 d | 
 |```health_records``` | Health records of the cows | - | - | 
-|```individual```| Manually annotated behavior labels of the cows  | 1 s | 1 d | 
+|```behavior_labels```| Manually annotated behavior labels of the cows  | 1 s | 1 d | 
 
 
 Vision-related and manually annotated data is available for all 16 cows, while data from wearable sensors is available for cow #1 to #10.
@@ -161,7 +161,7 @@ Time index format is unix timestamp. When converting unix timestamp to datetime,
 Annotated Visual Data
 ------
 
-Data from a single day 7/25
+Visual data of a single day 7/25
 
 **Structure of visual_data.zip**
 ```
@@ -184,7 +184,7 @@ ${ROOT}
 | ```images``` | UWB-syned isometric-view images where the other unrelated pens are masked out | 15 s | 1 d   |
 | ```labels```    | Annotated cow ID and bbox of individual cows in camera view, formated as ```[cow_id, x,y,w,h]```. Separated in three sets: standing cows only, lying cow only, or both standing and lying cows | 15 s | 1 d  | 
 | ```proj_mat``` | Matrices for projecting a 3D world location to a 2D pixel location | -| -   |
-| ```behavior_labels``` |   | 1 s | 1 d   |
+| ```behavior_labels``` |  Manually annotated behavior labels of the cows | 1 s | 1 d   |
 | ```visual_location``` | 3D locations of cow body derived from ```labels``` using visual localization | 15 s | 1 d  |
 
 
