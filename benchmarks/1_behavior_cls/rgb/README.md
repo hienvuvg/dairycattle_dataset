@@ -174,16 +174,17 @@ Evaluation
 ------
 
 
-1. Set the value of the key ```pred_label_dir``` in ```./eval/private/path.yaml``` same as the directory containg the prediction files. That is, it will be same as the location mentioned for the key ```save_preds_directory```  in ```./custom_ultralytics_yolov8/inference_config.json```. This location stores the results produced by the previous command for running the inference pipeline. 
+1. Set the value of the key ```pred_label_dir``` in ```./eval/private/path.yaml``` same as the directory containg the prediction files. That is, it will be same as the location mentioned for the key ```save_preds_directory```  in ```./custom_ultralytics_yolov8/inference_config.json```. This location stores the results produced by the previous command for running the inference pipeline.
+2. Download [sensor_data.zip](https://www.dropbox.com/scl/fi/k2qikwjw8lamm5u8w8m76/sensor_data.zip?rlkey=x897xeha714nsd0m16tphqbyb&dl=1) for ground truths. 
 
-2. In order to evaluate the performance of single view vision pipeline (i.e. RGBs), we compare the predicted labels with the ground truth using the following command:
+3. In order to evaluate the performance of single view vision pipeline (i.e. RGBs), we compare the predicted labels with the ground truth using the following command:
     ```
     python ./eval/eval_srgb_s2.py 
     ```
 
     Running the above command prints the F-1 scores for all the behaviors for single-view vision pipeline (RGBs).
 
-3. To evaluate the performance of multi-view vision pipeline (i.e. mRGB), use the following command:
+4. To evaluate the performance of multi-view vision pipeline (i.e. mRGB), use the following command:
     ```
     python ./eval/eval_mrgb_s2.py
     ```
