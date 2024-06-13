@@ -23,9 +23,9 @@ Data Preparation
     ```bash
     cd ./benchmarks/1_behavior_cls/rgb
     ```
-4. Download the dataset [visual_data.zip](https://www.dropbox.com/scl/fi/yiw5khfkzizntooz2if5y/visual_data.zip?rlkey=ncpvn9hn3kh9dbriykacthexy&dl=1) (23 GB) 15s interval visual data of 7/25
+4. Download sensor_data.zip, visual_data.zip, cropped_bboxes.zip, and trained_model_weights.zip from [this page](https://github.com/hienvuvg/dairycattle_dataset)
 
-5. Extract the zip file in the current working directory, i.e. ```dairycattle_dataset/benchmarks/1_behavior_cls/rgb```.
+5. Extract visual_data.zip in the current working directory, i.e. ```dairycattle_dataset/benchmarks/1_behavior_cls/rgb```.
 
 6. Generate data directories required for training and testing by running the following command
     ```bash
@@ -37,7 +37,7 @@ Data Preparation
     python data_preparation/labels_for_detector.py --dataset_path ./organized_data
     ```
 
-8. Download the cropped bounding boxes of cows from here: [cropped_bboxes.zip](https://www.dropbox.com/scl/fi/44d79t76i3bm81u3s7dk9/cropped_bboxes.zip?rlkey=needcxkpfw1ujo4i9d4fscb23&dl=1) (13 GB). Unzip inside './visual_data'<br>
+8. Unzip cropped_bboxes.zip inside './visual_data'<br>
     OR </br>
    [Optional] Crop bounding boxes from the original images using this script
    To generate bboxes for behavior classification
@@ -143,7 +143,7 @@ Stage 3: Cow Identification
 
 ### Overall Inference Pipeline
 ------
-1. Inference pipeline can be run either using the models trained in the previous steps or using the trained weights that can be downloaded from [here](https://purdue0-my.sharepoint.com/:u:/g/personal/oprabhun_purdue_edu/ERgvtswYqrlAm8yCn2SutekB6DYBvxc5ZDexZVXr-XHyJQ?e=nCEZUL).  <br />
+1. Inference pipeline can be run either using the models trained in the previous steps or using the trained weights (trained_model_weights.zip).  <br />
 Code adapted from https://github.com/ultralytics/ultralytics.
 1. Enter the configurations in ```./custom_ultralytics_yolov8/inference_config.json```
     
@@ -172,7 +172,7 @@ Code adapted from https://github.com/ultralytics/ultralytics.
 Evaluation
 ------
 
-1. Download [sensor_data.zip](https://www.dropbox.com/scl/fi/k2qikwjw8lamm5u8w8m76/sensor_data.zip?rlkey=x897xeha714nsd0m16tphqbyb&dl=1) for ground truths. 
+1. In ```./eval/private/path.yaml```, modify ```sensor_data_dir```, ```visual_data_dir```, and ```pred_label_dir``` to your local directories of the respective folders
 
 2. In order to evaluate the performance of single view vision pipeline (i.e. RGBs), we compare the predicted labels with the ground truth using the following command:
     ```
