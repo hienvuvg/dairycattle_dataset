@@ -4,7 +4,12 @@
 
 **Setup:**
 * Specify file directories in ```path.yaml``` to the two unzipped folders.
-
+* Install all dependencies using python before running the test:
+	```
+	cd visualization
+	pip install -r requirements.txt
+	```
+	
 **Tools:**
 * ```MmCows_view.py``` shows the 3D map of the pen with UWB location and a combined camera view which is time-synchronized with the map.
 * ```uwb_localization.py``` illustrates the localization of a single cow using UWB.
