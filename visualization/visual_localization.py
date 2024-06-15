@@ -269,7 +269,8 @@ def update(i):
         cow_id = single_cow_dict['cow_id']
         est_cow_loc = single_cow_dict['location']/100
 
-        if cow_id < 11:
+        # if cow_id < 11:
+        if True:
         
             # Plot points and titles
             if np.isnan(est_cow_loc[0]) == False:
