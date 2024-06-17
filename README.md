@@ -237,7 +237,7 @@ ${ROOT}
 [8/03](), 
 [8/04]().
 
-**```1s_interval_videos ```** (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos) (319GB/zip):
+**```1s_interval_videos ```** (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos):
 * [7/21]()
 [7/22](), 
 [7/23](), 
@@ -253,6 +253,10 @@ ${ROOT}
 [8/02](), 
 [8/03](), 
 [8/04]().
+
+
+**```1s_interval_videos ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):
+
 
 <br />
 
