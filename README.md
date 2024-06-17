@@ -5,8 +5,8 @@
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.
 <!--[Overview](https://hienvuvg.github.io/mmcows/)\-->
 **Download links:**
-* [sensor_data.zip](https://www.dropbox.com/scl/fi/k2qikwjw8lamm5u8w8m76/sensor_data.zip?rlkey=x897xeha714nsd0m16tphqbyb&dl=1) (18 GB) 14-day data from wearable sensors
-* [visual_data.zip](https://www.dropbox.com/scl/fi/9wm047u96gnhgf4g3i381/visual_data.zip?rlkey=w06ifb1rso516oqhnt08sdclc&dl=1) (20 GB) 15s-interval visual data on 7/25
+* [sensor_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EbqpyJkUdgtGiZ0ZQpkyqtQBSZEh8PhInGu7V5FVl0uWMw?e=Yuga6R) (18 GB) 14-day data from wearable sensors
+* [visual_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EXTIwZOnLs1Mv67gkEwfdhUBh2cWwL8qBIvpUVZTKi111w?e=3ZkN0I) (20 GB) 15s-interval visual data on 7/25
 * [cropped_bboxes.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EVnZ4WHspSJEpj-Xl2NIcm4ByWV5Ij-D3X9EF3uoM_FxOw?e=gTsSDL) (13 GB) cropped bounding boxes of cows for the training of behavior classification, lying cow identification, and non-lying cow identification
 * [trained_model_weights.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/oprabhun_purdue_edu/EcxQcjadm3BMvhh2i2waZAwBk58lN_R4vHg2KCxeZFow1w?e=cD5cmg) (1 GB) Pre-trained weights of the vision models
 * Visual data of 14 days with sampling rates of 1s and 15s is provided in multiple mp4 and zip files
