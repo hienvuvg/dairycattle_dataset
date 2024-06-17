@@ -216,14 +216,29 @@ ${ROOT}
 | ```proj_mat```  | Matrices for projecting a 3D world location to a 2D pixel location | - | 14 d  |
 | ```crop_profiles``` | Pixel locations in each camera view for masking the images | - | -  |
 
-**Multiple sets of visual data:**
-* ```15s_interval_images``` (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
-* ```1s_interval_videos``` (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos) (319GB/zip):  
+**Multiple sets of visual data:** 
 * ```1s_interval_combined_view_videos``` (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
 * [cow_gallery.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EWwMd7XKrUpNnaROWHd8oFUBQ_9-duvEtr7kP6-vA-Rw-A?e=VfmBZC): High-res photos of cows from various angles for references
 
-**```15s_interval_images```** (~20 GB / file)
+**```15s_interval_images```** (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
 * [7/21](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/ET5hpsYnc7lAgu-3AylHHE0B9cAQ9CQEscGSX0qNb_GPDw?e=N3XS3h)
+[7/22](), 
+[7/23](), 
+[7/24](), 
+[7/25](), 
+[7/26](), 
+[7/27](), 
+[7/28](), 
+[7/29](), 
+[7/30](), 
+[7/31](), 
+[8/01](), 
+[8/02](), 
+[8/03](), 
+[8/04]().
+
+**```1s_interval_videos ```** (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos) (319GB/zip):
+* [7/21]()
 [7/22](), 
 [7/23](), 
 [7/24](), 
