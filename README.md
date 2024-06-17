@@ -222,7 +222,7 @@ ${ROOT}
 * ```1s_interval_combined_view_videos``` (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
 * [cow_gallery.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EWwMd7XKrUpNnaROWHd8oFUBQ_9-duvEtr7kP6-vA-Rw-A?e=VfmBZC): High-res photos of cows from various angles for references
 
-**```15s_interval_images```**
+**```15s_interval_images```** (~20 GB / file)
 * [7/21](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/ET5hpsYnc7lAgu-3AylHHE0B9cAQ9CQEscGSX0qNb_GPDw?e=N3XS3h)
 [7/22](), 
 [7/23](), 
