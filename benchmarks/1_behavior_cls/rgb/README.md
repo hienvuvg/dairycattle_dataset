@@ -132,7 +132,7 @@ Stage 3: Cow Identification
 
 1. Training:
     ```
-    python lying_cow_identifier/train.py --normalization_values_file_path norm_params.json --model_save_path data_lying_cow_classification/saved_models --data_path ./data_lying_cow_classification/fold_1 --fold fold_1
+    python lying_cow_identifier/train.py --normalization_values_file_path norm_params.json --model_save_path data_lying_cow_classification/saved_models --data_path ./data_lying_cow_classification --fold fold_1
     ```
 
 2. Testing
