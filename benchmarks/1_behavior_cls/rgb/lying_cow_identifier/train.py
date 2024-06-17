@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, Subset
 from tqdm import tqdm
 import numpy as np
 from PIL import Image
-
+import json 
 # Define the device to use (GPU if available)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -234,6 +234,8 @@ if __name__ == "__main__":
     parser.add_argument('--epochs', type=int, default=15, help='Number of epochs to train the model')
     parser.add_argument('--model_save_path', type=str, default = 'saved_models', help='Path to save the best model')
     parser.add_argument('--fold', type=str, required=True, help='fold')
+    parser.add_argument('--normalization_values_file_path', required=True, type=str, help='Path to json file containing mean and std dev')
+
     
     args = parser.parse_args()
 
@@ -242,9 +244,18 @@ if __name__ == "__main__":
     train_dir = os.path.join(data_dir, 'train')
     val_dir = os.path.join(data_dir, 'val')
     test_dir = os.path.join(data_dir, 'test')
-    print('Marker 1')
-    mean, std = get_mean_std(train_dir)
-    print(f'Computed mean: {mean}, std: {std}')
+
+    
+    # mean, std = get_mean_std(train_dir)
+    # print(f'Computed mean: {mean}, std: {std}')
+    # mean, std = get_mean_std(train_dir) # calculate on the fly
+    
+    # Load precomputed mean and std
+    norm_params_file = open(args.normalization_values_file_path)
+    params = json.load(norm_params_file)
+    mean, std = params['standing'][args.fold]['mean'], params['standing'][args.fold]['std_dev']
+    # Closing file
+    norm_params_file.close()
 
     # remove empty classes from val set
     empty_classes = check_and_delete_empty_classes(val_dir)
