@@ -147,7 +147,7 @@ Stage 3: Cow Identification
 ------
 1. Inference pipeline can be run either using the models trained in the previous steps or using the trained weights (trained_model_weights.zip).  <br />
 Code adapted from https://github.com/ultralytics/ultralytics.
-1. Enter the configurations in ```./custom_ultralytics_yolov8/inference_config.json```
+2. Enter the configurations in ```./custom_ultralytics_yolov8/inference_config.json```
     
     ```fold``` : The fold to run inference pipeline on. e.g. "fold_1" <br />
     ```behav_model_path```: Path to behavior classification model trained weights file <br />
@@ -155,7 +155,7 @@ Code adapted from https://github.com/ultralytics/ultralytics.
     ```lying_ID_model_path```: Path to lying cow classification model trained weights file <br />
     ```cow_detection_model_path```: Path to yolov8 cow detection model trained weights file <br />
     
-2. Run the following command
+3. Run the following command (change "fold" number in the directory accordingly)
     ```
     python custom_ultralytics_yolov8/pipeline.py --data_path ./organized_data/fold_1/test/images
     ```
