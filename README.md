@@ -7,7 +7,7 @@ This dataset includes two parts: data from wearable sensors and visual data from
 **Download links:**
 * [sensor_data.zip](https://www.dropbox.com/scl/fi/k2qikwjw8lamm5u8w8m76/sensor_data.zip?rlkey=x897xeha714nsd0m16tphqbyb&dl=1) (18 GB) 14-day data from wearable sensors
 * [visual_data.zip](https://www.dropbox.com/scl/fi/9wm047u96gnhgf4g3i381/visual_data.zip?rlkey=w06ifb1rso516oqhnt08sdclc&dl=1) (20 GB) 15s-interval visual data on 7/25
-* [cropped_bboxes.zip](https://www.dropbox.com/scl/fi/44d79t76i3bm81u3s7dk9/cropped_bboxes.zip?rlkey=needcxkpfw1ujo4i9d4fscb23&dl=1) (13 GB) cropped bounding boxes of cows for the training of behavior classification, lying cow identification, and non-lying cow identification
+* [cropped_bboxes.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EVnZ4WHspSJEpj-Xl2NIcm4ByWV5Ij-D3X9EF3uoM_FxOw?e=gTsSDL) (13 GB) cropped bounding boxes of cows for the training of behavior classification, lying cow identification, and non-lying cow identification
 * [trained_model_weights.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/oprabhun_purdue_edu/EcxQcjadm3BMvhh2i2waZAwBk58lN_R4vHg2KCxeZFow1w?e=cD5cmg) (1 GB) Pre-trained weights of the vision models
 * Visual data of 14 days with sampling rates of 1s and 15s is provided in multiple mp4 and zip files
 
@@ -220,7 +220,7 @@ ${ROOT}
 * ```15s_interval_images``` (4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
 * ```1s_interval_videos``` (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos) (319GB/zip):  
 * ```1s_interval_combined_view_videos``` (4k resolution, 14 days): Combined view from four cameras, 14 days, 14 videos, 37 GB/video.
-* [cow_gallery.zip](https://www.dropbox.com/scl/fi/zni1huben6kdtboi0dkn2/cow_gallery.zip?rlkey=7vagfppu9o0guz9pzzqixgttt&dl=1): High-res photos of cows from various angles for references
+* [cow_gallery.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EWwMd7XKrUpNnaROWHd8oFUBQ_9-duvEtr7kP6-vA-Rw-A?e=VfmBZC): High-res photos of cows from various angles for references
 
 <br />
 
