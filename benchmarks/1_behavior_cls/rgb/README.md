@@ -27,7 +27,7 @@ Data Preparation
     
 4. Download sensor_data.zip, visual_data.zip, cropped_bboxes.zip, and trained_model_weights.zip from [this page](https://github.com/hienvuvg/dairycattle_dataset)
 
-5. Extract visual_data.zip in the current working directory, i.e. ```dairycattle_dataset/benchmarks/1_behavior_cls/rgb```.
+5. Extract visual_data.zip and sensor_data.zip in the current working directory, i.e. ```dairycattle_dataset/benchmarks/1_behavior_cls/rgb```.
 
 6. Generate data directories required for training and testing by running the following command
     ```bash
