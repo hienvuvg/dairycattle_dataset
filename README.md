@@ -202,7 +202,7 @@ UWB-Synced Visual Data (15s interval)
 
 Data from multiple days, from 7/21 to 8/04
 
-**Structure of uwb_synced_frames.zip**
+**Structure of zip files in ```uwb_synced_images```**
 ```
 ${ROOT}
 |-- images
@@ -219,7 +219,7 @@ ${ROOT}
 **Completed sets of visual data:** 
 [cow_gallery.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EWwMd7XKrUpNnaROWHd8oFUBQ_9-duvEtr7kP6-vA-Rw-A?e=VfmBZC): High-res photos of cows from various angles for references
 
-**[```UWB_synced_images```](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM)** (15s_interval, 4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
+**[```uwb_synced_images```](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM)** (15s_interval, 4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
 * 7/21,
 7/22, 
 7/23, 
