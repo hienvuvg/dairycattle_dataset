@@ -205,8 +205,8 @@ Data from multiple days, from 7/21 to 8/04
 **Structure of zip files in ```uwb_synced_images```**
 ```
 ${ROOT}
-|-- MMDD
-    |-- cam_1
+|-- MMDD (month/date)
+    |-- cam_1 (containing 5760 images)
     |-- cam_2
     |-- cam_3
     |-- cam_4
