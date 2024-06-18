@@ -168,10 +168,6 @@ Visual data of a single day 7/25
 ```
 ${ROOT}
 |-- images
-|   |-- cam_1
-|   |-- cam_2
-|   |-- cam_3
-|   |-- cam_4
 |-- labels
 |   |-- standing
 |   |-- lying
