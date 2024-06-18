@@ -212,7 +212,7 @@ ${ROOT}
 
 | Data  | Description | Interval | Duration    |
 |-------------|-----------|-----------|----------|
-| ```images```| UWB-synced isometric-view images of 4 cameras | 15 s | 14 d  |  
+| ```images```| UWB-synced isometric-view images of 4 cameras without masking | 15 s | 14 d  |  
 | ```proj_mat```  | Matrices for projecting a 3D world location to a 2D pixel location | - | 14 d  |
 | ```crop_profiles``` | Pixel locations in each camera view for masking the images | - | -  |
 
