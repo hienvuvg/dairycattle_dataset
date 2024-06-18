@@ -216,7 +216,8 @@ ${ROOT}
 | ```proj_mat```  | Matrices for projecting a 3D world location to a 2D pixel location | - | 14 d  |
 | ```crop_profiles``` | Pixel locations in each camera view for masking the images | - | -  |
 
-**Completed sets of visual data:** 
+**Completed sets of visual data:**
+
 [cow_gallery.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EWwMd7XKrUpNnaROWHd8oFUBQ_9-duvEtr7kP6-vA-Rw-A?e=VfmBZC): High-res photos of cows from various angles for references
 
 **[```uwb_synced_images```](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM)** (15s_interval, 4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
