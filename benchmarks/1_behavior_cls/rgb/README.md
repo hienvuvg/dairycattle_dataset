@@ -81,14 +81,14 @@ Stage 1: Cow Detection
 
 1. Training:
     ```bash
-    python cow_detection/train_yolov8.py --data_directory ./organized_data --epochs 20 --batch_size 16
+    python cow_detection/train_yolov8.py --data_directory ../organized_data --epochs 20 --batch_size 16
     ```
     This will train the yolov8 model for all the folds in ./organized_data.
 
 
 2. Testing:
     ```bash
-    python cow_detection/test_yolov8.py --data_directory ./organized_data
+    python cow_detection/test_yolov8.py --data_directory ../organized_data
     ```
 
 <br />
