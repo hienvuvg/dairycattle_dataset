@@ -252,6 +252,7 @@ ${ROOT}
 8/02, 
 8/03, 
 8/04.
+* The play time in each video is corresponding to the date time of the frame.
 
 
 <!--**```1s_interval_zips ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):-->
