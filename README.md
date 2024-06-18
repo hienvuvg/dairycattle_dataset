@@ -205,16 +205,12 @@ Data from multiple days, from 7/21 to 8/04
 **Structure of zip files in ```uwb_synced_images```**
 ```
 ${ROOT}
-|-- images
-|-- proj_mat
-|-- crop_profiles
+|-- MMDD
+    |-- cam_1
+    |-- cam_2
+    |-- cam_3
+    |-- cam_4
 ```
-
-| Data  | Description | Interval | Duration    |
-|-------------|-----------|-----------|----------|
-| ```images```| UWB-synced isometric-view images of 4 cameras without masking | 15 s | 14 d  |  
-| ```proj_mat```  | Matrices for projecting a 3D world location to a 2D pixel location | - | 14 d  |
-| ```crop_profiles``` | Pixel locations in each camera view for masking the images | - | -  |
 
 **Completed sets of visual data:**
 
@@ -258,6 +254,19 @@ ${ROOT}
 
 <!--**```1s_interval_zips ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):-->
 
+
+```
+${ROOT}
+|-- images
+|-- proj_mat
+|-- crop_profiles
+```
+
+| Data  | Description | Interval | Duration    |
+|-------------|-----------|-----------|----------|
+| ```images```| UWB-synced isometric-view images of 4 cameras without masking | 15 s | 14 d  |  
+| ```proj_mat```  | Matrices for projecting a 3D world location to a 2D pixel location | - | 14 d  |
+| ```crop_profiles``` | Pixel locations in each camera view for masking the images | - | -  |
 
 <br />
 
