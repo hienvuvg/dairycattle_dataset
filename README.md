@@ -255,7 +255,7 @@ ${ROOT}
 8/04.
 
 
-**```1s_interval_videos ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):
+**```1s_interval_video_zips ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):
 
 
 <br />
