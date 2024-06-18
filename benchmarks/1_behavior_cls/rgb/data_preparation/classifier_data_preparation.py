@@ -118,7 +118,7 @@ def main():
             for filename in (sorted(os.listdir(beh_image_dir))): # inside behav subfolders -> cropped bboxes
                 if is_image_file(filename):
                     file_path = os.path.join(beh_image_dir, filename) 
-                    print(f'This is filepath {file_path}')
+                    # print(f'This is filepath {file_path}')
                     file_datetime = get_datetime_from_filename(filename)
                     # print(f'This is file_datetime {file_datetime}')
                     # prefixed_filename = f"{cam_dir}_{filename}" # No need to, it's already formatted
@@ -138,7 +138,7 @@ def main():
                     copied_filepath = os.path.join(output_dir, fold_name, split, behav_dir, prefixed_filename)
                     shutil.copyfile(file_path, copied_filepath)
                     
-                    print(f'This is copied path {copied_filepath}')
+                    # print(f'This is copied path {copied_filepath}')
 
     print("Data organized successfully.")
 
