@@ -30,19 +30,27 @@ ${ROOT}
     |-- 0803
     |-- 0804
 ```
-
+<p align="center">
 <video width="800" controls autoplay loop>
   <source src="../files/mmcows_view_vid.mp4" type="video/mp4">
 </video>
+<p align="center">
+<br />
 
 * ```uwb_localization.py``` illustrates the localization of a single cow using UWB.
 
+<p align="center">
 <video width="500" controls autoplay loop>
   <source src="././files/uwb_loc_vid.mp4" type="video/mp4">
 </video>
+<p align="center">
+<br />
 
 * ```visual_localization.py``` illustrates the localization of cows (from 1 to 16) simultaneously using multiple views. Only applicable to 7/25.
 
+<p align="center">
 <video width="500" controls autoplay loop>
   <source src="../../files/visual_loc_vid.mp4" type="video/mp4">
 </video>
+<p align="center">
+<br />
