@@ -32,7 +32,7 @@ ${ROOT}
 ```
 <div align="center">
 <video width="800" controls autoplay loop>
-  <source src="https://github.com/hienvuvg/dairycattle_dataset/raw/main/visualization/files/mmcows_view_vid.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/hienvuvg/dairycattle_dataset/raw/main/visualization/files/mmcows_view_vid.mp4" type="video/mp4">
 </video>
 </div>
 
