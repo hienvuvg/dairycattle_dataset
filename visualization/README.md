@@ -11,7 +11,11 @@
 	```
 	
 **Tools:**
-* ```MmCows_view.py``` shows the 3D map of the pen with UWB location and a combined camera view which is time-synchronized with the map.
+* To show the 3D map of the pen with UWB location and a combined camera view which is time-synchronized with the map:
+
+```
+python MmCows_view.py
+```
 
 
 Note: Use ```--help``` to show config options.
@@ -37,7 +41,11 @@ https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/905ce915-ac74-49
 
 
 
-* ```uwb_localization.py``` illustrates the localization of a single cow using UWB.
+* Localization of a single cow using UWB:
+```
+python uwb_localization.py
+```
+
 
 
 
@@ -45,9 +53,10 @@ https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/8d7f469a-cf4c-42
 
 
 
-* ```visual_localization.py``` illustrates the localization of cows (from 1 to 16) simultaneously using multiple views. Only applicable to 7/25.
-
-
+* Localization of cows (from 1 to 16) simultaneously using multiple views. Only applicable to 7/25:
+```
+python visual_localization.py
+```
 
 https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/adf83598-4eef-40a0-a9d5-57c1a96f41de
 
