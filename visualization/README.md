@@ -37,6 +37,9 @@ ${ROOT}
     |-- 0804
 ```
 
+```
+python MmCows_view.py --uwb_points --boundary
+```
 
 
 https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/905ce915-ac74-4938-a492-9a556bbe61b5
