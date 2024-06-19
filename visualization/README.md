@@ -4,7 +4,7 @@
 
 **Setup:**
 * Specify file directories in ```path.yaml``` to the two unzipped folders.
-* Install all dependencies using python before running the test:
+* Install all dependencies using python before running the scripts:
 	```
 	cd visualization
 	pip install -r requirements.txt
