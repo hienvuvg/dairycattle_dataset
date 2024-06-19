@@ -32,20 +32,27 @@ ${ROOT}
 ```
 <div align="center">
 <video width="800" controls autoplay loop>
-  <source src="https://github.com/hienvuvg/dairycattle_dataset/raw/main/visualization/files/mmcows_view_vid.mp4" type="video/mp4">
+  <source src="./files/mmcows_view_vid.mp4" type="video/mp4">
 </video>
 </div>
 
 * ```uwb_localization.py``` illustrates the localization of a single cow using UWB.
 
-
-https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/fe564c01-4ac4-4159-aca5-aaf7d7f59daa
-
+<div align="center">
+<video width="800" controls autoplay loop>
+  <source src="./files/uwb_loc_vid.mp4" type="video/mp4">
+</video>
+</div>
 
 * ```visual_localization.py``` illustrates the localization of cows (from 1 to 16) simultaneously using multiple views. Only applicable to 7/25.
 
+<div align="center">
+<video width="800" controls autoplay loop>
+  <source src="./files/visual_loc_vid.mp4" type="video/mp4">
+</video>
+</div>
 
-
-https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/2baaf546-43c3-46ab-beb2-144eea7dde0d
-
+<a href="./files/visual_loc_vid.mp4">
+  <img src="./files/visual_loc_vid.mp4" width="800">
+</a>
 
