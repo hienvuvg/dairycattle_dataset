@@ -38,7 +38,7 @@ ${ROOT}
 * ```uwb_localization.py``` illustrates the localization of a single cow using UWB.
 
 <video width="500" controls autoplay loop>
-  <source src="../files/uwb_loc_vid.mp4" type="video/mp4">
+  <source src="././files/uwb_loc_vid.mp4" type="video/mp4">
 </video>
 
 * ```visual_localization.py``` illustrates the localization of cows (from 1 to 16) simultaneously using multiple views. Only applicable to 7/25.
