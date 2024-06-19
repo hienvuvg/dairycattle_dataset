@@ -53,6 +53,6 @@ ${ROOT}
 </div>
 
 <a href="https://hienvuvg.github.io/files/media/files/visual_loc_vid.mp4">
-  <img src="https://hienvuvg.github.io/files/media/files/visual_loc_vid.mp4" width="300">
+  <img src="https://hienvuvg.github.io/files/media/files/thumbnail.png" width="300" alt="Watch the video">
 </a>
 
