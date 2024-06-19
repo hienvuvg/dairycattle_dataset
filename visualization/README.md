@@ -37,6 +37,10 @@ ${ROOT}
     |-- 0804
 ```
 
+The flags:
+
+Example:
+
 ```
 python MmCows_view.py --uwb_points --boundary
 ```
