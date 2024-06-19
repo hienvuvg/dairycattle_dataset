@@ -53,6 +53,6 @@ ${ROOT}
 </div>
 
 <a href="./files/visual_loc_vid.mp4">
-  <img src="./files/visual_loc_vid.mp4" width="800">
+  <vid src="./files/visual_loc_vid.mp4" width="800">
 </a>
 
