@@ -21,6 +21,7 @@ python MmCows_view.py
 
 Note: Use ```--help``` to show config options.
 
+Image file structure for visualizing [vison data of multiple days](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM):
 ```
 ${ROOT}
 |-- images
