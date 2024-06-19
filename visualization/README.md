@@ -30,29 +30,25 @@ ${ROOT}
     |-- 0803
     |-- 0804
 ```
-<div align="center">
-<video width="300" controls autoplay loop>
-  <source src="./files/mmcows_view_vid.mp4" type="video/mp4">
-</video>
-</div>
+
+
+
+https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/905ce915-ac74-4938-a492-9a556bbe61b5
+
+
 
 * ```uwb_localization.py``` illustrates the localization of a single cow using UWB.
 
-<div align="center">
-<video width="300" controls autoplay loop>
-  <source src="./files/uwb_loc_vid.mp4" type="video/mp4">
-</video>
-</div>
+
+
+https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/8d7f469a-cf4c-4224-b486-c96c0a1ab6e1
+
+
 
 * ```visual_localization.py``` illustrates the localization of cows (from 1 to 16) simultaneously using multiple views. Only applicable to 7/25.
 
-<div align="center">
-<video width="300" controls autoplay loop>
-  <source src="https://hienvuvg.github.io/files/media/files/visual_loc_vid.mp4" type="video/mp4">
-</video>
-</div>
 
-<a href="https://hienvuvg.github.io/files/media/files/visual_loc_vid.mp4">
-  <img src="https://hienvuvg.github.io/files/media/files/thumbnail.png" width="300" alt="Watch the video">
-</a>
+
+https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/adf83598-4eef-40a0-a9d5-57c1a96f41de
+
 
