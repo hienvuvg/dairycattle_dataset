@@ -48,11 +48,11 @@ ${ROOT}
 
 <div align="center">
 <video width="800" controls autoplay loop>
-  <source src="./files/visual_loc_vid.mp4" type="video/mp4">
+  <source src="https://hienvuvg.github.io/files/media/files/visual_loc_vid.mp4" type="video/mp4">
 </video>
 </div>
 
 <a href="./files/visual_loc_vid.mp4">
-  <vid src="./files/visual_loc_vid.mp4" width="800">
+  <vid src="https://hienvuvg.github.io/files/media/files/visual_loc_vid.mp4" width="300">
 </a>
 
