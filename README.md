@@ -276,23 +276,14 @@ Complete Visual Data (1s interval)
 
 <br />
 
+Tools
+------
+
+Please check [this readme]() for more details about the visualization of MmCows, UWB localization, and visual localization.
+
+<br />
+
 Annotation Rules for Visual Data
 ------
 
-
-**Cow behaviors for behavior labels:** 
-
-| # | Behavior | Definition |
-|-------------|--------|-----------|
-| 0 | Unknow | When the cow is absent or the light is off | - |
-| 1 | Walking | Moving from one location to another between consecutive frames |  |
-| 2 | Standing | The legs are straight up for supporting the body and the head is not at the feeding area | |
-| 3 | Feeding head up | The head is at the feeding area and the mouth is above the food | |
-| 4 | Feeding head down | The head is at the feeding area and the mouth touches the food | |
-| 5 | Licking | Licking the mineral block | |
-| 6 | Drinking | Drinking at the water trough, when the mouth touches the water | |
-| 7 | Lying | The cow lies in the stall |<!--<img src="docs/imgs/bunching.png" style="max-width:100%; height:auto;" />-->|
-
-<!--| 8 | Bunching | When there are at least three cows standing right next to each other including the current cow, excluding standing in the stall, feeding, licking, and drinking |<!--![](docs/imgs/bunching.png)--> |-->
-
-Visual examples of the behaviors are provided in ```x.docx``` which is included in the zip.
+Details of cow ID annotation and behavior labeling are provided in [this online document](https://docs.google.com/document/d/1NAfwlkVOnybEZPSC2KwAE4i7GHH12huKUijDDizSxiI/edit?usp=sharing).
