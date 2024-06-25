@@ -283,7 +283,7 @@ Please check [this readme](https://github.com/hienvuvg/dairycattle_dataset/tree/
 
 <br />
 
-Annotation Rules for Visual Data
+Annotation Rules
 ------
 
 Details of cow ID annotation and behavior labeling are provided in [this online document](https://docs.google.com/document/d/1NAfwlkVOnybEZPSC2KwAE4i7GHH12huKUijDDizSxiI/edit?usp=sharing). We used [VGG Image Annotator (VIA)](https://www.robots.ox.ac.uk/~vgg/software/via/) to annotate the cow ID. The VIA json files for lying, non-lying, and combined ID lables are available upon request.
