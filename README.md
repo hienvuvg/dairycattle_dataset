@@ -1,4 +1,4 @@
-# MmCows
+# MmCows: A Multimodal Dataset for Dairy Cattle Monitoring
 
 
 <!--What this is\-->
