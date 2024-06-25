@@ -279,7 +279,7 @@ Complete Visual Data (1s interval)
 Tools
 ------
 
-Please check [this readme](https://github.com/hienvuvg/dairycattle_dataset/tree/main/visualization) for more details about the visualization of MmCows, UWB localization, and visual localization.
+Please check [this readme](https://github.com/hienvuvg/dairycattle_dataset/tree/main/visualization) for more details about the visualization tools of MmCows, UWB localization, and visual localization.
 
 <br />
 
