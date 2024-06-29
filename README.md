@@ -164,7 +164,7 @@ Time index format is unix timestamp. When converting unix timestamp to datetime,
 Annotated Visual Data
 ------
 
-sensor_data.zip: Visual data of a single day 7/25
+visual_data.zip: annotated visual data of a single day 7/25
 
 **Structure of visual_data.zip**
 ```
@@ -197,7 +197,7 @@ ${ROOT}
 UWB-Synced Visual Data (15s interval)
 ------
 
-uwb_synced_images: 15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
+uwb_synced_images: UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s (15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
 ```
 ${ROOT}
 |-- images
