@@ -35,8 +35,8 @@ In ```./path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to 
 
 3. [Optional] Create a virtual environment using [conda](https://docs.anaconda.com/free/miniconda/): 
 ```
-conda create -n mmcows python=3.9
-conda activate mmcows
+conda create -n mmcows_visual python=3.9
+conda activate mmcows_visual
 ```
 4. Install all dependencies using python before running the scripts:
 ```
