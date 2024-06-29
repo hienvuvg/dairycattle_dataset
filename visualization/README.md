@@ -18,10 +18,7 @@ For showing the 3D map of the pen with UWB location and a combined camera view w
 python MmCows_view.py
 ```
 
-
-Note: Use ```--help``` to show config options.
-
-Image file structure of ```visual_data``` for visualizing the sensor data with the [vison data of multiple days](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM):
+For visualizing the isometric-view images along with the sensor data, download the zipped images of the day-of-interest from [this folder](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM). Then unzip and organize them in the ```visual_data``` folder as the following structure:
 ```
 ${ROOT}
 |-- images
@@ -37,7 +34,10 @@ ${ROOT}
     |-- 0804
 ```
 
-The flags:
+There are several flags for passing into the python script that allows visualization of different parameters in the image views:
+* ```--help```
+
+Note: Use ```--help``` to show config options.
 
 Example:
 
