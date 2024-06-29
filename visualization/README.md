@@ -24,12 +24,14 @@ ${ROOT}
     |-- 0804
 ```
 Note: The annotated ```visual_data.zip``` only contains images on 7/25 from 2:57:18 to 23:57:17 which are also already masked. Refer to the link above for the original UWB-synced unmaked 24-hour frames.
+
 2. Clone the main directory, navitage to "visualization"
 ```
 	git clone https://github.com/hienvuvg/dairycattle_dataset
 	cd visualization
-	```
-	In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
+```
+
+In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
 3. Specify file directories in ```path.yaml``` to the two unzipped folders.
 4. Install all dependencies using python before running the scripts:
 	```
