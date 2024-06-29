@@ -3,7 +3,7 @@
 
 
 ## Setup
-1. Download and upzip [sensor_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EbqpyJkUdgtGiZ0ZQpkyqtQBSZEh8PhInGu7V5FVl0uWMw?e=Yuga6R) and visual data for the date that you want to visualize from [uwb_synced_images](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM) (completed UWB-synced frames, 24 hours for each day). Then unzip and organize them in the ```visual_data``` folder as the following structure:
+1. Download and upzip [sensor_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EbqpyJkUdgtGiZ0ZQpkyqtQBSZEh8PhInGu7V5FVl0uWMw?e=Yuga6R) and visual data for the date that you want to visualize from [uwb_synced_images](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM) (completed UWB-synced frames, 24 hours for each day). Then unzip and organize them in the ```visual_data``` folder as follows:
 ```
 ${ROOT}
 |-- images
