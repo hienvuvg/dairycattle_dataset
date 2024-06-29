@@ -40,7 +40,6 @@ conda activate mmcows
 ```
 4. Install all dependencies using python before running the scripts:
 ```
-cd visualization
 pip install -r requirements.txt
 ```
 
