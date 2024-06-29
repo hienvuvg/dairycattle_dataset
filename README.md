@@ -197,41 +197,12 @@ ${ROOT}
 UWB-Synced Visual Data (15s interval)
 ------
 
-Data from multiple days, from 7/21 to 8/04
-
-**Structure of zip files in ```uwb_synced_images```**
-```
-${ROOT}
-|-- MMDD (month/date)
-    |-- cam_1 (containing 5760 images)
-    |-- cam_2
-    |-- cam_3
-    |-- cam_4
-```
-
-**[```uwb_synced_images```](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM)** (15s_interval, 4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
-* Days: 7/21,
-7/22, 
-7/23, 
-7/24, 
-7/25, 
-7/26, 
-7/27, 
-7/28, 
-7/29, 
-7/30, 
-7/31, 
-8/01, 
-8/02, 
-8/03, 
-8/04.
-
-The zip files should be unzipped and organized as follows:
+```uwb_synced_images```: 15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
 ```
 ${ROOT}
 |-- images
-|   |-- 0721
-|   |   |-- cam_1
+|   |-- 0721 (MMDD)
+|   |   |-- cam_1 (containing 5760 images)
 |   |   |-- cam_2
 |   |   |-- cam_3
 |   |   |-- cam_4
@@ -257,7 +228,6 @@ ${ROOT}
 
 Complete Visual Data (1s interval)
 ------
-
 
 Due to the size of the complated 1s-interval frames, we converted the separate frames into a video for each camera view in each day, which is about 40GB. All videos are available at [1s_interval_videos](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Evg_ub8l6VBCqtMk6HAwfY4B-LDe_gIvt53InfFM8Jcmjw?e=z9cur0) (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos). Each video is 24h long. The play time in each video corresponds to the date time of the frame.
 
