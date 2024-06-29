@@ -4,7 +4,7 @@
 <!--What this is\-->
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.
 The sensor data is provide in sensor_data.zip.
-The visual data includes multiple sets. the UWB-synced multi-view images for each day of the deployment is available in uwb_synced_images.
+The visual data includes multiple sets. The UWB-synced multi-view images for each day of the deployment is available in uwb_synced_images.
 The complete internet-time synchronized visual data is provided in video-format at 1s_interval_videos.
 Additional high-resolution photos of individual cows are provided in cow_gallery.zip.
 
