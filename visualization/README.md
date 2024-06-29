@@ -27,14 +27,17 @@ Note: The annotated ```visual_data.zip``` only contains images on 7/25 from 2:57
 
 2. Clone the main directory, navitage to "visualization"
 ```
-	git clone https://github.com/hienvuvg/dairycattle_dataset
-	cd visualization
+git clone https://github.com/hienvuvg/dairycattle_dataset
+cd visualization
 ```
 
-In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
-3. Specify file directories in ```path.yaml``` to the two unzipped folders.
+In ```./path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
+3. [Optional] Create a virtual environment using [conda](https://docs.anaconda.com/free/miniconda/): 
+```
+conda create -n mmcows python=3.9
+conda activate mmcows
+```
 4. Install all dependencies using python before running the scripts:
-
 ```
 cd visualization
 pip install -r requirements.txt
@@ -45,7 +48,6 @@ pip install -r requirements.txt
 
 ## MmCows Viewer
 For showing the 3D map of the pen with UWB location and a combined camera view which is time-synchronized with the map:
-
 ```
 python MmCows_view.py
 ```
@@ -63,7 +65,6 @@ There are several flags for passing into the python script that allow visualizat
 
 
 Example:
-
 ```
 python MmCows_view.py --date 0725 --uwb_points --boundary
 ```
