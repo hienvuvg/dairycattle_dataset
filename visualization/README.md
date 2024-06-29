@@ -53,7 +53,7 @@ There are several flags for passing into the python script that allows visualiza
 Example:
 
 ```
-python MmCows_view.py --uwb_points --boundary
+python MmCows_view.py --date 0725 --uwb_points --boundary
 ```
 
 
