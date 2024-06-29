@@ -33,10 +33,10 @@ ${ROOT}
 |   |-- 0803
 |   |-- 0804
 |-- proj_mat
-|   |-- 0721
-|   |-- ...
-|   |-- 0803
-|   |-- 0804
+    |-- 0721
+    |-- ...
+    |-- 0803
+    |-- 0804
 ```
 
 There are several flags for passing into the python script that allows visualization of different parameters in the image views:
@@ -75,4 +75,4 @@ python visual_localization.py
 https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/adf83598-4eef-40a0-a9d5-57c1a96f41de
 
 
-If you cannot see the videos, hold the "shift" key and refresh your browser to reload the page.
+If you cannot see the videos, hold the "shift" key while refreshing your browser to reload the page.
