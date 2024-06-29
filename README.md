@@ -164,7 +164,7 @@ Time index format is unix timestamp. When converting unix timestamp to datetime,
 Annotated Visual Data
 ------
 
-Visual data of a single day 7/25
+sensor_data.zip: Visual data of a single day 7/25
 
 **Structure of visual_data.zip**
 ```
@@ -197,7 +197,7 @@ ${ROOT}
 UWB-Synced Visual Data (15s interval)
 ------
 
-```uwb_synced_images```: 15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
+uwb_synced_images: 15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
 ```
 ${ROOT}
 |-- images
@@ -229,7 +229,7 @@ ${ROOT}
 Complete Visual Data (1s interval)
 ------
 
-Due to the size of the complated 1s-interval frames, we converted the separate frames into a video for each camera view in each day, which is about 40GB. All videos are available at [1s_interval_videos](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Evg_ub8l6VBCqtMk6HAwfY4B-LDe_gIvt53InfFM8Jcmjw?e=z9cur0) (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos). Each video is 24h long. The play time in each video corresponds to the date time of the frame.
+1s_interval_videos: Internet-time synced footage throughout 14 days of the deployment with a sampling rate of 1s (4.5k resolution, 14 day, 14x4 videos, 40GB/video). Due to the size of the complated 1s-interval frames, we converted the separate frames into a video for each camera view in each day, which is about 40GB. Each video is 24h long. The play time in each video corresponds to the date time of the frame.
 
 
 <!--**```1s_interval_zips ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):-->
