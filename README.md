@@ -192,11 +192,6 @@ ${ROOT}
 
 <br />
 
-<mark>Note: The content below is currently being revisied</mark>
-------
-
-<br />
-
 UWB-Synced Visual Data (15s interval)
 ------
 
@@ -213,7 +208,7 @@ ${ROOT}
 ```
 
 **[```uwb_synced_images```](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM)** (15s_interval, 4.5k resolution, 14 days, 14 zips, 20k images/zip, 21GB/zip): 
-* 7/21,
+* Days: 7/21,
 7/22, 
 7/23, 
 7/24, 
@@ -229,12 +224,25 @@ ${ROOT}
 8/03, 
 8/04.
 
-
-
+The zip files should be unzipped and organized as follows:
 ```
 ${ROOT}
 |-- images
+|   |-- 0721
+|   |   |-- cam_1
+|   |   |-- cam_2
+|   |   |-- cam_3
+|   |   |-- cam_4
+|   |-- 0722
+|   |-- 0723
+|   |-- ...
+|   |-- 0803
+|   |-- 0804
 |-- proj_mat
+    |-- 0721
+    |-- ...
+    |-- 0803
+    |-- 0804
 ```
 
 | Data  | Description | Interval | Duration    |
@@ -250,8 +258,7 @@ Complete Visual Data (1s interval)
 
 * [cow_gallery.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EWwMd7XKrUpNnaROWHd8oFUBQ_9-duvEtr7kP6-vA-Rw-A?e=VfmBZC): High-res photos of cows from various angles for references
 
-
-**[```1s_interval_videos```](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Evg_ub8l6VBCqtMk6HAwfY4B-LDe_gIvt53InfFM8Jcmjw?e=z9cur0)** (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos):
+Due to the size of the complated 1s-interval frames, we converted the separate frames into a video for each camera view in each day, which is about 40GB. All videos are available at [```1s_interval_videos```](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Evg_ub8l6VBCqtMk6HAwfY4B-LDe_gIvt53InfFM8Jcmjw?e=z9cur0) (4.5k resolution, 14 day, 14x4 videos, 40GB/video, 120 GB/ 4 videos).
 * Cam 1, 2, 3, and 4: 7/21,
 7/22, 
 7/23, 
