@@ -22,16 +22,21 @@ For visualizing the isometric-view images along with the sensor data, download t
 ```
 ${ROOT}
 |-- images
-    |-- 0721
-    |   |-- cam_1
-    |   |-- cam_2
-    |   |-- cam_3
-    |   |-- cam_4
-    |-- 0722
-    |-- 0723
-    |-- ...
-    |-- 0803
-    |-- 0804
+|   |-- 0721
+|   |   |-- cam_1
+|   |   |-- cam_2
+|   |   |-- cam_3
+|   |   |-- cam_4
+|   |-- 0722
+|   |-- 0723
+|   |-- ...
+|   |-- 0803
+|   |-- 0804
+|-- proj_mat
+|   |-- 0721
+|   |-- ...
+|   |-- 0803
+|   |-- 0804
 ```
 
 There are several flags for passing into the python script that allows visualization of different parameters in the image views:
