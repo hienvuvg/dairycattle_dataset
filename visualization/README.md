@@ -41,7 +41,7 @@ ${ROOT}
 Note: The annotated ```visual_data.zip``` only contains images on 7/25 from 2:57:18 to 23:57:17 which are also already masked. Refer to the link above for the original UWB-synced unmaked 24-hour frames.
 
 
-There are several flags for passing into the python script that allows visualization of different parameters in the image views:
+There are several flags for passing into the python script that allow visualization of different parameters in the image views:
 * ```--date```, the chosen date to be visualized in MMDD
 * ```--no_image```, disabling the second window that displays the images
 * ```--uwb_points```, showing 3D UWB locations in the camera views
