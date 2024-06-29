@@ -124,7 +124,7 @@ def plot_images(ax, first_imgs, curr_timestamp):
     global black_image, cam_list, standing_bbox_en, lying_bbox_en, en_ground_boundary
     global uwb_locs  # Unit: cm
     global Proj_cam_list, image_dir, label_dir, prior_rest_y_loc, lying_refs, uwb_label_dir
-    global label_resolution, disp_resolution, dconf, color_bbox
+    global label_resolution, disp_resolution, color_bbox
 
     disp_scale = label_resolution[0] / disp_resolution[0]
         
@@ -166,7 +166,7 @@ def plot_images(ax, first_imgs, curr_timestamp):
                     width_height = ratio_to_pixel(disp_resolution, row[3:5])
                     bboxes_data[idx, 1:5] = convert_bbox_format(bbox_center, width_height)
 
-            out_img_list.append(draw_standing_bbox(cam_img, bboxes_data, dconf, color_bbox))
+            out_img_list.append(draw_standing_bbox(cam_img, bboxes_data, 0, color_bbox))
 
         img_cam_list = out_img_list
 
@@ -386,19 +386,6 @@ def update(i):
                 vector = rotate_vector(north_vector, theta, phi, -psi) * 1.3
                 roll_vector = rotate_vector(north_vector, phi, theta, -psi + math.pi/2) * 0.5
 
-                # # Detect drinking cow
-                # v_x, v_y, v_z = vector
-                # loc_x, loc_y, loc_z = cow_loc
-                # if v_x < (pen_min_x + trough_x) or v_x > (pen_max_x - trough_x*1.5):
-                #     if np.abs(v_y) < trough_y/2:
-                #         if pitch < -30:
-                #             print(f"drink cow {cow_id} v")
-
-                # if loc_x < (pen_min_x + trough_x) or loc_x > (pen_max_x - trough_x*1.5):
-                #     if np.abs(loc_y) < trough_y/2:
-                #         if pitch < -30:
-                #             print(f"drink cow {cow_id}")
-
                 ## Plot compass
                 ax1.plot([cow_loc[0], cow_loc[0] + vector[0]], [cow_loc[1], cow_loc[1] + vector[1]], [cow_loc[2], cow_loc[2] + vector[2]], color=head_color) 
                 ax1.plot([cow_loc[0] - roll_vector[0], cow_loc[0] + roll_vector[0]], [cow_loc[1] - roll_vector[1], cow_loc[1] + roll_vector[1]], [cow_loc[2] - roll_vector[2], cow_loc[2] + roll_vector[2]], color=head_color) # Roll line
@@ -422,7 +409,7 @@ def main(args):
     global ax1, ax2, fig2, combined_timestamps, curr_timestamp, cow_data_list, masking
     global first_imgs, showing_images, en_uwb_points, en_ground_grid, label_resolution
     global standing_bbox_en, lying_bbox_en, cam_list, Proj_cam_list, image_dir, label_dir, uwb_label_dir
-    global en_ground_boundary, disp_resolution, dconf, cam_coord, hide_ticks, plot_scale, color_bbox
+    global en_ground_boundary, disp_resolution, cam_coord, hide_ticks, plot_scale, color_bbox
 
     date = args.date
     showing_images = args.no_image
@@ -436,7 +423,6 @@ def main(args):
     masking = args.masking
     standing_bbox_en = args.bbox
     color_bbox = args.color_bbox
-    dconf = args.conf
     hide_ticks= args.hide_ticks
     plot_scale = 1
 
@@ -579,7 +565,7 @@ def main(args):
         first_imgs = first_images(ax2, first_imgs, curr_timestamp)
         plt.tight_layout()
 
-    ani = Player(fig=fig1, func=update, maxi=len(combined_timestamps)-1, run_status=run_status, interval_ms=args.dis_intv) 
+    ani = Player(fig=fig1, func=update, maxi=len(combined_timestamps)-1, run_status=run_status, interval_ms=args.disp_intv) 
 
     plt.show()
 
@@ -588,14 +574,14 @@ def main(args):
 
 if __name__ == '__main__':
 
-    print("Tips: Use --help for detailed configurations")
+    # print("Tips: Use --help for detailed configurations")
 
     date_list = ["0721", "0722", "0723", "0724","0725","0726","0727","0728","0729","0730","0731","0801","0802", "0803","0804"]
     
     # settings
     parser = argparse.ArgumentParser(description='CowLoc visualization')
-    parser.add_argument('--freeze', action='store_true', help='Use --freeze if the annimation is laggy')
-    parser.add_argument('--date', type=str, default='0725', choices=date_list, help='The date of the experiment for displaying the data in MMDD')
+    parser.add_argument('--freeze', action='store_true', help='Stop the annimation at run. Use if the annimation is laggy')
+    parser.add_argument('--date', type=str, default='0725', choices=date_list, help='The chosen date to be visualized in MMDD')
     parser.add_argument('--no_image', action='store_false', help='Disabling the second window that displays the images')
     parser.add_argument('--print_out', action='store_true', help='N/A')
     parser.add_argument('--uwb_points', action='store_true', help='Showing 3D UWB locations in the camera views')
@@ -604,12 +590,10 @@ if __name__ == '__main__':
     parser.add_argument('--masking', action='store_true', help='Masking the view from other pens')
     parser.add_argument('--bbox', action='store_true', help='Drawing bounding boxes from the cow ID labels')
     parser.add_argument('--color_bbox', action='store_true', help='Drawing bounding boxes from the cow ID labels with unique colors')
-    parser.add_argument('--conf', action='store_true', help='Display confidence score on bounding boxes')
-    # parser.add_argument('--lying_bbox', action='store_true', help='Drawing bounding boxes from the uwb locations')
     parser.add_argument('--hide_ticks', action='store_true', help='Hide x, y, and z ticks')
     parser.add_argument('--frame_ratio', type=float, default=1.6, help='Ratio of the frame being displayed')
     parser.add_argument('--frame_height', type=int, default=2800, help='Height of the frame being displayed')
-    parser.add_argument('--dis_intv', type=int, default=3000, help='Display interval of the animation') 
+    parser.add_argument('--disp_intv', type=int, default=3000, help='Set display interval of the animation') 
 
     # north_vector = np.array([3, 9, 0]).astype(float)
     north_vector = np.array([0, 9, 0]).astype(float)
