@@ -3,6 +3,13 @@
 
 <!--What this is\-->
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.
+The sensor data is provide in sensor_data.zip.
+The visual data includes multiple sets. the UWB-synced multi-view images for each day of the deployment is available in uwb_synced_images.
+The complete internet-time synchronized visual data is provided in video-format at 1s_interval_videos.
+Additional high-resolution photos of individual cows are provided in cow_gallery.zip.
+
+We also provide additional sets of data for benchmarking the dataset such as cropped_bboxes.zip and trained_model_weights.zip.
+
 <!--[Overview](https://hienvuvg.github.io/mmcows/)\-->
 **Download links:**
 * [sensor_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EbqpyJkUdgtGiZ0ZQpkyqtQBSZEh8PhInGu7V5FVl0uWMw?e=Yuga6R) (18 GB) 14-day data from wearable sensors
