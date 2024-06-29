@@ -36,6 +36,8 @@ Note: The annotated ```visual_data.zip``` only contains images on 7/25 from 2:57
 	cd visualization
 	pip install -r requirements.txt
 	```
+
+
 <br />
 
 ## MmCows Viewer
