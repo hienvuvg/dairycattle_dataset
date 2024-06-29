@@ -3,22 +3,7 @@
 
 
 ## Setup
-* Specify file directories in ```path.yaml``` to the two unzipped folders.
-* Install all dependencies using python before running the scripts:
-	```
-	cd visualization
-	pip install -r requirements.txt
-	```
-<br />
-
-## MmCows Viewer
-For showing the 3D map of the pen with UWB location and a combined camera view which is time-synchronized with the map:
-
-```
-python MmCows_view.py
-```
-
-For visualizing the isometric-view images along with the sensor data, download the zipped images of the day-of-interest and the projection matrices (proj_mat.zip) from [this folder](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM) (completed UWB-synced frames, 24 hours for each day). Then unzip and organize them in the ```visual_data``` folder as the following structure:
+1. Download and upzip [sensor_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EbqpyJkUdgtGiZ0ZQpkyqtQBSZEh8PhInGu7V5FVl0uWMw?e=Yuga6R) and visual data from [uwb_synced_images](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM) (completed UWB-synced frames, 24 hours for each day). Then unzip and organize them in the ```visual_data``` folder as the following structure:
 ```
 ${ROOT}
 |-- images
@@ -39,6 +24,26 @@ ${ROOT}
     |-- 0804
 ```
 Note: The annotated ```visual_data.zip``` only contains images on 7/25 from 2:57:18 to 23:57:17 which are also already masked. Refer to the link above for the original UWB-synced unmaked 24-hour frames.
+2. Clone the main directory, navitage to "visualization"
+```
+	git clone https://github.com/hienvuvg/dairycattle_dataset
+	cd visualization
+	```
+	In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
+3. Specify file directories in ```path.yaml``` to the two unzipped folders.
+4. Install all dependencies using python before running the scripts:
+	```
+	cd visualization
+	pip install -r requirements.txt
+	```
+<br />
+
+## MmCows Viewer
+For showing the 3D map of the pen with UWB location and a combined camera view which is time-synchronized with the map:
+
+```
+python MmCows_view.py
+```
 
 
 There are several flags for passing into the python script that allow visualization of different parameters in the image views:
