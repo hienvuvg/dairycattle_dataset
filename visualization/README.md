@@ -34,10 +34,11 @@ Note: The annotated ```visual_data.zip``` only contains images on 7/25 from 2:57
 In ```./configs/path.yaml```, modify ```sensor_data_dir``` and ```visual_data_dir``` to your local directories of the respective folders
 3. Specify file directories in ```path.yaml``` to the two unzipped folders.
 4. Install all dependencies using python before running the scripts:
-	```
-	cd visualization
-	pip install -r requirements.txt
-	```
+
+```
+cd visualization
+pip install -r requirements.txt
+```
 
 
 <br />
