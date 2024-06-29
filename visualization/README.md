@@ -76,7 +76,7 @@ https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/905ce915-ac74-49
 <br />
 
 ## UWB Localization
-Localization of a single cow using UWB:
+Localization of a single cow using UWB (does not require the visual data):
 ```
 python uwb_localization.py
 ```
@@ -87,7 +87,7 @@ https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/8d7f469a-cf4c-42
 <br />
 
 ## Multi-View Visual Localization
-Localization of cows (from 1 to 16) simultaneously using multiple views. Only applicable to 7/25:
+Localization of cows (from 1 to 16) simultaneously using multiple views. Only applicable to 7/25 (does not require the visual data):
 ```
 python visual_localization.py
 ```
