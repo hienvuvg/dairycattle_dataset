@@ -42,12 +42,12 @@ Note: The annotated ```visual_data.zip``` only contains images on 7/25 from 2:57
 
 
 There are several flags for passing into the python script that allow visualization of different parameters in the image views:
-* ```--date```, specifying the chosen date to be visualized in MMDD
-* ```--no_image```, disabling the second window that displays the images
-* ```--uwb_points```, showing 3D UWB locations in the camera views
-* ```--bbox```, drawing bounding boxes from the cow ID labels (only applicable on 7/25)
-* ```--ground_grid```, showing the ground grid and the pen boundary in the camera views
-* ```--boundary```, showing the pen boundary in the camera views
+* ```--date```, specify the chosen date to be visualized in MMDD
+* ```--no_image```, disable the second window that displays the images
+* ```--uwb_points```, show 3D UWB locations in the camera views
+* ```--bbox```, draw bounding boxes from the cow ID labels (only applicable on 7/25)
+* ```--ground_grid```, show the ground grid and the pen boundary in the camera views
+* ```--boundary```, show the pen boundary in the camera views
 * ```--disp_intv```, set display interval of the animation
 * ```--freeze```, stop the annimation at run
 
