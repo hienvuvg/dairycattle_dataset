@@ -91,9 +91,6 @@ Localization of cows (from 1 to 16) simultaneously using multiple views. Only ap
 python visual_localization.py
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TkPsPfbDuRc?si=etzodIr9-0OaS4Kf&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
 https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/adf83598-4eef-40a0-a9d5-57c1a96f41de
 
 
