@@ -3,24 +3,17 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import rgb2hex
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
-# New number 2024.01.23
-n_y = 5.33 - 0.2
-s_y = 6.46 - 0.2
-
-# # Previously used numbers
-# n_y = 5.7
-# s_y = 5.67
 
 Anchors = np.asarray([
                     [0,0,0],                # 0
-                    [-6.1, n_y , 3.88],      # 1
-                    [0, n_y, 4.04],         # 2
-                    [6.1, n_y, 3.95],       # 3
+                    [-6.1, 5.13, 3.88],      # 1
+                    [0, 5.13, 4.04],         # 2
+                    [6.1, 5.13, 3.95],       # 3
                     [-0.36, 0, 5.17],       # 4
                     [0.36, 0, 5.17],        # 5
-                    [-6.1, -s_y, 5.47],    # 6
-                    [0, -s_y, 5.36],       # 7
-                    [6.1, -s_y, 5.49]])    # 8
+                    [-6.1, -6.26, 5.47],    # 6
+                    [0, -6.26, 5.36],       # 7
+                    [6.1, -6.26, 5.49]])    # 8
 
 
 stall_y = 4.75
