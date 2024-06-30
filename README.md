@@ -86,7 +86,7 @@ Sensor Data
 
 Data of 14 days, from 7/21 to 8/04
 
-**Structure of <a href="#">sensor_data.zip</a>**
+**Structure of [sensor_data.zip](#)**
 
 <!--Old
 ```
@@ -172,7 +172,7 @@ Time index format is unix timestamp. When converting unix timestamp to datetime,
 Annotated Visual Data
 ------
 
-<a href="#">visual_data.zip</a>: annotated visual data of a single day 7/25
+[visual_data.zip](#): annotated visual data of a single day 7/25
 
 **Structure of visual_data.zip**
 ```
@@ -205,7 +205,7 @@ ${ROOT}
 UWB-Synced Visual Data (15s interval)
 ------
 
-<a href="#">uwb_synced_images</a>: UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s (15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
+[uwb_synced_images](#): UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s (15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
 ```
 ${ROOT}
 |-- images
@@ -237,7 +237,7 @@ ${ROOT}
 Complete Visual Data (1s interval)
 ------
 
-<a href="#">1s_interval_videos</a>: Internet-time synced footage throughout 14 days of the deployment with a sampling rate of 1s (4.5k resolution, 14 day, 14x4 videos, 40GB/video). Due to the size of the complated 1s-interval frames, we converted the separate frames into a video for each camera view in each day, which is about 40GB. Each video is 24h long. The play time in each video corresponds to the date time of the frame.
+[1s_interval_videos](#): Internet-time synced footage throughout 14 days of the deployment with a sampling rate of 1s (4.5k resolution, 14 day, 14x4 videos, 40GB/video). Due to the size of the complated 1s-interval frames, we converted the separate frames into a video for each camera view in each day, which is about 40GB. Each video is 24h long. The play time in each video corresponds to the date time of the frame.
 
 
 <!--**```1s_interval_zips ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):-->
