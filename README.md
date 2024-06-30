@@ -167,14 +167,14 @@ Vision-related and manually annotated data is available for all 16 cows, while d
 Time index format is unix timestamp. When converting unix timestamp to datetime, it needs to be converted to Central Daylight Time (CDT) which is 5 hours off from the Coordinated Universal Time (UTC).
 
 For UWB localization, the locations of eight stationary UWB anchors (in meters) are as follows:
-1. [-6.1, 5.13, 3.88]
-1. [0, 5.13, 4.04]
-1. [6.1, 5.13, 3.95]
-1. [-0.36, 0, 5.17]
-1. [0.36, 0, 5.17]
-1. [-6.1, -6.26, 5.47]
-1. [0, -6.26, 5.36]
-1. [6.1, -6.26, 5.49]
+1. [-6.10, 5.13, 3.88]
+1. [0.00, 5.13, 4.04]
+1. [6.10, 5.13, 3.95]
+1. [-0.36, 0.00, 5.17]
+1. [0.36, 0.00, 5.17]
+1. [-6.10, -6.26, 5.47]
+1. [0.00, -6.26, 5.36]
+1. [6.10, -6.26, 5.49]
 
 
 <br />
