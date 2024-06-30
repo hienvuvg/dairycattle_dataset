@@ -80,8 +80,13 @@ Localization of a single cow using UWB:
 python uwb_localization.py
 ```
 
+<div align="center">
+<video width="480" controls autoplay loop>
+  <source src="https://hienvuvg.github.io/files/media/uwb_loc_vid.mp4" type="video/mp4">
+</video>
+</div>
 
-https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/8d7f469a-cf4c-4224-b486-c96c0a1ab6e1
+<!--https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/8d7f469a-cf4c-4224-b486-c96c0a1ab6e1-->
 
 <br />
 
@@ -90,8 +95,13 @@ Localization of cows (from 1 to 16) simultaneously using multiple views. Only ap
 ```
 python visual_localization.py
 ```
+<div align="center">
+<video width="480" controls autoplay loop>
+  <source src="https://hienvuvg.github.io/files/media/visual_loc_vid.mp4" type="video/mp4">
+</video>
+</div>
 
-https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/adf83598-4eef-40a0-a9d5-57c1a96f41de
+<!--https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/adf83598-4eef-40a0-a9d5-57c1a96f41de-->
 
 
 If you cannot see the videos, hold the "shift" key while refreshing your browser to reload the page.
