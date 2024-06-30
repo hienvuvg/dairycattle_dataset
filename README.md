@@ -1,6 +1,6 @@
 ## MmCows: A Multimodal Dataset for Dairy Cattle Monitoring
 
-### [An Overview of MmCows](https://hienvuvg.github.io/mmcows/)
+### [Click Here for An Overview of MmCows](https://hienvuvg.github.io/mmcows/)
 
 ### Data Description:
 
