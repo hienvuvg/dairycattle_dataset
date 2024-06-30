@@ -3,7 +3,7 @@
 
 <!--What this is\-->
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.
-The sensor data is provide in sensor_data.zip.
+The wearable sensor data is provide in sensor_data.zip.
 The visual data includes multiple sets. The UWB-synced multi-view images for each day of the deployment are available in uwb_synced_images.
 The complete internet-time synchronized visual data is provided in video-format in 1s_interval_videos.
 In addition, high-resolution photos of individual cows are provided in cow_gallery.zip.
@@ -86,7 +86,7 @@ Sensor Data
 
 Data of 14 days, from 7/21 to 8/04
 
-**Structure of sensor_data.zip**
+**Structure of <a href="#">sensor_data.zip</a>**
 
 <!--Old
 ```
@@ -172,7 +172,7 @@ Time index format is unix timestamp. When converting unix timestamp to datetime,
 Annotated Visual Data
 ------
 
-visual_data.zip: annotated visual data of a single day 7/25
+<a href="#">visual_data.zip</a>: annotated visual data of a single day 7/25
 
 **Structure of visual_data.zip**
 ```
@@ -205,7 +205,7 @@ ${ROOT}
 UWB-Synced Visual Data (15s interval)
 ------
 
-uwb_synced_images: UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s (15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
+<a href="#">uwb_synced_images</a>: UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s (15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
 ```
 ${ROOT}
 |-- images
@@ -237,7 +237,7 @@ ${ROOT}
 Complete Visual Data (1s interval)
 ------
 
-1s_interval_videos: Internet-time synced footage throughout 14 days of the deployment with a sampling rate of 1s (4.5k resolution, 14 day, 14x4 videos, 40GB/video). Due to the size of the complated 1s-interval frames, we converted the separate frames into a video for each camera view in each day, which is about 40GB. Each video is 24h long. The play time in each video corresponds to the date time of the frame.
+<a href="#">1s_interval_videos</a>: Internet-time synced footage throughout 14 days of the deployment with a sampling rate of 1s (4.5k resolution, 14 day, 14x4 videos, 40GB/video). Due to the size of the complated 1s-interval frames, we converted the separate frames into a video for each camera view in each day, which is about 40GB. Each video is 24h long. The play time in each video corresponds to the date time of the frame.
 
 
 <!--**```1s_interval_zips ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):-->
