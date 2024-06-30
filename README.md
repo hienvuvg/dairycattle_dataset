@@ -86,7 +86,7 @@ Sensor Data
 
 Data of 14 days, from 7/21 to 8/04
 
-**Structure of [sensor_data.zip](#)**
+**Structure of [sensor_data.zip](#top)**
 
 <!--Old
 ```
@@ -172,7 +172,7 @@ Time index format is unix timestamp. When converting unix timestamp to datetime,
 Annotated Visual Data
 ------
 
-[visual_data.zip](#): annotated visual data of a single day 7/25
+[visual_data.zip](#top): annotated visual data of a single day 7/25
 
 **Structure of visual_data.zip**
 ```
