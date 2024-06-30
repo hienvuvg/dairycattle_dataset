@@ -2,6 +2,8 @@
 
 ### [An Overview of MmCows](https://hienvuvg.github.io/mmcows/)
 
+### Data Description:
+
 <!--What this is\-->
 This dataset includes two parts: data from wearable sensors and visual data from four cameras.
 The wearable sensor data is provide in sensor_data.zip.
