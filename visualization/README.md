@@ -69,8 +69,8 @@ Example:
 python MmCows_view.py --date 0725 --uwb_points --boundary
 ```
 
+https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/a29fd3cf-ad23-49db-80af-38ae963d77f1
 
-https://github.com/hienvuvg/dairycattle_dataset/assets/60267498/905ce915-ac74-4938-a492-9a556bbe61b5
 
 <br />
 
