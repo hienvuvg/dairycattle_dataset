@@ -88,7 +88,7 @@ Note:
 Sensor Data
 ------
 
-Data of 14 days, from 7/21 to 8/04
+Data of 14 days, from 12:30 PM 7/21 to 7:00 AM 8/04
 
 **Structure of [sensor_data.zip](#links)**
 
@@ -217,7 +217,7 @@ ${ROOT}
 UWB-Synced Visual Data (15s interval)
 ------
 
-[uwb_synced_images](#links): UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s (15s_interval, 4.5k resolution, 14 days from 7/21 to 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
+[uwb_synced_images](#links): UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s (15s_interval, 4.5k resolution, 14 days from  from 12:30 PM 7/21 to 7:00 AM 8/04, 14 zips, 20k images/zip, 21GB/zip). The zip files should be unzipped and organized as follows:
 ```
 ${ROOT}
 |-- images
