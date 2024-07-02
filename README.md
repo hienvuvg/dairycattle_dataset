@@ -249,7 +249,7 @@ ${ROOT}
 Complete Visual Data (1s interval)
 ------
 
-[1s_interval_images](#links) or [1s_interval_videos](#links): Internet-time synced frames/footage throughout 14 days of the deployment with a sampling rate of 1s (4.5k resolution, 14 day, 14x4 zips/videos). This data is provided in two formats: images (zipped) and videos. They contain the same data but the videos offer smaller file size compared to images. For the images, the image name contains the synced unixtimestamp of each frame. For the videos, the play time in each video corresponds to the date time of the frame.
+[1s_interval_images](#links) or [1s_interval_videos](#links): Internet-time synced frames/footage throughout 14 days of the deployment with a sampling rate of 1s (4.5k resolution, 14 day, 14x4 zips/videos). This data is provided in two formats: images (zipped) and videos. They contain the same data but the videos offer smaller file size compared to images. For the images, the image name contains the synced unix timestamp of each frame. For the videos, the play time in each video corresponds to the date time of the frame.
 
 
 <!--**```1s_interval_zips ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):-->
