@@ -23,7 +23,7 @@ ${ROOT}
     |-- 0803
     |-- 0804
 ```
-Note: The annotated ```visual_data.zip``` only contains images on 7/25 from 2:57:18 to 23:57:17 which have also been already masked. Refer to the folder uwb_synced_images above for the original UWB-synced unmaked 24-hour frames.
+Note: The annotated ```visual_data.zip``` only contains images on 7/25 from 2:57:18 to 23:57:17 which have also been already masked. Refer to the folder uwb_synced_images above for the original UWB-synced unmasked 24-hour frames.
 
 2. Clone the main directory, navitage to "visualization"
 ```
