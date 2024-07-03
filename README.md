@@ -19,7 +19,8 @@ We also provide additional sets of data for benchmarking the dataset such as cro
 * [sensor_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EbqpyJkUdgtGiZ0ZQpkyqtQBSZEh8PhInGu7V5FVl0uWMw?e=Yuga6R) (18 GB) 14-day data from wearable sensors
 * [visual_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EXTIwZOnLs1Mv67gkEwfdhUBh2cWwL8qBIvpUVZTKi111w?e=3ZkN0I) (20 GB) 15s-interval visual data on 7/25
 * [uwb_synced_images](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM): UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s
-* [1s_interval_images](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/EpG-e9c9l8tMgbT2zaBE5uABPUMvtZFYcZZEqA0ZwvJrkg?e=rRG4Me) or [1s_interval_videos](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Evg_ub8l6VBCqtMk6HAwfY4B-LDe_gIvt53InfFM8Jcmjw?e=z9cur0): Internet-time synced frames/footage throughout 14 days of the deployment with a sampling rate of 1s (uploading is in-progress)
+* [1s_interval_images](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/EpG-e9c9l8tMgbT2zaBE5uABPUMvtZFYcZZEqA0ZwvJrkg?e=rRG4Me): Internet-time synced frames throughout 14 days of the deployment with a sampling rate of 1s (55 GB/zip, 3 TB in total). (uploading is in-progress)
+* [1s_interval_images_3hr](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/EuHPy-0gjUlGv3CEOCGmgrMByCs62VVCHveeDjbm9PEaAg?e=KtT3wa): A subset of 1s_interval_images on 7/25 from 12PM to 3PM with smaller file size (7.5 GB/zip, 30 GB in total).
 * [cow_gallery.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EWwMd7XKrUpNnaROWHd8oFUBQ_9-duvEtr7kP6-vA-Rw-A?e=VfmBZC): High-res photos of cows from various angles for references
 * [cropped_bboxes.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EVnZ4WHspSJEpj-Xl2NIcm4ByWV5Ij-D3X9EF3uoM_FxOw?e=g70Yr7) (13 GB) cropped bounding boxes of cows for the training of behavior classification, lying cow identification, and non-lying cow identification
 * [trained_model_weights.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/oprabhun_purdue_edu/EcxQcjadm3BMvhh2i2waZAwBk58lN_R4vHg2KCxeZFow1w?e=cD5cmg) (1 GB) Pre-trained weights of the vision models
@@ -249,8 +250,9 @@ ${ROOT}
 Complete Visual Data (1s interval)
 ------
 
-[1s_interval_images](#links) or [1s_interval_videos](#links): Internet-time synced frames/footage throughout 14 days of the deployment with a sampling rate of 1s (4.5k resolution, 14 day, 14x4 zips/videos). This data is provided in two formats: images (zipped) and videos. They contain the same data but the videos offer smaller file size compared to images. For the images, the image name contains the synced unix timestamp of each frame. For the videos, the play time in each video corresponds to the date time of the frame.
+[1s_interval_images](#links): Internet-time synced frames throughout 14 days of the deployment with a sampling rate of 1s (4.5k resolution, 14 day, 14x4 zips/videos). Each zip file is for one camera view in one day (55 GB/zip).
 
+[1s_interval_images_3hr](#links): A subset of 1s_interval_images on 7/25 from 12 PM to 3 PM with smaller file size (7.5 GB/zip).
 
 <!--**```1s_interval_zips ```** (4.5k resolution, 14 day, 14x4 videos, 319GB/zip):-->
 
