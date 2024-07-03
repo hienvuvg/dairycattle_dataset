@@ -205,7 +205,7 @@ ${ROOT}
 | Data  | Description | Interval | Duration    |
 |-------------|-----------|----------|----------|
 | ```images``` | UWB-syned isometric-view images where the other unrelated pens are masked out | 15 s | 1 d   |
-| ```labels```    | Annotated cow ID and bbox of individual cows in camera view, formated as ```[cow_id, x,y,w,h]```. Separated in three sets: standing cows only, lying cow only, or both standing and lying cows | 15 s | 1 d  | 
+| ```labels```    | Annotated cow ID and bbox of individual cows in camera view, formated as ```[cow_id, x,y,w,h]```, normalized for the resolution of 4480x2800. Separated in three sets: standing cows only, lying cow only, or both standing and lying cows | 15 s | 1 d  | 
 | ```proj_mat``` | Matrices for projecting a 3D world location to a 2D pixel location | -| -   |
 | ```behavior_labels``` |  Manually annotated behavior labels of the cows | 1 s | 1 d   |
 | ```visual_location``` | 3D locations of cow body derived from ```labels``` using visual localization | 15 s | 1 d  |
