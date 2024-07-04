@@ -18,7 +18,7 @@ We also provide additional sets of data for benchmarking the dataset such as cro
 **Download links:**
 * [sensor_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EbqpyJkUdgtGiZ0ZQpkyqtQBSZEh8PhInGu7V5FVl0uWMw?e=Yuga6R) (18 GB) 14-day data from wearable sensors
 * [visual_data.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EXTIwZOnLs1Mv67gkEwfdhUBh2cWwL8qBIvpUVZTKi111w?e=3ZkN0I) (20 GB) 15s-interval visual data on 7/25
-* [uwb_synced_images](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM): UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s
+* [uwb_synced_images](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Et4vQrsbOvRNudWe7SGn7p0BzPJlyWY6jXG1NOn39me5-A?e=DuY0TM): UWB-synced images throughout 14 days of the deployment with a sampling rate of 15s. Previews of the UWB-synced images are provided in [combined-view_videos](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/Evg_ub8l6VBCqtMk6HAwfY4B9Gh3zi16FJ84DMXX4K2noA?e=L4VIh3) (3 GB/video/day).  
 * [1s_interval_images](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/EpG-e9c9l8tMgbT2zaBE5uABPUMvtZFYcZZEqA0ZwvJrkg?e=rRG4Me): Internet-time synced frames throughout 14 days of the deployment with a sampling rate of 1s (55 GB/zip, 3 TB in total). (uploading is in-progress)
 * [1s_interval_images_3hr](https://purdue0-my.sharepoint.com/:f:/g/personal/vu64_purdue_edu/EuHPy-0gjUlGv3CEOCGmgrMByCs62VVCHveeDjbm9PEaAg?e=KtT3wa): A subset of 1s_interval_images on 7/25 from 12 PM to 3 PM with smaller file size (7.5 GB/zip, 30 GB in total).
 * [cow_gallery.zip](https://purdue0-my.sharepoint.com/:u:/g/personal/vu64_purdue_edu/EWwMd7XKrUpNnaROWHd8oFUBQ_9-duvEtr7kP6-vA-Rw-A?e=VfmBZC): High-res photos of cows from various angles for references
@@ -243,6 +243,9 @@ ${ROOT}
 |-------------|-----------|-----------|----------|
 | ```images```| UWB-synced isometric-view images of 4 cameras without masking | 15 s | 14 d  |  
 | ```proj_mat```  | Matrices for projecting a 3D world location to a 2D pixel location | 1 d | 14 d  |
+
+
+[combined-view_videos](#links): Footage of UWB-synced frames in a combined-view format throughout 14 days of the deployment (3 GB/video/day). These videos represent the same data as 1s_interval_images but at a lower sample rate of 15s intervals.
 
 
 <br />
