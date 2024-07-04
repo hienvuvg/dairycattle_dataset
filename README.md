@@ -245,7 +245,7 @@ ${ROOT}
 | ```proj_mat```  | Matrices for projecting a 3D world location to a 2D pixel location | 1 d | 14 d  |
 
 
-[combined-view_videos](#links): Footage of UWB-synced frames in a combined-view format throughout 14 days of the deployment (3 GB/video/day). These videos represent the same data as 1s_interval_images but at a lower sample rate of 15s intervals.
+[combined-view_videos](#links): Footage of UWB-synced frames in a combined-view format throughout 14 days of the deployment (3 GB/video/day). These videos represent the same data as in 1s_interval_images but at a lower sample rate of 15s intervals.
 
 
 <br />
