@@ -1,6 +1,6 @@
 # Computer Vision-based Cow Monitoring
 <p align="center">
-<img src="./S-RGB_pipeline.png" alt="S-RGB" width="700">
+<img src="./visual_pipeline.png" alt="S-RGB" width="700">
 <p align="center">
 <br />
 
