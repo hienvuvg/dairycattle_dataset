@@ -182,7 +182,7 @@ Evaluation
 
     Running the above command prints the F-1 scores for all the behaviors for single-view vision pipeline (RGBs).
 
-2. To evaluate the performance of multi-view vision pipeline (i.e. mRGB), use the following command:
+2. To evaluate the performance of multi-view vision pipeline (i.e. RGBm), use the following command:
     ```
     python ./eval/eval_mrgb_s2.py
     ```
